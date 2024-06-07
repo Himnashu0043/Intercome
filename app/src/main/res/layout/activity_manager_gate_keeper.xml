@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.gatekeeper.ManagerGateKeeperActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_choose_to_proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/bold"
+        android:text="Choose to Proceed"
+        android:textColor="#20222C"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_manage_gatekeepers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bg_bills"
+        app:layout_constraintEnd_toStartOf="@+id/layout_add_visitor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_choose_to_proceed">
+
+        <ImageView
+            android:id="@+id/iv_add_billing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:scaleType="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_add_billing" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_add_visitor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/bg_bills"
+        android:backgroundTint="#E5F3FB"
+        app:layout_constraintEnd_toStartOf="@+id/layout_create_gate_pass"
+        app:layout_constraintStart_toEndOf="@+id/layout_manage_gatekeepers"
+        app:layout_constraintTop_toBottomOf="@+id/tv_choose_to_proceed">
+
+        <ImageView
+            android:id="@+id/iv_billing_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/billing_list" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_create_gate_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/bg_bills"
+        android:backgroundTint="#F4EAFB"
+        app:layout_constraintEnd_toStartOf="@+id/layout_past_visitors"
+        app:layout_constraintStart_toEndOf="@+id/layout_add_visitor"
+        app:layout_constraintTop_toBottomOf="@id/tv_choose_to_proceed">
+
+        <ImageView
+            android:id="@+id/iv_overdue_unpaid_bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_overdue_unpaid_bills" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_past_visitors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/bg_bills"
+        android:backgroundTint="#FFE5EA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/layout_create_gate_pass"
+        app:layout_constraintTop_toBottomOf="@+id/tv_choose_to_proceed">
+
+        <ImageView
+            android:id="@+id/iv_pending_for_approval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_pending_for_approval" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_add_manage_gatekeepers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Manage
+Gatekeepers"
+        android:textColor="#20222C"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_manage_gatekeepers"
+        app:layout_constraintStart_toStartOf="@+id/layout_manage_gatekeepers"
+        app:layout_constraintTop_toBottomOf="@+id/layout_manage_gatekeepers" />
+
+    <TextView
+        android:id="@+id/tv_add_visitor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Add
+Visitor"
+        android:textColor="#20222C"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_add_visitor"
+        app:layout_constraintStart_toStartOf="@+id/layout_add_visitor"
+        app:layout_constraintTop_toBottomOf="@+id/layout_add_visitor" />
+
+    <TextView
+        android:id="@+id/tv_create_gate_pass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Create
+Gate pass"
+        android:textColor="#20222C"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_create_gate_pass"
+        app:layout_constraintStart_toStartOf="@+id/layout_create_gate_pass"
+        app:layout_constraintTop_toBottomOf="@+id/layout_create_gate_pass" />
+
+    <TextView
+        android:id="@+id/tv_past_visitors"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Past
+Visitors"
+        android:textColor="#20222C"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_past_visitors"
+        app:layout_constraintStart_toStartOf="@+id/layout_past_visitors"
+        app:layout_constraintTop_toBottomOf="@+id/layout_past_visitors" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/ownerBillingAccountDrw"
+    tools:openDrawer="start"
+    tools:context=".owner.activity.ownerbilling.BillingAccountOwnerActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/common_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/light_red_gradient_bg"
+            app:layout_constraintEnd_toStartOf="@+id/paidBill"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:id="@+id/imageView150"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/red_stock_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView261"
+                    style="@style/normaltxt_13sp_Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Unpaid Bills"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView150"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView150" />
+
+                <TextView
+                    android:id="@+id/textView262"
+                    style="@style/normaltxt_14sp_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Total Unpaid:"
+                    app:layout_constraintStart_toStartOf="@+id/textView261"
+                    app:layout_constraintTop_toBottomOf="@+id/textView261" />
+
+                <TextView
+                    android:id="@+id/textView263"
+                    style="@style/normaltxt_14sp_extra_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="left"
+                    android:text="0"
+                    app:layout_constraintEnd_toEndOf="@+id/textView261"
+                    app:layout_constraintStart_toEndOf="@+id/textView262"
+                    app:layout_constraintTop_toTopOf="@+id/textView262" />
+
+                <TextView
+                    android:id="@+id/textView264"
+                    style="@style/normaltxt_16sp_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="left"
+                    android:text="৳ 0"
+                    android:textColor="@color/orange"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView261"
+                    app:layout_constraintStart_toStartOf="@+id/textView261"
+                    app:layout_constraintTop_toBottomOf="@+id/textView263" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/paidBill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/light_green_gradint_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/card"
+            app:layout_constraintTop_toTopOf="@+id/card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+
+                <ImageView
+                    android:id="@+id/imageView15011"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/green_stock_icon"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textView2611"
+                    style="@style/normaltxt_13sp_Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Paid Bills"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView15011"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView15011" />
+
+                <TextView
+                    android:id="@+id/textView2621"
+                    style="@style/normaltxt_14sp_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Total Paid:"
+                    app:layout_constraintStart_toStartOf="@+id/textView2611"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2611" />
+
+                <TextView
+                    android:id="@+id/textView2631"
+                    style="@style/normaltxt_14sp_extra_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="left"
+                    android:text="0"
+                    app:layout_constraintEnd_toEndOf="@+id/textView2611"
+                    app:layout_constraintStart_toEndOf="@+id/textView2621"
+                    app:layout_constraintTop_toTopOf="@+id/textView2621" />
+
+                <TextView
+                    android:id="@+id/textView2641"
+                    style="@style/normaltxt_16sp_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="left"
+                    android:text="৳ 0"
+                    android:textColor="@color/green"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView2611"
+                    app:layout_constraintStart_toStartOf="@+id/textView2611"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2631" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pendingBill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/light_yellow_gradient_bg"
+            app:layout_constraintEnd_toEndOf="@+id/card"
+            app:layout_constraintStart_toStartOf="@+id/card"
+            app:layout_constraintTop_toBottomOf="@+id/card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+
+                <ImageView
+                    android:id="@+id/imageView150111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/phone_icon"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textView26111"
+                    style="@style/normaltxt_13sp_Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Approval"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView150111"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView150111" />
+
+                <TextView
+                    android:id="@+id/textView262111"
+                    style="@style/normaltxt_14sp_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Total Pending:"
+                    app:layout_constraintStart_toStartOf="@+id/textView26111"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26111" />
+
+                <TextView
+                    android:id="@+id/textView26311"
+                    style="@style/normaltxt_14sp_extra_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="left"
+                    android:text="0"
+                    app:layout_constraintEnd_toEndOf="@+id/textView26111"
+                    app:layout_constraintStart_toEndOf="@+id/textView262111"
+                    app:layout_constraintTop_toTopOf="@+id/textView262111" />
+
+                <TextView
+                    android:id="@+id/textView26411"
+                    style="@style/normaltxt_16sp_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="left"
+                    android:text="৳ 0"
+                    android:textColor="@color/yellow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView26111"
+                    app:layout_constraintStart_toStartOf="@+id/textView26111"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26311" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rentBill"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/light_blue_gradient_bg"
+            app:layout_constraintEnd_toEndOf="@+id/paidBill"
+            app:layout_constraintStart_toStartOf="@+id/paidBill"
+            app:layout_constraintTop_toTopOf="@+id/pendingBill">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+
+                <ImageView
+                    android:id="@+id/imageView1501111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/blue_stock_icon"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textView261111"
+                    style="@style/normaltxt_13sp_Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Rent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView1501111"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView1501111" />
+
+                <TextView
+                    android:id="@+id/textView2621111"
+                    style="@style/normaltxt_14sp_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Total Bills:"
+                    app:layout_constraintStart_toStartOf="@+id/textView261111"
+                    app:layout_constraintTop_toBottomOf="@+id/textView261111" />
+
+                <TextView
+                    android:id="@+id/textView263111"
+                    style="@style/normaltxt_14sp_extra_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="left"
+                    android:text="0"
+                    app:layout_constraintEnd_toEndOf="@+id/textView261111"
+                    app:layout_constraintStart_toEndOf="@+id/textView2621111"
+                    app:layout_constraintTop_toTopOf="@+id/textView2621111" />
+
+                <TextView
+                    android:id="@+id/textView264111"
+                    style="@style/normaltxt_16sp_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="left"
+                    android:text="৳ 0"
+                    android:textColor="@color/blue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView261111"
+                    app:layout_constraintStart_toStartOf="@+id/textView261111"
+                    app:layout_constraintTop_toBottomOf="@+id/textView263111" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pending"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            android:background="@drawable/light_red_gradient_bg"
+            app:layout_constraintEnd_toEndOf="@+id/pendingBill"
+            app:layout_constraintStart_toStartOf="@+id/pendingBill"
+            app:layout_constraintTop_toBottomOf="@+id/pendingBill">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+
+                <ImageView
+                    android:id="@+id/imageView1502"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/red_stock_icon"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/textView2623"
+                    style="@style/normaltxt_13sp_Bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Pending"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imageView1502"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView1502" />
+
+                <TextView
+                    android:id="@+id/textView2622"
+                    style="@style/normaltxt_14sp_Medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Total Bills:"
+                    app:layout_constraintStart_toStartOf="@+id/textView2623"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2623" />
+
+                <TextView
+                    android:id="@+id/textView2632"
+                    style="@style/normaltxt_14sp_extra_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:gravity="left"
+                    android:text="0"
+                    app:layout_constraintEnd_toEndOf="@+id/textView2623"
+                    app:layout_constraintStart_toEndOf="@+id/textView2622"
+                    app:layout_constraintTop_toTopOf="@+id/textView2622" />
+
+                <TextView
+                    android:id="@+id/textView2642"
+                    style="@style/normaltxt_16sp_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="left"
+                    android:text="৳ 0"
+                    android:textColor="@color/orange"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/textView2623"
+                    app:layout_constraintStart_toStartOf="@+id/textView2623"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2632" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/nav"
+            layout="@layout/user_nav_drw" />
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardCornerRadius="@dimen/_16sdp"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingBottom="@dimen/_24sdp">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semi_bold"
+            android:text="Set Date"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:textColor="#20222C"
+            app:layout_constraintBottom_toTopOf="@+id/edt_date"
+            app:layout_constraintStart_toStartOf="@+id/edt_date"
+         />
+
+
+        <EditText
+            android:id="@+id/edt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:background="@drawable/bg_edit_text"
+            android:ems="10"
+            android:hint="12/03/2023"
+            android:inputType="textPassword"
+            android:minHeight="@dimen/_40sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semi_bold"
+            android:text="Set Time"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:textColor="#20222C"
+            app:layout_constraintBottom_toTopOf="@+id/edt_time"
+            app:layout_constraintStart_toStartOf="@+id/edt_time" />
+
+        <EditText
+            android:id="@+id/edt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_24sdp"
+
+            android:background="@drawable/bg_edit_text"
+            android:ems="10"
+            android:hint="09:00 pm"
+            android:inputType="textPassword"
+            android:minHeight="@dimen/_40sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_date" />
+
+        <include
+            android:id="@+id/btn_login"
+            layout="@layout/common_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="@+id/edt_time"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/edt_time"
+            app:layout_constraintTop_toBottomOf="@+id/edt_time" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".owner.activity.ownerParkingDetails.OwnerParkingDetailsActivity">
+
+    <include
+        android:id="@+id/parkingDetailsToolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView68"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/parkingDetailsToolbar"
+        app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+        app:srcCompat="@drawable/img_5" />
+
+    <TextView
+        android:id="@+id/textView132"
+        style="@style/normaltxt_16sp_extrabold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView68"
+        app:layout_constraintTop_toTopOf="@+id/imageView68" />
+
+    <TextView
+        android:id="@+id/textView1321"
+        style="@style/normaltxt_12sp_Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Parking Number:"
+        app:layout_constraintBottom_toBottomOf="@+id/tvParkingNumber"
+        app:layout_constraintStart_toStartOf="@+id/textView132"
+        app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+    <TextView
+        android:id="@+id/tvParkingNumber"
+        style="@style/normaltxt_13sp_SemiBold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView132"
+        app:layout_constraintStart_toEndOf="@+id/textView1321"
+        app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+    <TextView
+        android:id="@+id/textView133"
+        style="@style/normaltxt_12sp_Semibold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/map_icon"
+        android:drawablePadding="@dimen/_4sdp"
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="@+id/textView132"
+        app:layout_constraintStart_toStartOf="@+id/textView132"
+        app:layout_constraintTop_toBottomOf="@+id/tvParkingNumber" />
+    <TextView
+        android:id="@+id/textView134"
+        style="@style/normaltxt_18sp_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/details"
+        app:layout_constraintStart_toStartOf="@+id/imageView68"
+        app:layout_constraintTop_toBottomOf="@+id/imageView68" />
+
+    <TextView
+        android:id="@+id/textView135"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/parapets_play_a_vital_role_in_the_design_of_a_house_before_we_move_on_examining_the_various_house_parapet_designs_that_can_ideal_for_your_home_read_more"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView134"
+        app:layout_constraintTop_toBottomOf="@+id/textView134" />
+
+    <include
+        android:id="@+id/common_btn"
+        layout="@layout/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView135"
+        app:layout_constraintStart_toStartOf="@+id/textView135"
+        app:layout_constraintTop_toBottomOf="@+id/textView135" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

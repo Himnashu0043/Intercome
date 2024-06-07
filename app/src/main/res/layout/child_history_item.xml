@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView181"
+            style="@style/normaltxt_12sp_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="In :"
+            android:textColor="@color/new_dark_sileti"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView182"
+            style="@style/normaltxt_12sp_Regular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="04:55 PM"
+            android:textColor="@color/new_dark_sileti"
+            app:layout_constraintBottom_toBottomOf="@+id/textView181"
+            app:layout_constraintStart_toEndOf="@+id/textView181"
+            app:layout_constraintTop_toTopOf="@+id/textView181" />
+
+        <TextView
+            android:id="@+id/textView183"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/new_dark_sileti"
+            style="@style/normaltxt_12sp_Regular"
+            app:layout_constraintBottom_toBottomOf="@+id/textView182"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView182" />
+
+        <TextView
+            android:id="@+id/textView1841"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:text="Out :"
+            style="@style/normaltxt_12sp_bold"
+            android:textColor="@color/new_dark_sileti"
+            app:layout_constraintBottom_toBottomOf="@+id/textView181"
+            app:layout_constraintEnd_toStartOf="@+id/textView183"
+            app:layout_constraintTop_toTopOf="@+id/textView181" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

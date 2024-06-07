@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivMenu"
+            android:layout_width="@dimen/dp_30"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginStart="16dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHomeDes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTittle"
+            app:srcCompat="@drawable/menu_icon" />
+
+        <TextView
+            android:id="@+id/tvTittle"
+            style="@style/normaltxt_16sp_Semibold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/tvHomeDes"
+            app:layout_constraintEnd_toStartOf="@+id/tvLang"
+            app:layout_constraintStart_toEndOf="@+id/imageView59"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHomeDes"
+            style="@style/normaltxt_12sp_Semibold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvTittle"
+            app:layout_constraintTop_toBottomOf="@+id/tvTittle" />
+
+        <ImageView
+            android:id="@+id/imageView69"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:src="@drawable/baseline_keyboard_arrow_down_24"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHomeDes"
+            app:layout_constraintStart_toEndOf="@+id/tvHomeDes"
+            app:layout_constraintTop_toTopOf="@+id/tvHomeDes" />
+        <Spinner
+            android:id="@+id/homeSpiner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/ivhome_chat"
+            app:layout_constraintEnd_toStartOf="@+id/ivhome_chat"
+            app:layout_constraintTop_toTopOf="@+id/ivhome_chat" />
+
+        <ImageView
+            android:id="@+id/ivNoti"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:src="@drawable/noti_icon"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHomeDes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTittle" />
+        <TextView
+            android:id="@+id/tvLang"
+            style="@style/normaltxt_12sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginEnd="8dp"
+            android:drawableRight="@drawable/baseline_keyboard_arrow_down_24"
+            android:drawablePadding="@dimen/dp_2"
+            android:gravity="start|center"
+            android:hint="Eng"
+            android:paddingStart="@dimen/dp_4"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/ivhome_chat"
+            app:layout_constraintEnd_toStartOf="@+id/ivhome_chat"
+            app:layout_constraintTop_toTopOf="@+id/ivhome_chat" />
+
+        <Spinner
+            android:id="@+id/lang_sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLang"
+            app:layout_constraintEnd_toEndOf="@+id/tvLang"
+            app:layout_constraintStart_toStartOf="@+id/tvLang"
+            app:layout_constraintTop_toTopOf="@+id/tvLang" />
+        <ImageView
+            android:id="@+id/ivhome_chat"
+            android:layout_width="30dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/ivNoti"
+            app:layout_constraintEnd_toStartOf="@+id/ivNoti"
+            app:layout_constraintTop_toTopOf="@+id/ivNoti"
+            app:srcCompat="@drawable/home_chat_icon" />
+
+        <ImageView
+            android:id="@+id/imageView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvHomeDes"
+            app:layout_constraintStart_toEndOf="@+id/ivMenu"
+            app:layout_constraintTop_toTopOf="@+id/tvTittle"
+            app:srcCompat="@drawable/loc_orange_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

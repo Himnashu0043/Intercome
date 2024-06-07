@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainLayMap"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView134"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                app:srcCompat="@drawable/img" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:drawableStart="@drawable/calendar_icon"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/regular"
+                android:gravity="left"
+                android:text="Date of Registration : 22/10/2023"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView134"
+                app:layout_constraintTop_toBottomOf="@+id/imageView134" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_marginStart="4dp"
+                android:background="@drawable/bg_dot"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+                app:layout_constraintStart_toEndOf="@+id/tv_date"
+                app:layout_constraintTop_toTopOf="@+id/tv_date" />
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:drawableStart="@drawable/dic_icon"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/medium"
+                android:text="1.3 km"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+                app:layout_constraintEnd_toEndOf="@+id/tv_property_price"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/tv_date" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layRent"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/common_btn_bg"
+                app:layout_constraintStart_toEndOf="@+id/imageView134"
+                app:layout_constraintTop_toTopOf="@+id/imageView134">
+
+
+                <TextView
+                    android:id="@+id/tv_property_type"
+                    style="@style/normaltxt_12sp_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layResidental"
+                android:layout_width="100dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/black"
+                android:background="@drawable/common_btn_bg"
+                app:layout_constraintBottom_toBottomOf="@+id/layRent"
+                app:layout_constraintStart_toEndOf="@+id/layRent"
+                app:layout_constraintTop_toTopOf="@+id/layRent">
+
+
+                <TextView
+                    android:id="@+id/tv_property_type1"
+                    style="@style/normaltxt_12sp_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView234"
+                style="@style/normaltxt_16sp_extrabold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/layRent"
+                app:layout_constraintTop_toBottomOf="@+id/layRent" />
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_location"
+                app:layout_constraintStart_toStartOf="@+id/textView234"
+                app:layout_constraintTop_toTopOf="@+id/tv_location"
+                app:srcCompat="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/regular"
+                android:gravity="left"
+                android:text="Pahlawan St.24 Surabaya"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintEnd_toEndOf="@+id/textView234"
+                app:layout_constraintStart_toEndOf="@+id/iv_location"
+                app:layout_constraintTop_toBottomOf="@+id/textView234" />
+
+            <TextView
+                android:id="@+id/tv_property_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/extra_bold"
+                android:text="৳1640,00"
+                android:textColor="@color/orange"
+                app:layout_constraintEnd_toEndOf="@+id/tv_location"
+                app:layout_constraintStart_toStartOf="@+id/iv_location"
+                app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

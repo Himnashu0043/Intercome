@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.newFlow.balancesheet.fragment.BalanceExpensesReportsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView273"
+                style="@style/normaltxt_14sp_extra_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="GL Account Head"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView275"
+                style="@style/normaltxt_14sp_extra_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Amount"
+                app:layout_constraintBottom_toBottomOf="@+id/textView273"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView273" />
+
+            <TextView
+                android:id="@+id/textView276"
+                style="@style/normaltxt_13sp_Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Expense Description"
+                app:layout_constraintStart_toStartOf="@+id/textView273"
+                app:layout_constraintTop_toBottomOf="@+id/textView273" />
+
+            <TextView
+                android:id="@+id/textView277"
+                style="@style/normaltxt_13sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Expense Category"
+                android:drawablePadding="8dp"
+                android:drawableEnd="@drawable/info_icon"
+                android:textColor="@color/lightBlack"
+                app:layout_constraintStart_toStartOf="@+id/textView276"
+                app:layout_constraintTop_toBottomOf="@+id/textView276" />
+
+            <TextView
+                android:id="@+id/tvExpensesCategory"
+                style="@style/normaltxt_13sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/lightBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/textView277"
+                app:layout_constraintEnd_toEndOf="@+id/textView275"
+                app:layout_constraintTop_toTopOf="@+id/textView277" />
+
+            <TextView
+                android:id="@+id/textView279"
+                style="@style/normaltxt_13sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cash in Hand"
+                android:textColor="@color/lightBlack"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/textView277"
+                app:layout_constraintTop_toBottomOf="@+id/textView277" />
+
+
+
+            <TextView
+                android:id="@+id/textView280"
+                style="@style/normaltxt_13sp_Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Total Expense"
+                app:layout_constraintStart_toStartOf="@+id/textView279"
+                app:layout_constraintTop_toBottomOf="@+id/textView279" />
+
+
+
+            <TextView
+                android:id="@+id/textView281"
+                style="@style/normaltxt_13sp_Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Closing Balance"
+                android:textColor="@color/lightBlack"
+                app:layout_constraintStart_toStartOf="@+id/textView280"
+                app:layout_constraintTop_toBottomOf="@+id/textView280" />
+
+            <TextView
+                android:id="@+id/textView282"
+                style="@style/normaltxt_13sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cash In Hand"
+                android:textColor="@color/lightBlack"
+                app:layout_constraintStart_toStartOf="@+id/textView281"
+                app:layout_constraintTop_toBottomOf="@+id/textView281" />
+
+            <TextView
+                android:id="@+id/tvEpeneseCashInHand"
+                style="@style/normaltxt_13sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/lightBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/textView282"
+                app:layout_constraintEnd_toEndOf="@+id/tvExpensesCategory"
+                app:layout_constraintTop_toTopOf="@+id/textView282" />
+
+            <TextView
+                android:id="@+id/textView2823"
+                style="@style/normaltxt_13sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cash In Bank"
+                android:textColor="@color/lightBlack"
+                app:layout_constraintStart_toStartOf="@+id/textView281"
+                app:layout_constraintTop_toBottomOf="@+id/textView282" />
+
+            <TextView
+                android:id="@+id/tvExpenesesCashInBank"
+                style="@style/normaltxt_13sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/lightBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2823"
+                app:layout_constraintEnd_toEndOf="@+id/tvExpensesCategory"
+                app:layout_constraintTop_toTopOf="@+id/textView2823" />
+
+            <TextView
+                android:id="@+id/textView2821"
+                style="@style/normaltxt_13sp_Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Total Closing Balance"
+                android:textColor="@color/lightBlack"
+                app:layout_constraintStart_toStartOf="@+id/textView281"
+                app:layout_constraintTop_toBottomOf="@+id/textView2823" />
+
+            <TextView
+                android:id="@+id/tvtotalIncome"
+                style="@style/normaltxt_13sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/lightBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2821"
+                app:layout_constraintEnd_toEndOf="@+id/tvExpensesCategory"
+                app:layout_constraintTop_toTopOf="@+id/textView2821" />
+
+            <TextView
+                android:id="@+id/textView283"
+                style="@style/normaltxt_14sp_extra_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Total Balance"
+                app:layout_constraintStart_toStartOf="@+id/textView2821"
+                app:layout_constraintTop_toBottomOf="@+id/textView2821" />
+
+            <TextView
+                android:id="@+id/tvtotalMain"
+                style="@style/normaltxt_14sp_extra_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="0"
+                android:textColor="@color/lightBlack"
+                app:layout_constraintBottom_toBottomOf="@+id/textView283"
+                app:layout_constraintEnd_toEndOf="@+id/tvExpensesCategory"
+                app:layout_constraintTop_toTopOf="@+id/textView283" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/light_red_gradient_bg"
+                android:elevation="4dp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout35">
+
+                <TextView
+                    android:id="@+id/textView2652"
+                    style="@style/normaltxt_16sp_extrabold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Cash in Hand and Bank Report"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView1512"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/not_equal_icon"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2652"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView2652" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout32"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/light_green_gradint_bg"
+                android:elevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView283">
+
+                <TextView
+                    android:id="@+id/textView265"
+                    style="@style/normaltxt_16sp_extrabold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Earnings Reports"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView151"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/green_stock_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView265"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView265" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout33"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/light_red_gradient_bg"
+                android:elevation="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout32"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout32"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout32">
+
+                <TextView
+                    android:id="@+id/textView2651"
+                    style="@style/normaltxt_16sp_extrabold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Expenses Report"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView1511"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/red_stock_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2651"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView2651" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout35"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/light_red_gradient_bg"
+                android:elevation="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout33"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayout33"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout33">
+
+                <TextView
+                    android:id="@+id/textView26513"
+                    style="@style/normaltxt_16sp_extrabold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Due Bills"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView15113"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:src="@drawable/not_equal_icon"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView26513"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView26513" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/bg_add_billing_btn"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include
+            android:id="@+id/btn_login"
+            layout="@layout/common_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

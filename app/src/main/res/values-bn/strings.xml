@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="google_place_api">AIzaSyBtWGYw6U5VzpZNPqDYNmuh2mQsKs3C8KQ</string>
+    <string name="app_name">Intercom</string>
+    <string name="my_list">আমার তালিকা</string>
+    <string name="activity">কার্যকলাপ</string>
+    <string name="service">সেবা</string>
+    <string name="properties">বৈশিষ্ট্য</string>
+    <string name="home">বাড়ি</string>
+    <string name="my_profile">আমার প্রোফাইল</string>
+    <string name="gate_pass">গেট পাস</string>
+    <string name="visitors">দর্শক</string>
+    <string name="complain">অভিযোগ</string>
+    <string name="gatekeepers">BGatekeepers</string>
+    <string name="notice">BNotice</string>
+    <string name="member">মেম্বার</string>
+    <string name="manager">ম্যানেজার</string>
+    <string name="gatekeeper">গেটকিপার</string>
+    <string name="enter_your_mobile_number">মোবাইল নম্বর</string>
+    <string name="enter_your_password">পাসওয়ার্ড</string>
+    <string name="login">লগ ইন </string>
+    <string name="login_using_password">পাসওয়ার্ড ব্যবহার করে লগইন করুন</string>
+    <string name="login_as_a_member">মেম্বার লগ ইন</string>
+    <string name="by_login_you_agreed_to_our">লগ ইন করার মাধ্যমে আপনি আমাদের</string>
+    <string name="privacy_policy">প্রাইভেসী পলিসি</string>
+    <string name="terms_and_conditions">শর্তাবলী</string>
+    <string name="terms_amp_conditions"><font color="#FFC107">শর্তাবলী</font>  এবং</string>
+    <string name="login_as_guest">অতিথি হিসেবে লগইন করুন</string>
+    <string name="forgot_password">পাসওয়ার্ড ভুলে গিয়েছেন?</string>
+    <string name="login_using_otp">ওটিপি দিয়ে লগ ইন করুন।</string>
+    <string name="please_enter_phone_number">মোবাইল নম্বর দিন</string>
+    <string name="please_enter_password">পাসওয়ার্ড দিন</string>
+    <string name="submit">সাবমিট </string>
+    <string name="we_sent_you_a_code_to_your_mobile_number">আপনার নম্বরে ওটিপি পাঠানো হয়েছে </string>
+    <string name="enter_the_otp_code">ওটিপি দিবেন</string>
+    <string name="resend">পুনরায় পাঠান</string>
+    <string name="services">সার্ভিসেস</string>
+    <string name="view_all">সবগুলো</string>
+    <string name="parking_to_let">পার্কিং টু-লেট</string>
+    <string name="search_properties">BSearch Properties......</string>
+    <string name="help_and_support">হেল্প এন্ড সাপোর্ট</string>
+    <string name="property">প্রপার্টি</string>
+    <string name="favorites">BFavorites</string>
+    <string name="about">আমাদের সম্পর্কে জানুন</string>
+    <string name="settings">সেটিংস</string>
+    <string name="share">BShare</string>
+    <string name="become_a_member">B-Become a Member</string>
+    <string name="push_notifications">BPush notifications</string>
+    <string name="language">ভাষা</string>
+    <string name="english">ইংরাজি </string>
+    <string name="change_password">পাসওয়ার্ড পরিবর্তন করুন</string>
+    <string name="logout">লগ আউট</string>
+    <string name="bangla">বাংলা</string>
+    <string name="are_you_sure_you_nwant_to_log_out">লগ আউট করতে চাচ্ছেন?</string>
+    <string name="cancel">বাতিল</string>
+    <string name="listed_properties">BListed Properties</string>
+    <string name="edit">BEdit</string>
+    <string name="save">BSave</string>
+    <string name="name">BName</string>
+    <string name="email">BEmail</string>
+    <string name="phone_number">BPhone Number</string>
+    <string name="parking">পার্কিং</string>
+    <string name="my_community">BMy Community</string>
+    <string name="visitors_gatepass">BVisitors &amp; GatePass</string>
+    <string name="upgrade">BUpgrade</string>
+    <string name="property_type">BProperty Type</string>
+    <string name="residentials">BResidentials</string>
+    <string name="commercial">BCommercial</string>
+    <string name="floor_level">BFloor Level</string>
+    <string name="floor_no">BFloor No.</string>
+    <string name="out_of">BOut of</string>
+    <string name="total_floors">BTotal Floors</string>
+    <string name="set_locality">BSet Locality</string>
+    <string name="enter_location">BEnter Location</string>
+    <string name="move_the_map_and_set_the_pin_location">BMove the map and set the pin location</string>
+    <string name="pin_location">BPin Location</string>
+    <string name="step1_3">BSTEP 1 OF 3</string>
+    <string name="next_step">BNext Step</string>
+    <string name="office">Office</string>
+    <string name="shop">BShop</string>
+    <string name="floor">BFloor</string>
+    <string name="building">BBuilding</string>
+    <string name="factory">BFactory</string>
+    <string name="warehouse">BWarehouse</string>
+    <string name="plot">BPlot</string>
+    <string name="apartment">BApartment</string>
+    <string name="roommates">BRoommates</string>
+    <string name="rooms">BRooms</string>
+    <string name="house">BHouse</string>
+    <string name="let_s_get_started">BLet\'s Get Started</string>
+    <string name="list_your_home_with_nsimple_steps">BList your home with\nsimple Steps.</string>
+    <string name="i_want_to_rent">BI Want to Rent</string>
+    <string name="i_want_to_sell">BI Want to Sell</string>
+    <string name="continue_1">BContinue</string>
+    <string name="no_of_owners_you_ncan_contact">BNo. of Owners you\ncan contact</string>
+    <string name="owner_s_proprty">BOwner’s Proprty</string>
+    <string name="validity_months">BValidity (Months)</string>
+    <string name="how_it_works">BHow it works</string>
+    <string name="you_are_posting_this_property_for">BYou are posting this property for</string>
+    <string name="free">BFree</string>
+    <string name="thank_you_for_submitting">BThank you for submitting.</string>
+    <string name="your_property_is_under_review_we_will_n_notify_you_when_your_listing_was_active">BYour property is under review we will\n notify you when your Listing was active</string>
+    <string name="go_to_my_property">BGo to My Property</string>
+    <string name="step_2_3">BSTEP 2 OF 3</string>
+    <string name="property_price">BProperty Price</string>
+    <string name="enter_property_price">BEnter Property Price</string>
+    <string name="property_room_bath">BProperty Room/Bath</string>
+    <string name="bedroom">BBedroom</string>
+    <string name="bath">BBath</string>
+    <string name="property_area">BProperty Area</string>
+    <string name="enter_property_area">BEnter Property Area</string>
+    <string name="feature">BFeature</string>
+    <string name="step_3_3">BSTEP 3 OF 3</string>
+    <string name="tittle_your_listing">BTittle your Listing</string>
+    <string name="enter_tittle">BEnter Tittle</string>
+    <string name="enter_description">BEnter Description</string>
+    <string name="upload_photos">BUpload Photos</string>
+    <string name="filters">BFilters</string>
+    <string name="reset">BRESET</string>
+    <string name="looking_for">BLooking For</string>
+    <string name="rent">BRent</string>
+    <string name="select_locality">BSelect Locality</string>
+    <string name="current_locality">BCurrent Locality</string>
+    <string name="search_by_locality">BSearch by locality</string>
+    <string name="price_range">BPrice Range</string>
+    <string name="bedrooms">BBedrooms</string>
+    <string name="bathrooms">BBathrooms</string>
+    <string name="size_area_sqft">BSize Area (sqft)</string>
+    <string name="show_properties">BShow Properties</string>
+    <string name="basic">BBasic</string>
+    <string name="active">BActive</string>
+    <string name="no_of_owners_you_can_contact">BNo. of Owners you can contact</string>
+    <string name="preview_listing">BPreview Listing</string>
+    <string name="submit_listing">BSubmit Listing</string>
+    <string name="for_rent">BFOR RENT</string>
+    <string name="residential">BRESIDENTIAL</string>
+    <string name="please_enter_old_password">BPlease enter old password</string>
+    <string name="please_enter_new_password">BPlease enter new password</string>
+    <string name="please_enter_confirm_password">BPlease enter confirm password</string>
+    <string name="confrim_passowrd_is_not_matching">BConfirm password is not matching</string>
+    <string name="you_can_change_your_npassword">BYou can change your\npassword</string>
+    <string name="recent_password">BOld Password</string>
+    <string name="enter_new_password">BEnter new password</string>
+    <string name="password">BNew Password</string>
+    <string name="confirm_password">BEnter confirm Password</string>
+    <string name="comfirm_password">BComfirm password</string>
+    <string name="bhk">BBHK</string>
+    <string name="ft">Bft</string>
+    <string name="inactive">BInActive</string>
+    <string name="reject">BReject</string>
+    <string name="date_of_listed">BDate of Listed</string>
+    <string name="reason">BReason</string>
+    <string name="re_submit">BRe-Submit</string>
+    <string name="my_parkings">BMy Parkings</string>
+    <string name="property_details">BProperty Details</string>
+    <string name="view_tenant">BView Tenant</string>
+    <string name="to_let_sale">BTo-Let / Sale</string>
+    <string name="flat_number">BFlat Number :</string>
+    <string name="create_tenant">BCreate Tenant</string>
+    <string name="flat_number_1">BFlat number</string>
+    <string name="select_date_of_occupancy">BSelect date of occupancy</string>
+    <string name="tenant_full_name">BTenant Full name</string>
+    <string name="enter_tenant_full_name">BEnter Tenant Full name</string>
+    <string name="enter_tenant_e_mail_address">BEnter Tenant E-mail address</string>
+    <string name="tenant_e_mail_address">BTenant E-mail address</string>
+    <string name="tenant_mobile_number">BTenant Mobile number</string>
+    <string name="enter_tenant_mobile_number">BEnter Tenant Mobile number</string>
+    <string name="tenant_s_nid_number">BTenant’s NID Number</string>
+    <string name="enter_tenant_s_nid_number">BEnter Tenant’s NID Number</string>
+    <string name="reference_nid_number">BReference NID Number</string>
+    <string name="enter_reference_nid_number">BEnter Reference NID Number</string>
+    <string name="billing_date">BBilling Date</string>
+    <string name="select_billing_date">BSelect Billing Date</string>
+    <string name="monthly_room_rent">BMonthly Room Rent</string>
+    <string name="enter_monthly_room_rent">BEnter Monthly Room Rent</string>
+    <string name="allot_parking">BAllot Parking</string>
+    <string name="monthly_rent_parking">BMonthly Rent Parking</string>
+    <string name="enter_monthly_rent_parking">BEnter Monthly Rent Parking</string>
+    <string name="upload_rent_agreement">BUpload Rent Agreement</string>
+    <string name="no">BNo</string>
+    <string name="yes">BYes</string>
+    <string name="create_a_tenant">BCreate a Tenant</string>
+    <string name="add_tenant">BAdd Tenant</string>
+    <string name="list_your_property">BList Your Property</string>
+    <string name="sale">BSale</string>
+    <string name="flat_no_a_121_3rd_floor_noida_sector_63_noida">BFlat no - A-121 , 3rd floor\n Noida Sector-63, Noida</string>
+    <string name="include_parking">BInclude Parking</string>
+    <string name="description">BDescription</string>
+    <string name="amentities">BAmentities</string>
+    <string name="enter_price">BEnter Price</string>
+    <string name="occupancy_from">BOccupancy From</string>
+    <string name="occupancy_to">BOccupancy To</string>
+    <string name="contact_manager">BContact Manager</string>
+    <string name="my_parking">BMy Parking</string>
+    <string name="tenant_details">BTenant Details</string>
+    <string name="edit_tenant">BEdit Tenant</string>
+    <string name="parking_no">BParking no :</string>
+    <string name="flat_no">BFlat no :</string>
+    <string name="property_to_let_sale">BProperty To-let / Sale</string>
+    <string name="sale_property">BSale Property</string>
+    <string name="add_property">BAdd Property</string>
+    <string name="add_parking">BAdd Parking</string>
+    <string name="parking_number">BParking Number :</string>
+    <string name="remove_tenant">BRemove Tenant</string>
+    <string name="tenant_history">BTenant History</string>
+    <string name="remove_successfully">BRemove successfully!!</string>
+    <string name="current_tenant">BCurrent Tenant</string>
+    <string name="previous_tenant">BPrevious Tenant</string>
+    <string name="details">BDetails</string>
+    <string name="property_documnets">BProperty Documnets</string>
+    <string name="upload_image">BUpload Photo</string>
+    <string name="notice_board">BNotice Board</string>
+    <string name="my_properties">BMy Properties</string>
+    <string name="list_of_services">BList of Services</string>
+    <string name="data_not_found">BData Not Found</string>
+    <string name="recently_searched">BRecently Searched</string>
+    <string name="visitor_s_name">BVisitor’s name</string>
+    <string name="enter_visitor_s_name">BEnter Visitor’s name</string>
+    <string name="visitor_s_phone_number">BVisitor’s Phone Number</string>
+    <string name="visitor_address">BVisitor’s Address</string>
+    <string name="enter_visitor_s_address">BEnter Visitor’s Address</string>
+        <string name="number_of_visitors">BNumber of Visitors</string>
+    <string name="enter_number_of_visitors">BEnter Number of Visitors</string>
+    <string name="enter_entry">BEnter Entry</string>
+    <string name="regular_entry">BRegular Entry</string>
+    <string name="visitor_history">BVisitor History</string>
+    <string name="gatepass_list">BGatePass List</string>
+    <string name="add">BAdd</string>
+    <string name="delivery_company_service_name_etc">B(Delivery company/Service name etc )</string>
+    <string name="date">BDate</string>
+    <string name="from">BFrom</string>
+    <string name="to">BTo</string>
+    <string name="visitor_history_type">BVisitor History Type</string>
+    <string-array name="Months">
+        <item>BMonths</item>
+        <item>BJanuary</item>
+        <item>BFebruary</item>
+        <item>BMarch</item>
+        <item>BApril</item>
+        <item>BMay</item>
+        <item>BJune</item>
+        <item>BJuly</item>
+        <item>BAugust</item>
+        <item>BSeptember</item>
+        <item>BOctober</item>
+        <item>BNovember</item>
+        <item>BDecember</item>
+    </string-array>
+    <string name="enable_gps">BEnable Gps</string>
+    <string name="location">BLocation</string>
+    <string name="fav_properties">BFavorite Properties</string>
+    <string name="fav_property">BFavorite Property</string>
+    <string name="fav_parking">BFavorite Parking</string>
+    <string name="register_complain">BRegister Complain</string>
+    <string name="please_enter_name">BPlease Enter Name!!</string>
+    <string name="please_enter_description">BPlease Enter Description!!</string>
+    <string name="please_select_service_category">BPlease Select Service Category!!</string>
+    <string name="select_service_category">BSelect Service Category</string>
+    <string name="view_complain_history">BView Complain history</string>
+    <string name="write_complain_name">BWrite complain Name</string>
+    <string name="service_category">BWrite Service Category</string>
+    <string name="upload_photo_video">BUpload Photo<!--/ Video--></string>
+    <string name="write_description">BWrite Description</string>
+    <string name="complain_history">BComplain History</string>
+    <string name="edit_comment">BEdit Comment</string>
+    <string name="enter_comment">BEnter Comment</string>
+    <string name="ok">BOk</string>
+    <string name="my_post">BMy Posts</string>
+    <string name="create_post">BCreate Post</string>
+    <string name="write_a_post">BWrite a post ...</string>
+    <string name="photo_video">BPhoto</string>
+    <string name="post">BPost</string>
+    <string name="comments">BComments</string>
+    <string name="write_some_text_here">BWrite some text here..</string>
+    <string name="my_billings">BMy Billings</string>
+    <string name="filter">BFilter</string>
+    <string name="unpaid">BUnpaid</string>
+    <string name="enter_amount">BEnter Amount</string>
+    <string name="select_category">BSelect Category</string>
+    <string name="select_flat">BSelect Flat</string>
+    <string name="close">BClose</string>
+    <string name="paid">BPaid</string>
+    <string name="approval">BApproval</string>
+    <string name="filter_by">BFilter By</string>
+    <string name="type">BType</string>
+    <string name="service_charge">BService Charges</string>
+    <string name="select_months">BSelect Months</string>
+    <string name="apply">BApply</string>
+    <string name="notify">BNotify</string>
+    <string name="due_date">BDue Date</string>
+    <string name="pay">BPay</string>
+    <string name="mark_as_paid">BMark as Paid</string>
+    <string name="pay_now">BPay Now</string>
+    <string name="pending">BPending</string>
+    <string name="confirm">BConfirm</string>
+    <string name="contact_owner">BContact Owner</string>
+    <string name="single_entry_history">BSingle Entry History</string>
+    <string name="ongoing">BOngoing</string>
+    <string name="completed">BCompleted</string>
+    <string name="cancelled">BCancelled</string>
+    <string name="in_date">BIn Date:</string>
+    <string name="out_date">BOut Date:</string>
+    <string name="in_time">BIn Time:</string>
+    <string name="note_1">BNote:</string>
+    <string name="out_time">BOut Time:</string>
+    <string name="regular_entry_history">BRegular Entry History</string>
+    <string name="last_in">BLast In :</string>
+    <string name="last_out">BLast Out :</string>
+    <string name="nid_document">BNID Document :</string>
+    <string name="in_out_history">BIn/Out History:</string>
+    <string name="visitor_details">BVisitor Details</string>
+    <string name="accept">BAccept</string>
+    <string name="in">BIn:</string>
+    <string name="out">BOut:</string>
+    <string name="out_1">BOut</string>
+    <string name="personal_information">BPersonal Information</string>
+    <string name="address">BAddress</string>
+    <string name="nid_number">BNID Number</string>
+    <string name="reference_information">BReference Information</string>
+    <string name="ref_nid_name">BRef NID Name</string>
+    <string name="ref_nid_number">BReference NID Number</string>
+    <string name="bank_info">BBank Information</string>
+    <string name="acc_holder_number">BAccount Holder Number</string>
+    <string name="bank_name">BBank Name</string>
+    <string name="branch_name">BBranch Name</string>
+    <string name="mfs_info">BMFS Information</string>
+    <string name="mfs_holder_name">BMfs Holder Name</string>
+    <string name="mfs_type">BMFS Type</string>
+    <string name="mfs_acc_number">BMFS Account Number</string>
+    <string name="acc_holde_name">BAccount Holder Name</string>
+    <string name="note">BNote</string>
+    <string name="view_pass">BView Pass</string>
+    <string name="contact_name">BContact Name</string>
+    <string name="enter_contact_s_name">BEnter Contact\'s name</string>
+    <string name="contact_s_phone_number">BContact’s Phone Number</string>
+    <string name="enter_contact_s_phone_number">BEnter Contact’s Phone Number</string>
+    <string name="date_1">BDate:</string>
+    <string name="time">BTime:</string>
+    <string name="gatepass">BGatePass</string>
+    <string name="create">BCreate</string>
+    <string name="create_gatepass">BCreate GatePass</string>
+    <string name="contact_no">BContact No.</string>
+    <string name="exit_date">BExit Date</string>
+    <string name="exit_time">BExit Time</string>
+    <string name="please_select_img">BPlease Select Images!!</string>
+    <string name="please_enter_valid_phone_number">BPlease Enter Valid Phone Number !!</string>
+    <string name="please_select_exit_date">BPlease Select Exit Date!!</string>
+    <string name="please_select_exit_time">BPlease Select Exit Time!!</string>
+    <string name="entry_date">BEntry Date</string>
+    <string name="entry_time">BEntry Time</string>
+    <string name="contact_project_admin">BContact Project Admin</string>
+    <string name="owner_contact_tenant">BOwner Contact/Tenant</string>
+    <string name="call">Bcall</string>
+    <string name="chat_with_us">BChat With Us</string>
+    <string name="email_us">BEmail us</string>
+    <string name="sort_by_price_high_to">BSort by Price: High to Low</string>
+    <string name="tv_property_details">BProperty \nDetails</string>
+    <string name="terms_of_service">BTerms of Service</string>
+    <string name="sort_by">BSort By</string>
+    <string name="rent_high_to_low">BRent (High to Low)</string>
+    <string name="rent_low_to_high">BRent (Low to High)</string>
+    <string name="amenities">BAmenities</string>
+    <string name="map_direction">BMap Direction</string>
+    <string name="similar_properties">BSimilar Properties</string>
+    <string name="price">BPrice</string>
+    <string name="monthly">BMonthly</string>
+    <string name="propertyid">BPropertyId:</string>
+    <string name="date_of_regi">BDate of Registration</string>
+    <string name="no_active_visitor">BNo Active Visitor</string>
+    <string name="payment_options">BPayment Options</string>
+    <string name="mfs">BMFS</string>
+    <string name="bkash_nagad">BBkash/Nagad</string>
+    <string name="bank_payment">BBank Payment</string>
+    <string name="pay_on_bank_payment">Bpay on Bank Payment</string>
+    <string name="cash">BCash</string>
+    <string name="pay_on_cash">Bpay on Cash</string>
+    <string name="verifying_your_payment">BVerifying your payment</string>
+    <string name="mfs_payment">BMFS Payment</string>
+    <string name="beneficiary_account_details">BBeneficiary Account details</string>
+    <string name="mfs_account_number">BMFS Account Number :</string>
+    <string name="mfs_name">BMFS Name:</string>
+    <string name="payment_mode">BPayment Mode:</string>
+    <string name="enter_reference_no">BEnter Reference No.</string>
+    <string name="payment">BPayment</string>
+    <string name="reference_no">BReference No.</string>
+    <string name="okay">BOkay</string>
+    <string name="recent_complaint">BRecent Complaint</string>
+    <string name="unpaid_billings">BUnpaid Billings</string>
+    <string name="complain_id">BComplain Id</string>
+    <string name="add_visitors">BAdd\nVisitors</string>
+    <string name="add_billings">BAdd\nBillings</string>
+    <string name="add_gatekeeper">BAdd\nGatekeeper</string>
+    <string name="add_notice">BAdd\nNotice</string>
+    <string name="complain_management">BComplain Management</string>
+    <string name="resolved">BResolved</string>
+    <string name="service_category_1">BService Category :</string>
+    <string name="complain_details">BComplain Details</string>
+    <string name="deny_reason">BDenyReason</string>
+    <string name="complain_id_1">BComplain ID</string>
+    <string name="as_resolved">Bas resolved</string>
+    <string name="complaint_name">BComplaint Name :</string>
+    <string name="add_billings_1">BAdd Billings</string>
+    <string name="bill_service">BBill Service</string>
+    <string name="amount">BAmount</string>
+    <string name="date_due">BDate Due</string>
+    <string name="add_gatekeeper_1">BAdd Gatekeeper</string>
+    <string name="on_duty">BOn Duty</string>
+    <string name="add_service_charge">BAdd Service Charge</string>
+    <string name="billing_type">BBilling Type</string>
+    <string name="select_date">BSelect Date</string>
+    <string name="please_select_flat">BPlease Select Flat</string>
+    <string name="flats_list">BFlats List</string>
+    <string name="select_all">BSelect all</string>
+    <string name="select">BSelect</string>
+    <string name="please_select_billing_type">BPlease Select Billing Type!!</string>
+    <string name="please_select_date">BPlease Select Date!!</string>
+    <string name="please_enter_amount">BPlease Enter Amount!!</string>
+    <string name="set">BSet</string>
+    <string name="contact_intercom">BContact Intercom</string>
+    <string name="visitor">BVisitor</string>
+    <string name="single_entry">BSingle Entry</string>
+    <string name="out_successfully">BOut Successfully!!</string>
+    <string name="tenant">BTenant</string>
+    <string name="entry">BEntry</string>
+    <string name="single">BSingle</string>
+    <string name="create_notice">BCreate Notice</string>
+    <string name="set_date">BSet Date</string>
+    <string name="set_time">BSet Time</string>
+    <string name="select_time">BSelect Time</string>
+    <string name="schedule">BSchedule</string>
+    <string name="enter_notice_name">BEnter Notice Name</string>
+    <string name="select_user">BSelect User</string>
+    <string name="all">BAll</string>
+    <string name="write_what_you_want_to_know">BWrite what you want to know</string>
+    <string name="post_now">BPost Now</string>
+    <string name="post_later">BPost Later</string>
+    <string name="my_shift">BMy Shift</string>
+    <string name="add_visitors_1">BAdd Visitors</string>
+    <string name="this_link_is_not_valid_for_gateKeeper">BThis link is not Valid for GateKeeper!!</string>
+    <string name="hi_guest">BHi,Guest</string>
+    <string name="please_enter_address">BPlease Enter Address!!</string>
+    <string name="please_enter_number_of_visitor">BPlease Enter Number of Visitor!!</string>
+    <string name="this_link_is_not_vaild_for_manager">BThis Link is not Valid for Manager!!</string>
+    <string name="gps_enabled">BGPS: ENABLED.....</string>
+    <string name="day_left">BDay left</string>
+    <string name="this_link_is_not_valid_for_user">BThis link is not Valid for User!!</string>
+    <string name="list_of_gatekeeper">BList of GateKeepers</string>
+    <string name="starting_from">BStarting From</string>
+    <string name="shift_timing">BShift Timing</string>
+    <string name="in_successfully">BIn successfully!!</string>
+    <string name="last_date">BLast Date:</string>
+    <string name="last_in_time">BLast In Time:</string>
+    <string name="last_out_time">BLast Out Time:</string>
+    <string name="in_1">BIn</string>
+    <string name="regular_entry_history_details">BRegular Entry History Details</string>
+    <string name="property_details_1">BProperty Details</string>
+    <string name="parking_details_1">BParking Details</string>
+    <string name="parking_details_2">BParking\nDetails</string>
+    <string name="km">BKm</string>
+    <string name="resend_otp">BResend Otp</string>
+    <string name="please_enter_otp">BPlease enter otp</string>
+    <string name="number_verification_failed">BNumber Verification Failed</string>
+    <string name="sending_otp">BSending OTP...</string>
+    <string name="invalid_otp">BInvalid OTP...</string>
+    <string name="success">BSuccess</string>
+    <string name="enter_your_name">BEnter your name</string>
+    <string name="enter_your_email">BEnter your email</string>
+    <string name="add_your_complex">BAdd your complex</string>
+    <string name="add_new_visitor">BAdd new visitor</string>
+    <string name="be_a_member">BBe a Member</string>
+    <string name="mobile_number">BMobile Number</string>
+    <string name="enter_what_you_want_to_know">BEnter what you want to know</string>
+    <string name="please_click_back_again_to_exit">BPlease click BACK again to exit</string>
+    <string name="save_change">BSave Change</string>
+    <string name="buy_plan">BBuy Plan</string>
+    <string name="frequently_asked_questions">BFrequently Asked Questions</string>
+    <string name="accept_successfully">BAccept Successfully!!</string>
+    <string name="reject_successfully">BReject Successfully!!</string>
+    <string name="resident">BResident</string>
+    <string name="please_enter_email_id">BPlease Enter Email Id!!</string>
+    <string name="invalid_email_id">BInvalid Email Id!!</string>
+    <string name="update_gatekeeper">BUpdate Gatekeeper</string>
+    <string name="please_enter_father_name">BPlease Enter Father name!!</string>
+    <string name="please_enter_mother_name">BPlease Enter Mother name!!</string>
+    <string name="please_select_image">BPlease Select Image!!</string>
+    <string name="please_enter_reference_phone_number">BPlease Enter Reference Phone Number !!</string>
+    <string name="please_enter_valid_reference_phone_number">BPlease Enter Valid Reference Phone Number !!</string>
+    <string name="please_enter_generate_password">BPlease Enter Generate Password!</string>
+    <string name="please_enter_reenter_password">BPlease Enter Re-enter Password!</string>
+    <string name="reEnter_password_does_not_match">BRe-enter Password does not Match!</string>
+    <string name="please_enter_nid_number">BPlease Enter NID Number!!</string>
+    <string name="please_enter_refr_nid_number">BPlease Enter Reference NID Number!!</string>
+    <string name="please_additional_document">BPlease Additional Document!!</string>
+    <string name="please_select_shift_date">BPlease Select Shift Date!!</string>
+    <string name="please_enter_ref_name">BPlease Enter Reference Name!!</string>
+    <string name="please_select_nid_front_side_img">BPlease Select NID Front Side Image!!</string>
+    <string name="please_select_nid_back_side_img">BPlease Select NID Back Side Image!!</string>
+    <string name="please_select_ref_nid_front_side_img">BPlease Select Reference NID Front Side Image!!</string>
+    <string name="please_select_fre_nid_back_side_img">BPlease Select Reference NID Back Side Image!!</string>
+    <string name="please_select_additi_docu_front_side_img">BPlease Select Additional Document Front Side Image!!</string>
+    <string name="please_select_additi_docu_back_side_img">BPlease Select Additional Document Back Side Image!!</string>
+    <string name="register_copmlain">BRegister Complain</string>
+    <string name="please_enter_service_category">BPlease Select Service Category!!</string>
+    <string name="off_duty">BOff Duty</string>
+    <string name="notify_successfully">BNotify successfully!!</string>
+    <string name="please_select_from_date">BPlease Select From Date!!</string>
+    <string name="please_select_to_date">BPlease Select To Date!!</string>
+    <string name="please_select_from_time">BPlease Select From Time!!</string>
+    <string name="please_select_to_time">BPlease Select To Time!!</string>
+    <string name="please_enter_visitor">BPlease Enter Visitor!!</string>
+    <string name="please_enter_details">BPlease Enter Details!!</string>
+    <string name="contact_us">BContact Us</string>
+    <string name="expenses">BExpenses</string>
+    <string name="deny">BDeny</string>
+    <string name="add_expenses">BAdd Expenses</string>
+    <string name="create_gatekeeper">BCreate Gatekeeper</string>
+    <string name="finance">BFinance</string>
+    <string name="billing">BBilling</string>
+    <string name="account">BAccount</string>
+    <string name="reports">BReports</string>
+    <string name="daily">BDaily</string>
+    <string name="plus_add_note">+BAdd Note</string>
+
+    <string name="other_category">BOther Category</string>
+    <string name="write_here">BWrite here</string>
+    <string name="already_paid">BAlready Paid</string>
+    <string name="add_bill">BAdd Bill</string>
+    <string name="invoice">BInvoice</string>
+    <string name="upload_bill_receipt">BUpload Bill/Receipt</string>
+    <string name="please_enter_other_category">BPlease Enter Other Category!!</string>
+    <string name="please_select_category">BPlease Select Category!!</string>
+    <string name="payment_option">BPayment Option</string>
+    <string name="please_enter_ref_number">BPlease Enter Reference Number!!</string>
+    <string name="please_upload_receipt">BPlease Upload Receipt !!</string>
+    <string name="balance_sheet_month">BBalance Sheet Month</string>
+    <string name="opening_balance">BOpening Balance</string>
+    <string name="closing_balance">BClosing Balance</string>
+    <string name="download_report">BDownload Report</string>
+    <string name="income">BIncome</string>
+    <string name="expense_report">BExpense Report</string>
+    <string name="earning_report">BEarning Report</string>
+    <string name="due_report">BDue Report</string>
+    <string name="please_enter_time">BPlease Enter Time!!</string>
+    <string name="billing_account">BBilling Account</string>
+    <string name="note_add_successfully">BNote Add Successfully!!</string>
+    <string name="star_date">BStart Date</string>
+    <string name="end_date">BEnd Date</string>
+    <string name="back_to_login">BBack to Login</string>
+    <string name="terms_amp_conditions1"><font color="#FFC107">BTerms &amp; Conditions</font></string>
+    <string name="terms_amp_conditions2">BTerms &amp; Conditions</string>
+    <string name="and">Band</string>
+    <string name="unlimited_access">BUnlimited Access</string>
+    <!--chnages String-->
+    <string-array name="EditProfile">
+        <item>Select</item>
+        <item>Text</item>
+        <item>Text1</item>
+        <item>Text2</item>
+    </string-array>
+
+    <string-array name="Lang">
+        <item>EN</item>
+        <item>BN</item>
+    </string-array>
+    <string-array name="LangOne">
+        <item>বাংলা</item>
+        <item>English</item>
+    </string-array>
+    <string name="tv_forgot_desc">Enter your phone and we will \nsend you otp</string>
+    <string name="tv_reset_password">Enter your new password to \nreset</string>
+    <string name="tv_your_password_changed_successfully">Your password has been \nchanged successfully!</string>
+    <string name="tv_register_member">You are not register as a \nMember</string>
+    <string name="tv_register_member_note">Note - If you want to become a \nmember than you contact us</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_property_name">Modern house with European \nbuilding style</string>
+    <string name="tv_activate_subscription">Enter your coupon code to \nactivate your subscription</string>
+    <string name="tv_profile_details">Enter your details to complete \nyour profile</string>
+    <string name="tv_contact_details">Do you want to Contact Intercom \nCustomer Service by Calling unified \ncenter or through conversation.</string>
+    <string name="reliably_explore_parkings">Reliably Explore</string>
+    <string name="choose_flat_unit_to_visit">Choose Flat/Unit to visit</string>
+    <string name="relationship_with_you">Relationship with you</string>
+    <string name="visitor_name">Visitor Name</string>
+    <string name="visitor_phone_number">Visitor Phone number</string>
+    <string name="_03">03</string>
+    <string name="family">Family</string>
+    <string name="entry_date_amp_time"><![CDATA[Entry Date & Time]]></string>
+    <string name="_03_05_2023_05_00_pm">03/05/2023 ; 05:00 pm</string>
+    <string name="visitation_address">Visitation Address</string>
+    <string name="flat_number_tf_244_yashoda">Flat Number- TF-244, Yashoda ....</string>
+    <string name="visitation_phone_number">Visitation Phone Number</string>
+    <string name="_889956178900">+889956178900</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="cleaning">Cleaning</string>
+    <string name="service_provider_charge">৳%1$s</string>
+    <string name="profile">Profile</string>
+    <string name="ralph_edwards">Ralph Edwards</string>
+    <string name="electricity_bill_issue">Electricity Bill Issue</string>
+    <string name="electricity_bill">Electricity bill</string>
+    <string name="due_date_5_jan_2021">Due Date: 5 Jan, 2021</string>
+    <string name="pay_in_advance">Pay in Advance</string>
+    <string name="guest">Guest</string>
+    <string name="company_address">Company Address</string>
+    <string name="delivery_company">Delivery Company</string>
+    <string name="enter_delivery_company">Enter Delivery Company</string>
+    <string name="kavita">Savita</string>
+    <string name="friend">Friend</string>
+    <string name="activity_name">Activity Name</string>
+    <string name="notification_sent">Notification Sent ..</string>
+    <string name="waiting_for_confirmation">Waiting for confirmation</string>
+    <string name="declined_entry">Declined Entry</string>
+    <string name="your_entry_is_declined_by_owner">Your entry is declined by owner</string>
+    <string name="allowed">Allowed</string>
+    <string name="lets_guests_enter_the_society">Lets Guests Enter the Society</string>
+    <string name="flat_no_a_121_3rd_floor">Flat no - A-121 , 3rd floor</string>
+    <string name="_12_03_2022">12/03/2022</string>
+    <string name="_12_00_pm">12:00 pm</string>
+    <string name="_4_hours_ago">4 hours ago</string>
+    <string name="like">Like</string>
+    <string name="reply">Reply</string>
+    <string name="_5_jan_2021">5 Jan, 2021</string>
+    <string name="today">Today</string>
+    <string name="_02_visitors">02 Visitors</string>
+    <string name="tv_list_to_let">List of To-Let in \nYasodha Residency</string>
+    <string name="tv_complaint_id">Do you want to mark \n‘Complain ID-23663’ \nas resolved</string>
+    <string-array name="select_flat">
+        <item>Select Flat</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+        <item>Select Flat</item>
+        <item>Select Category</item>
+        <item>Select  Billing Holder Name</item>
+    </string-array>
+    <string-array name="serviceCharges">
+        <item>Service Charges</item>
+        <item>Monthly</item>
+        <item>Yearly</item>
+    </string-array>
+    <string-array name="select_date">
+        <item>Select Date</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+        <item>Select Flat</item>
+        <item>Select Category</item>
+        <item>Select  Billing Holder Name</item>
+    </string-array>
+    <string-array name="min_rent">
+        <item>Min</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>1100</item>
+        <item>1200</item>
+
+    </string-array>
+    <string-array name="location">
+        <item>Dhaka</item>
+    </string-array>
+    <string-array name="month">
+        <item>January</item>
+    </string-array>
+    <string-array name="max_rent">
+        <item>Max</item>
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>1100</item>
+        <item>1200</item>
+    </string-array>
+    <string-array name="select_category">
+        <item>Select Category</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+        <item>Select Flat</item>
+        <item>Select Category</item>
+        <item>Select  Billing Holder Name</item>
+    </string-array>
+    <string-array name="select_billing_holder_name">
+        <item>Java</item>
+        <item>Kotlin</item>
+        <item>Swift</item>
+        <item>Python</item>
+        <item>Scala</item>
+        <item>Perl</item>
+        <item>Select Flat</item>
+        <item>Select Category</item>
+        <item>Select  Billing Holder Name</item>
+    </string-array>
+    <string name="title_activity_unpaid_bills">UnpaidBillsActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="delivery_02_visitors">Delivery   02 Visitors</string>
+    <string name="unpaid_bills">Unpaid Bills</string>
+    <string name="parapets_play_a_vital_role_in_the_design_of_a_house_before_we_move_on_examining_the_various_house_parapet_designs_that_can_ideal_for_your_home_read_more">Parapets play a vital role in the design of a house. Before we move on examining the various house parapet designs that can ideal for your home.<font color="#000000">Read more</font></string>
+    <string name="view_details">View Details</string>
+    <string name="choose_your_flat">Choose your flat</string>
+    <string name="owner">Owner</string>
+    <string name="rented">Rented</string>
+    <string name="description_amet_minim_mollit_non_deserunt_ullamco_est_sit_aliqua_dolor_do_amet_sint_velit_officia_consequat_duis_enim_velit_mollit">Description - Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit</string>
+    <string name="date_26_03_2023">Date :</string>
+    <string name="electricians">Electricians</string>
+    <string name="amet_minim_mollit_non_deserunt_ullamco_est_sit_aliqua_dolor_do_amet_sint_velit_officia_consequat_duis_enim_velit_mollit">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</string>
+    <string name="_32_minutes_ago">32 minutes ago</string>
+    <string name="to_let">To- Let</string>
+    <string name="yashoda_residency">Yashoda Residency</string>
+    <string name="modern_house_with_european_building_style">Modern house with European building style</string>
+    <string name="himanshu_gmail_com">himanshu@gmail.com</string>
+    <string name="flat_number_312">Flat Number - 312</string>
+    <string name="current_tenancy">Current Tenancy</string>
+    <string name="from_25_04_2023">From:<font color="#000000"> 25/04/2023</font></string>
+    <string name="to_25_04_2023">To:<font color="#000000"> 25/04/2023</font></string>
+    <string name="tv_flat_address">Flat no - A-121 , 3rd floor\n Noida Sector-63, Noida</string>
+    <string name="_12_sept_2022">12.Sept.2022</string>
+    <string name="_12_nov_2023">12.Nov.2023</string>
+    <string name="january_rent">January Rent</string>
+    <string name="tv_valid_enter_mobile_number">Please enter valid mobile number</string>
+    <string name="min_sec">%s : %s</string>
+    <string name="unlimited_property_amp_parking_contact"><![CDATA[Unlimited Property & Parking Contact]]></string>
+    <string name="title_activity_user_maps">UserMapsActivity</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="add_note">Add Note</string>
+    <string name="bl">বাংলা</string>
+    <string name="_02">02 <font color="#FD701E">/</font></string>
+    <string name="_020"><font color="#A6A7AB">02</font> <font color="#FFB000">/</font></string>
+    <string name="dhaka"><u>Dhaka</u></string>
+    <string name="clear_all"><u>Clear all</u></string>
+    <string name="_90_buyers_prefer_properties_with_photos"><font color="#FFB000">90% Buyers</font><font color="#A6A7AB"> prefer Properties with Photos</font></string>
+    <string name="default_notification_channel_id">notifications_channel</string>
+
+    <string name="default_notification_channel_id_without_sound">notifications_channel_without_sound</string>
+
+</resources>

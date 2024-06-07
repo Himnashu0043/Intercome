@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    app:cardCornerRadius="@dimen/_12sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_12sdp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+            app:srcCompat="@drawable/ic_billing_list" />
+
+        <TextView
+            android:id="@+id/tv_bill_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/bold"
+            android:text="Society Monthly Maintenance Bill"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_paid_unpaid"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            app:layout_constraintTop_toTopOf="@+id/iv_profile" />
+
+
+        <TextView
+            android:id="@+id/tv_paid_unpaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/bg_contact_us_btn"
+            android:backgroundTint="#F4EAFB"
+            android:fontFamily="@font/semi_bold"
+            android:gravity="center"
+            android:minWidth="@dimen/_65sdp"
+            android:minHeight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="View Bills"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="#BA59FE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".owner.activity.propertyDetails.OwnerPropertyDetailsActivity">
+
+    <include
+        android:id="@+id/ownerPDetails"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ownerPDetails">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView68"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                app:srcCompat="@drawable/img_5" />
+
+            <TextView
+                android:id="@+id/textView132"
+                style="@style/normaltxt_16sp_extrabold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView68"
+                app:layout_constraintTop_toTopOf="@+id/imageView68" />
+
+            <TextView
+                android:id="@+id/textView185"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/flat_number"
+                app:layout_constraintBottom_toBottomOf="@+id/tvFlatName"
+                app:layout_constraintStart_toStartOf="@+id/textView132"
+                app:layout_constraintTop_toTopOf="@+id/tvFlatName" />
+
+            <TextView
+                android:id="@+id/tvFlatName"
+                style="@style/normaltxt_16sp_extrabold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/textView132"
+                app:layout_constraintStart_toEndOf="@+id/textView185"
+                app:layout_constraintTop_toBottomOf="@+id/textView132" />
+
+            <TextView
+                android:id="@+id/textView133"
+                style="@style/normaltxt_12sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/map_icon"
+                android:drawablePadding="@dimen/_4sdp"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintEnd_toEndOf="@+id/textView132"
+                app:layout_constraintStart_toStartOf="@+id/textView132"
+                app:layout_constraintTop_toBottomOf="@+id/tvFlatName" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/layout_bedroom"
+                app:layout_constraintStart_toStartOf="@+id/imageView68"
+                app:layout_constraintTop_toBottomOf="@+id/imageView68">
+
+                <ImageView
+                    android:id="@+id/iv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_login_type_btn"
+                    android:backgroundTint="#F0FAF2"
+                    android:minWidth="@dimen/_24sdp"
+                    android:minHeight="@dimen/_24sdp"
+                    android:padding="@dimen/_8sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_distance" />
+
+                <TextView
+                    android:id="@+id/tv_fit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/medium"
+                    android:textColor="#20222C"
+                    android:textSize="@dimen/_8ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_distance"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_distance"
+                    app:layout_constraintTop_toTopOf="@+id/iv_distance" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_bedroom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_distance"
+                app:layout_constraintEnd_toStartOf="@+id/layout_bathroom"
+                app:layout_constraintStart_toEndOf="@+id/layout_distance"
+                app:layout_constraintTop_toTopOf="@+id/layout_distance">
+
+                <ImageView
+                    android:id="@+id/iv_bedroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_login_type_btn"
+                    android:backgroundTint="#F0FAF2"
+                    android:minWidth="@dimen/_24sdp"
+                    android:minHeight="@dimen/_24sdp"
+                    android:padding="@dimen/_8sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bed" />
+
+                <TextView
+                    android:id="@+id/tv_bedroom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/medium"
+                    android:textColor="#20222C"
+                    android:textSize="@dimen/_8ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_bedroom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_bedroom"
+                    app:layout_constraintTop_toTopOf="@+id/iv_bedroom" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_bathroom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_bedroom"
+                app:layout_constraintEnd_toEndOf="@+id/textView132"
+                app:layout_constraintStart_toEndOf="@+id/layout_bedroom"
+                app:layout_constraintTop_toTopOf="@+id/layout_bedroom">
+
+                <ImageView
+                    android:id="@+id/iv_bathroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_login_type_btn"
+                    android:backgroundTint="#F4EAFB"
+                    android:minWidth="@dimen/_24sdp"
+                    android:minHeight="@dimen/_24sdp"
+                    android:padding="@dimen/_4sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bathroom" />
+
+                <TextView
+                    android:id="@+id/tv_bathroom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/medium"
+                    android:textColor="#20222C"
+                    android:textSize="@dimen/_8ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_bathroom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_bathroom"
+                    app:layout_constraintTop_toTopOf="@+id/iv_bathroom" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView134"
+                style="@style/normaltxt_18sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/details"
+                app:layout_constraintStart_toStartOf="@+id/layout_distance"
+                app:layout_constraintTop_toBottomOf="@+id/layout_distance" />
+
+            <TextView
+                android:id="@+id/textView135"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+                app:layout_constraintEnd_toEndOf="@+id/layout_bathroom"
+                app:layout_constraintStart_toStartOf="@+id/textView134"
+                app:layout_constraintTop_toBottomOf="@+id/textView134" />
+
+            <TextView
+                android:id="@+id/textView136"
+                style="@style/normaltxt_18sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/property_documnets"
+                app:layout_constraintStart_toStartOf="@+id/textView135"
+                app:layout_constraintTop_toBottomOf="@+id/textView135" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyPhoto"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvIn"
+                app:layout_constraintEnd_toEndOf="@+id/textView135"
+                app:layout_constraintStart_toStartOf="@+id/textView136"
+                app:layout_constraintTop_toBottomOf="@+id/textView136" />
+
+            <include
+                android:id="@+id/common_btn"
+                layout="@layout/common_btn"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvCreateTenantBtn"
+                app:layout_constraintEnd_toEndOf="@+id/rcyPhoto"
+                app:layout_constraintStart_toStartOf="@+id/rcyPhoto" />
+
+            <TextView
+                android:id="@+id/tvCreateTenantBtn"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/oragne_strock_with_white_bg"
+                android:gravity="center"
+                android:text="@string/create_tenant"
+                android:textColor="@color/orange"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/common_btn"
+                app:layout_constraintStart_toStartOf="@+id/common_btn" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

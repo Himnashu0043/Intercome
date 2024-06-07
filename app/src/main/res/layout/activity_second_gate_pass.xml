@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gatekepper.activity.gatePass.SecondGatePassActivity">
+
+    <include
+        android:id="@+id/secondToolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondToolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_24"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                app:cardCornerRadius="@dimen/dp_8"
+                app:cardElevation="@dimen/dp_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/normaltxt_14sp_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp_16"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/activity_name"
+                        android:textColor="@color/lightBlack"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/normaltxt_14sp_bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:text="@string/activity_name"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="?android:attr/listDivider"
+                        app:layout_constraintEnd_toEndOf="@+id/textView3"
+                        app:layout_constraintStart_toStartOf="@+id/textView3"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/normaltxt_14sp_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:text="@string/visitor_phone_number"
+                        android:textColor="@color/lightBlack"
+                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        style="@style/normaltxt_14sp_bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                    <View
+                        android:id="@+id/divider1"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="?android:attr/listDivider"
+                        app:layout_constraintEnd_toEndOf="@+id/textView31"
+                        app:layout_constraintStart_toStartOf="@+id/textView31"
+                        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+                    <TextView
+                        android:id="@+id/textView42"
+                        style="@style/normaltxt_14sp_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:text="@string/entry_date_amp_time"
+                        android:textColor="@color/lightBlack"
+                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+                    <TextView
+                        android:id="@+id/textView312"
+                        style="@style/normaltxt_14sp_bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/_03_05_2023_05_00_pm"
+                        app:layout_constraintEnd_toEndOf="@+id/divider1"
+                        app:layout_constraintStart_toStartOf="@+id/textView42"
+                        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+                    <View
+                        android:id="@+id/divider12"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="?android:attr/listDivider"
+                        app:layout_constraintEnd_toEndOf="@+id/textView312"
+                        app:layout_constraintStart_toStartOf="@+id/textView312"
+                        app:layout_constraintTop_toBottomOf="@+id/textView312" />
+
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        style="@style/normaltxt_14sp_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:text="@string/visitation_address"
+                        android:textColor="@color/lightBlack"
+                        app:layout_constraintStart_toStartOf="@+id/textView31"
+                        app:layout_constraintTop_toBottomOf="@+id/divider12" />
+
+                    <TextView
+                        android:id="@+id/textView311"
+                        style="@style/normaltxt_14sp_bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                    <View
+                        android:id="@+id/divider11"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="?android:attr/listDivider"
+                        app:layout_constraintEnd_toEndOf="@+id/textView311"
+                        app:layout_constraintStart_toStartOf="@+id/textView311"
+                        app:layout_constraintTop_toBottomOf="@+id/textView311" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        style="@style/normaltxt_14sp_Regular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_8"
+                        android:text="@string/gate_pass"
+                        android:textColor="@color/lightBlack"
+                        app:layout_constraintStart_toStartOf="@+id/textView311"
+                        app:layout_constraintTop_toBottomOf="@+id/divider11" />
+
+                    <TextView
+                        android:id="@+id/textView3111"
+                        style="@style/normaltxt_14sp_bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_4"
+                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                    <View
+                        android:id="@+id/divider111"
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="8dp"
+                        android:background="?android:attr/listDivider"
+                        app:layout_constraintEnd_toEndOf="@+id/divider11"
+                        app:layout_constraintStart_toStartOf="@+id/textView3111"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3111" />
+
+                    <ImageView
+                        android:id="@+id/imageView28"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView281"
+                        app:layout_constraintStart_toStartOf="@+id/divider111"
+                        app:layout_constraintTop_toBottomOf="@+id/divider111"
+                        app:srcCompat="@drawable/icon_3" />
+
+                    <ImageView
+                        android:id="@+id/imageView281"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView28"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView2812"
+                        app:layout_constraintStart_toEndOf="@+id/imageView28"
+                        app:layout_constraintTop_toTopOf="@+id/imageView28"
+                        app:srcCompat="@drawable/icon_3" />
+
+                    <ImageView
+                        android:id="@+id/imageView2812"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView281"
+                        app:layout_constraintEnd_toEndOf="@+id/divider111"
+                        app:layout_constraintStart_toEndOf="@+id/imageView281"
+                        app:layout_constraintTop_toTopOf="@+id/imageView281"
+                        app:srcCompat="@drawable/icon_3" />
+
+                    <ImageView
+                        android:id="@+id/imageView282"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="@+id/imageView28"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView28"
+                        app:srcCompat="@drawable/icon_3" />
+
+                    <ImageView
+                        android:id="@+id/imageView28122"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView282"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView281"
+                        app:layout_constraintStart_toStartOf="@+id/imageView281"
+                        app:layout_constraintTop_toTopOf="@+id/imageView282"
+                        app:srcCompat="@drawable/icon_3" />
+
+                    <ImageView
+                        android:id="@+id/imageView28123"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView28122"
+                        app:layout_constraintEnd_toEndOf="@+id/imageView2812"
+                        app:layout_constraintStart_toStartOf="@+id/imageView2812"
+                        app:layout_constraintTop_toTopOf="@+id/imageView28122"
+                        app:srcCompat="@drawable/icon_3" />
+                    <ImageView
+                        android:id="@+id/imageView62"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView3111"
+                        app:layout_constraintEnd_toEndOf="@+id/textView311"
+                        app:layout_constraintTop_toTopOf="@+id/textView7"
+                        app:srcCompat="@drawable/bar_code_icon" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/download"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="15dp"
+                app:cardBackgroundColor="#F4EAFB"
+                app:cardCornerRadius="@dimen/dp_10"
+                app:cardElevation="@dimen/dp_2"
+                app:layout_constraintEnd_toStartOf="@+id/printout"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/download_icon" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/printout"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="24dp"
+                app:cardBackgroundColor="#E5F3FB"
+                app:cardCornerRadius="@dimen/dp_10"
+                app:cardElevation="@dimen/dp_2"
+                app:layout_constraintBottom_toBottomOf="@+id/download"
+                app:layout_constraintEnd_toEndOf="@+id/cardView"
+                app:layout_constraintStart_toEndOf="@+id/download"
+                app:layout_constraintTop_toTopOf="@+id/download">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/printout_icon" />
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

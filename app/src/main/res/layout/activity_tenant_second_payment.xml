@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tenant.activity.payment.TenantSecondPaymentActivity">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:elevation="-1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/white_back_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBankName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvBankName" />
+
+    <TextView
+        android:id="@+id/tvBankName"
+        style="@style/tofino_16sp_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/mfs_payment"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tvBankAdd"
+        style="@style/tofino_16sp_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bkash_nagad"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBankName" />
+
+
+    <TextView
+        android:id="@+id/tv_invoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/bold"
+        android:text="Invoice#232213"
+        android:textColor="#20222C"
+        android:visibility="gone"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/bg_service_charges"
+        android:paddingBottom="@dimen/_16sdp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_invoice"
+        tools:layout_editor_absoluteX="16dp">
+
+
+        <TextView
+            android:id="@+id/tv_service_charges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/medium"
+            android:text="@string/mfs_account_number"
+            android:textColor="#4D20222C"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_monthly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/semi_bold"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView22"
+            app:layout_constraintStart_toStartOf="@+id/tv_service_charges"
+            app:layout_constraintTop_toBottomOf="@+id/tv_service_charges" />
+
+        <TextView
+            android:id="@+id/tv_select_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/medium"
+            android:text="@string/mfs_name"
+            android:textColor="#4D20222C"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@+id/tv_monthly"
+            app:layout_constraintTop_toBottomOf="@+id/tv_monthly" />
+
+
+        <TextView
+            android:id="@+id/tv_every_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/semi_bold"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView23"
+            app:layout_constraintStart_toStartOf="@+id/tv_select_date"
+            app:layout_constraintTop_toBottomOf="@+id/tv_select_date" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/medium"
+            android:text="@string/payment_mode"
+            android:textColor="#4D20222C"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@+id/tv_every_month"
+            app:layout_constraintTop_toBottomOf="@+id/tv_every_month" />
+
+
+        <TextView
+            android:id="@+id/tv_total_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semi_bold"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_every_month"
+            app:layout_constraintStart_toStartOf="@+id/tv_amount"
+            app:layout_constraintTop_toBottomOf="@+id/tv_amount" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_monthly"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_service_charges"
+            app:srcCompat="@drawable/copy_icon" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_every_month"
+            app:layout_constraintEnd_toEndOf="@+id/imageView22"
+            app:layout_constraintTop_toTopOf="@+id/tv_select_date"
+            app:srcCompat="@drawable/copy_icon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_title_service_charges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-8dp"
+        android:background="@color/white"
+        android:fontFamily="@font/regular"
+        android:text="@string/beneficiary_account_details"
+        android:textColor="#20222C"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FD701E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edRefNumber"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/bg_organge_stoke_gray"
+            android:hint="@string/enter_reference_no"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/btn_login"
+            app:layout_constraintEnd_toEndOf="@+id/btn_login"
+            app:layout_constraintStart_toStartOf="@+id/btn_login"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/btn_login"
+            layout="@layout/common_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView160"
+        style="@style/normaltxt_34sp_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBankAdd" />
+    <TextView
+        android:id="@+id/textView161"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/service_charge"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textView160"
+        app:layout_constraintStart_toStartOf="@+id/textView160"
+        app:layout_constraintTop_toBottomOf="@+id/textView160" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardSub"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="invisible"
+        android:layout_marginStart="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_50sdp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView161"
+        app:layout_constraintStart_toEndOf="@+id/textView161"
+        app:layout_constraintTop_toTopOf="@+id/textView161">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="-"
+            android:textColor="@color/orange" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView162"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:text="00"
+        android:visibility="invisible"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/cardSub"
+        app:layout_constraintStart_toEndOf="@+id/cardSub"
+        app:layout_constraintTop_toTopOf="@+id/cardSub" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardplus"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_50sdp"
+        app:cardElevation="2dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/cardSub"
+        app:layout_constraintStart_toEndOf="@+id/textView162"
+        app:layout_constraintTop_toTopOf="@+id/textView162">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="+"
+            android:textColor="@color/orange" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/upload_rece_img" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivUpload"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_80"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/imageView24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

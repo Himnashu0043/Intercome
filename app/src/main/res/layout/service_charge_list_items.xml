@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    app:cardCornerRadius="@dimen/_12sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+            app:srcCompat="@drawable/ic_billing_list" />
+
+        <TextView
+            android:id="@+id/tv_rent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/bold"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toStartOf="@+id/tvPrice"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            app:layout_constraintTop_toTopOf="@+id/iv_profile" />
+
+
+        <TextView
+            android:id="@+id/tv_flat_no"
+            style="@style/normaltxt_11sp_bold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/tv_rent"
+            app:layout_constraintStart_toEndOf="@+id/textView187"
+            app:layout_constraintTop_toBottomOf="@+id/tv_rent" />
+
+        <TextView
+            android:id="@+id/textView187"
+            style="@style/normaltxt_12sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/flat_number"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_flat_no"
+            app:layout_constraintStart_toStartOf="@+id/tv_rent"
+            app:layout_constraintTop_toTopOf="@+id/tv_flat_no" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semi_bold"
+            android:textColor="@color/dark_grey"
+            android:textSize="@dimen/_9ssp"
+            style="@style/normaltxt_14sp_bold"
+            app:layout_constraintEnd_toEndOf="@+id/tv_flat_no"
+            app:layout_constraintStart_toStartOf="@+id/tv_rent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_flat_no" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/semi_bold"
+            android:textColor="#FD701E"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_rent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_rent" />
+
+        <View
+            android:id="@+id/divider18"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_profile" />
+
+        <View
+            android:id="@+id/divider19"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider18" />
+
+        <TextView
+            android:id="@+id/tvEditHis"
+            style="@style/normaltxt_14sp_bold"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/edit"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/divider19"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider18" />
+
+        <TextView
+            android:id="@+id/tvDelete"
+            style="@style/normaltxt_14sp_bold"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/divider19"
+            app:layout_constraintTop_toBottomOf="@+id/divider18" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

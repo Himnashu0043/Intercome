@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".owner.activity.registerComplain.OwnerAddRegisterComplainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <include
+            android:id="@+id/complainToolbar"
+            layout="@layout/common_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/complainToolbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView96"
+                    style="@style/normaltxt_14sp_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:padding="4dp"
+                    android:visibility="gone"
+                    android:text="@string/view_complain_history"
+                    android:textColor="@color/orange"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    style="@style/normaltxt_14sp_Semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/write_complain_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView96" />
+
+                <EditText
+                    android:id="@+id/ed_Name"
+                    style="@style/normaltxt_14sp_Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/common_bg"
+                    android:fontFamily="@font/medium"
+                    android:gravity="center_vertical"
+                    android:hint="@string/write_complain_name"
+                    android:inputType="textPersonName"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    app:layout_constraintEnd_toEndOf="@+id/textView96"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    style="@style/normaltxt_14sp_Semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/service_category"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ed_Name" />
+
+                <TextView
+                    android:id="@+id/ed_service"
+                    style="@style/normaltxt_14sp_Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:background="@drawable/common_bg"
+                    android:drawableRight="@drawable/ic_newdropdown"
+                    android:fontFamily="@font/medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/textView96"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="8dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/ed_service"
+                    app:layout_constraintStart_toStartOf="@+id/ed_service"
+                    app:layout_constraintTop_toTopOf="@+id/ed_service" />
+
+                <TextView
+                    android:id="@+id/textView98"
+                    style="@style/normaltxt_14sp_Semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/write_description"
+                    app:layout_constraintStart_toStartOf="@+id/textView5"
+                    app:layout_constraintTop_toBottomOf="@+id/ed_service" />
+
+                <EditText
+                    android:id="@+id/ed_Write_Description"
+                    style="@style/normaltxt_14sp_Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_100"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/common_bg"
+                    android:fontFamily="@font/medium"
+                    android:gravity="top"
+                    android:hint="@string/write_description"
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:maxLines="10"
+                    android:minLines="6"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingTop="@dimen/dp_16"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    app:layout_constraintEnd_toEndOf="@+id/ed_Name"
+                    app:layout_constraintStart_toStartOf="@+id/textView98"
+                    app:layout_constraintTop_toBottomOf="@+id/textView98" />
+
+                <TextView
+                    android:id="@+id/textView99"
+                    style="@style/normaltxt_14sp_Semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/upload_photo_video"
+                    app:layout_constraintStart_toStartOf="@+id/ed_Write_Description"
+                    app:layout_constraintTop_toBottomOf="@+id/ed_Write_Description" />
+
+                <EditText
+                    android:id="@+id/ed_upload"
+                    style="@style/normaltxt_14sp_Medium"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_46"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/common_bg"
+                    android:drawableEnd="@drawable/upload_one"
+                    android:focusable="false"
+                    android:fontFamily="@font/medium"
+                    android:gravity="center_vertical"
+                    android:hint="@string/upload_photo_video"
+                    android:paddingStart="@dimen/dp_16"
+                    android:paddingEnd="@dimen/dp_16"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/grey"
+                    app:layout_constraintEnd_toEndOf="@+id/ed_Write_Description"
+                    app:layout_constraintStart_toStartOf="@+id/textView99"
+                    app:layout_constraintTop_toBottomOf="@+id/textView99" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcyPhoto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/ed_upload"
+                    app:layout_constraintTop_toBottomOf="@+id/ed_upload" />
+
+                <include
+                    android:id="@+id/common_btn"
+                    layout="@layout/common_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginBottom="32dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/ed_upload"
+                    app:layout_constraintStart_toStartOf="@+id/ed_upload"
+                    app:layout_constraintTop_toBottomOf="@+id/rcyPhoto" />
+
+                <ProgressBar
+                    android:id="@+id/pro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--<com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/nav"
+            layout="@layout/user_nav_drw" />
+    </com.google.android.material.navigation.NavigationView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

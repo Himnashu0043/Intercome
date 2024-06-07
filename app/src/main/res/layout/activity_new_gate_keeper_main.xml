@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="start"
+    android:id="@+id/newGateKeepeerDrw"
+    tools:context=".gatekepper.activity.newFlow.home.NewGateKeeperMainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="-1dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/profile_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView86"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView164"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/textView164"
+            app:srcCompat="@drawable/white_menu_list" />
+
+        <TextView
+            android:id="@+id/textView164"
+            style="@style/normaltxt_18sp_extrebold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/white"
+            android:gravity="fill_horizontal"
+            app:layout_constraintEnd_toStartOf="@+id/tvLang"
+            app:layout_constraintStart_toEndOf="@+id/imageView86"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView87"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView164"
+            app:layout_constraintEnd_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/textView164"
+            app:srcCompat="@drawable/notification_white_icon" />
+
+        <TextView
+            android:id="@+id/tvLang"
+            style="@style/normaltxt_12sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_30"
+            android:layout_marginEnd="8dp"
+            android:drawableRight="@drawable/white_down_arrow"
+            android:drawablePadding="@dimen/dp_2"
+            android:gravity="start|center"
+            android:hint="Eng"
+            android:paddingStart="@dimen/dp_4"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/textView164"
+            app:layout_constraintEnd_toStartOf="@+id/imageView87"
+            app:layout_constraintTop_toTopOf="@+id/textView164" />
+
+        <Spinner
+            android:id="@+id/lang_sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tvLang"
+            app:layout_constraintEnd_toEndOf="@+id/tvLang"
+            app:layout_constraintStart_toStartOf="@+id/tvLang"
+            app:layout_constraintTop_toTopOf="@+id/tvLang" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_height="0dp"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView88"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/single_entry_img" />
+
+                <ImageView
+                    android:id="@+id/ivRegularEntry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView88"
+                    app:layout_constraintStart_toStartOf="@+id/imageView88"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView88"
+                    app:srcCompat="@drawable/regular_entry_img" />
+
+                <ImageView
+                    android:id="@+id/ivVisitorHis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="@+id/ivRegularEntry"
+                    app:layout_constraintStart_toStartOf="@+id/ivRegularEntry"
+                    app:layout_constraintTop_toBottomOf="@+id/ivRegularEntry"
+                    app:srcCompat="@drawable/visitor_his_img" />
+                <ImageView
+                    android:id="@+id/ivgatePass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="@+id/ivVisitorHis"
+                    app:layout_constraintStart_toStartOf="@+id/ivVisitorHis"
+                    app:layout_constraintTop_toBottomOf="@+id/ivVisitorHis"
+                    app:srcCompat="@drawable/gatepass_img" />
+                <ImageView
+                    android:id="@+id/ivgatePasshis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintEnd_toEndOf="@+id/ivgatePass"
+                    app:layout_constraintStart_toStartOf="@+id/ivgatePass"
+                    app:layout_constraintTop_toBottomOf="@+id/ivgatePass"
+                    app:srcCompat="@drawable/gatepass_his_img" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <ImageView
+            android:id="@+id/imageView89"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/textView165"
+            app:layout_constraintStart_toStartOf="@+id/imageView86"
+            app:layout_constraintTop_toTopOf="@+id/textView165"
+            app:srcCompat="@drawable/white_loc" />
+
+        <TextView
+            android:id="@+id/textView165"
+            style="@style/normaltxt_16sp_Semibold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView87"
+            app:layout_constraintStart_toEndOf="@+id/imageView86"
+            app:layout_constraintStart_toStartOf="@+id/textView164"
+            app:layout_constraintTop_toBottomOf="@+id/textView164"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/nav"
+            layout="@layout/user_nav_drw" />
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:textSize">@dimen/dp_12</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:padding">@dimen/dp_5</item>
+
+    </style>
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+                <item name="behavior_peekHeight">1200dp</item>
+    </style>
+    <style name="TabLayouy_Style">
+<!--        <item name="tabSelectedTextColor">@color/black</item>-->
+<!--        <item name="tabIndicatorColor">@color/black</item>-->
+<!--        <item name="tabMode">scrollable</item>-->
+<!--        <item name="tabGravity">fill</item>-->
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="fontFamily">@font/bold</item>
+        <!--        <item name="tabTextAppearance">@android:style/TextAppearance.Widget.TabWidget</item>-->
+<!--        <item name="tabTextColor">@color/lightBlack</item>-->
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/bold</item>
+        <item name="tabTextColor">@color/black</item>
+    </style>
+    <style name="normaltxt_24sp_bold">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="normaltxt_24sp_extrabold">
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/extra_bold</item>
+    </style>
+    <style name="millaCilla_45sp">
+        <item name="android:textSize">@dimen/sp_45</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="normaltxt_20sp_bold">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="normaltxt_20spMedium">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+    <style name="normaltxt_22sp_bold">
+        <item name="android:textSize">@dimen/sp_22</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="normaltxt_20sp_Semibold">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="normaltxt_20sp_extraBold">
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/extra_bold</item>
+    </style>
+
+    <style name="normaltxt_18sp_bold">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="normaltxt_18sp_extrebold">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/extra_bold</item>
+    </style>
+    <style name="normaltxt_18sp_Semibold">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+
+    <style name="extraBold_30sp">
+        <item name="android:textSize">@dimen/sp_30</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="normaltxt_18sp_Medium">
+        <item name="android:textSize">@dimen/sp_18</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+
+    <style name="normaltxt_17sp_Semibold">
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="normaltxt_16sp_Semibold">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="normaltxt_16sp_extrabold">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/extra_bold</item>
+    </style>
+    <style name="normaltxt_16sp_Regular">
+    <item name="android:textSize">@dimen/sp_16</item>
+    <item name="android:textColor">@color/lightBlack</item>
+
+    <item name="android:fontFamily">@font/light</item>
+</style>
+
+    <style name="normaltxt_16sp_Medium">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+    <style name="normaltxt_16sp_bold">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="tofino_16sp_bold">
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="normaltxt_14sp_bold">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/bold</item>
+
+    </style>
+    <style name="normaltxt_14sp_extra_bold">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/extra_bold</item>
+
+    </style>
+    <style name="normaltxt_14sp_light">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/light</item>
+
+    </style>
+    <style name="normaltxt_14sp_Medium">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/medium</item>
+
+    </style>
+    <style name="normaltxt_11sp_Regular">
+        <item name="android:textSize">@dimen/sp_11</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/regular</item>
+
+    </style>
+    <style name="normaltxt_14sp_Regular">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/regular</item>
+
+    </style>
+
+    <style name="normaltxt_14sp_Semibold">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+
+    <style name="normaltxt_28sp_Medium">
+        <item name="android:textSize">@dimen/sp_28</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+
+    <style name="normaltxt_15sp_light">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+
+    <style name="normaltxt_15sp_semi_bold">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="normaltxt_15spbold">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="normaltxt_15sp_Regular">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/regular</item>
+
+    </style>
+    <style name="normaltxt_10sp_Regular">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="normaltxt_12sp_Semibold">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="normaltxt_12sp_bold">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="normaltxt_12sp_Regular">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="normaltxt_12sp_light">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+    <style name="normaltxt_12sp_Medium">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+    <style name="normaltxt_13sp_Regular">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="normaltxt_13sp_Medium">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+    <style name="normaltxt_13sp_regular">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="normaltxt_34sp_bold">
+        <item name="android:textSize">@dimen/sp_34</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/bold</item>
+
+    </style>
+    <style name="normaltxt_10sp_Medium">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+    <style name="normaltxt_10sp_MediumItalic">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/medium_italic</item>
+    </style>
+    <style name="normaltxt_30sp_Extrabold">
+        <item name="android:textSize">@dimen/sp_30</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/extra_bold</item>
+    </style>
+    <style name="normaltxt_11sp_light">
+        <item name="android:textSize">@dimen/sp_11</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/light</item>
+    </style>
+    <style name="normaltxt_11sp_bold">
+        <item name="android:textSize">@dimen/sp_11</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="normaltxt_13sp_Bold">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="normaltxt_13sp_SemiBold">
+        <item name="android:textSize">@dimen/sp_13</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="normaltxt_17sp_Regular">
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/regular</item>
+    </style>
+    <style name="normaltxt_17sp_Bold">
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+    <style name="normaltxt_10sp_semiBold">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="normaltxt_15sp_Semibold">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/semi_bold</item>
+    </style>
+    <style name="normaltxt_15sp_Medium">
+        <item name="android:textSize">@dimen/sp_15</item>
+        <item name="android:textColor">@color/lightBlack</item>
+        <item name="android:fontFamily">@font/medium</item>
+    </style>
+    <style name="normaltxt_53sp_Regular">
+        <item name="android:textSize">@dimen/sp_53</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/regular</item>
+
+    </style>
+    <style name="normaltxt_8sp_Regular">
+        <item name="android:textSize">@dimen/sp_8</item>
+        <item name="android:textColor">@color/lightBlack</item>
+
+        <item name="android:fontFamily">@font/regular</item>
+    </style><style name="normaltxt_8sp_bold">
+    <item name="android:textSize">@dimen/sp_8</item>
+    <item name="android:textColor">@color/lightBlack</item>
+
+    <item name="android:fontFamily">@font/bold</item>
+</style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name="service_10_imge_shapeable_overloay">
+        <item name="cornerSize">10%</item>
+        <item name="cornerSizeTopLeft">10%</item>
+        <item name="cornerSizeTopRight">10%</item>
+    </style>
+    <style name="testservice_10_imge_shapeable_overloay">
+
+        <item name="cornerSizeTopLeft">10%</item>
+        <item name="cornerSizeTopRight">10%</item>
+    </style>
+    <style name="bottom_10_imge_shapeable_overloay">
+        <item name="boxCornerRadiusBottomStart">@dimen/dp_10</item>
+    </style>
+
+    <style name="blackCustomCheckbox02" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/add_black_checkbox_selector</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="yellowCustomCheckbox02" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/add_black_checkbox_selector</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="RangeSliderTheme" parent="Base.Widget.AppCompat.SeekBar.Discrete">
+        <item name="labelStyle">@style/Widget.App.Tooltip</item>
+        <item name="trackColorActive">@color/orange</item>
+        <item name="trackColorInactive">@color/light_grey</item>
+        <item name="thumbColor">@color/white</item>
+        <item name="thumbStrokeColor">@color/orange</item>
+        <item name="thumbStrokeWidth">3dp</item>
+        <item name="labelBehavior">gone</item>
+        <item name="tickColor">@android:color/transparent</item>
+        <item name="thumbElevation">4pt</item>
+        <item name="trackHeight">3dp</item>
+    </style>
+    <style name="Widget.App.Tooltip" parent="Widget.MaterialComponents.Tooltip">
+        <item name="android:textAppearance">@style/TextAppearance.App.Tooltip</item>
+        <item name="backgroundTint">@color/white</item>
+    </style>
+    <style name="Widget.App.Slider" parent="Widget.MaterialComponents.Slider">
+        <item name="labelStyle">@style/Widget.App.Tooltip</item>
+        <item name="thumbStrokeColor">@color/orange</item>
+        <item name="thumbStrokeWidth">3dp</item>
+        <item name="trackColorActive">@color/orange</item>
+        <item name="thumbColor">@color/white</item>
+
+        <item name="trackColorInactive">@color/light_grey</item>
+    </style>
+    <style name="TextAppearance.App.Tooltip" parent="TextAppearance.MaterialComponents.Tooltip">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="CircularDeterminateProgressBar">
+        <item name="android:indeterminateOnly">false </item>
+        <item name="android:progressDrawable">@drawable/circle</item>
+    </style>
+</resources>

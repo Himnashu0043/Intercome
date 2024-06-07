@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".user.profile.UserProfileFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivchange"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/iv_dummy_img"
+        app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="-1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:visibility="invisible"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/white_back_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView20"
+        style="@style/tofino_16sp_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="@string/my_profile"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/ivchange"
+        app:layout_constraintStart_toStartOf="@+id/ivchange"
+        app:srcCompat="@drawable/camera_bg_icon" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tvEdit"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/textView20">
+
+        <TextView
+            style="@style/normaltxt_13sp_SemiBold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/edit"
+            android:textColor="@color/orange" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:visibility="visible"
+        android:background="@drawable/bg_edit_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivchange">
+
+        <TextView
+            android:id="@+id/textView144"
+            style="@style/normaltxt_14sp_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/name"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView145"
+            style="@style/normaltxt_14sp_Semibold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView144"
+            app:layout_constraintTop_toBottomOf="@+id/textView144" />
+
+        <TextView
+            android:id="@+id/textView146"
+            style="@style/normaltxt_14sp_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/email"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintStart_toStartOf="@+id/textView145"
+            app:layout_constraintTop_toBottomOf="@+id/textView145" />
+
+        <TextView
+            android:id="@+id/textView147"
+            style="@style/normaltxt_14sp_Semibold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+
+            app:layout_constraintEnd_toEndOf="@+id/textView145"
+            app:layout_constraintStart_toStartOf="@+id/textView146"
+            app:layout_constraintTop_toBottomOf="@+id/textView146" />
+
+        <TextView
+            android:id="@+id/textView148"
+            style="@style/normaltxt_14sp_Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/phone_number"
+            android:textColor="@color/dark_grey"
+            app:layout_constraintStart_toStartOf="@+id/textView147"
+            app:layout_constraintTop_toBottomOf="@+id/textView147" />
+
+        <TextView
+            android:id="@+id/textView149"
+            style="@style/normaltxt_14sp_Semibold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView147"
+            app:layout_constraintStart_toStartOf="@+id/textView148"
+            app:layout_constraintTop_toBottomOf="@+id/textView148" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <include
+        android:id="@+id/common_btn"
+        layout="@layout/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:visibility="visible"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/constraintLayout8"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout8"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/main_profile"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivchange">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView254"
+                style="@style/normaltxt_16sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/personal_information"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView1442"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/name"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView254" />
+
+            <TextView
+                android:id="@+id/textView1452"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView1442"
+                app:layout_constraintTop_toBottomOf="@+id/textView1442" />
+
+            <TextView
+                android:id="@+id/textView1462"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/email"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1452"
+                app:layout_constraintTop_toBottomOf="@+id/textView1452" />
+
+            <TextView
+                android:id="@+id/textView1472"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView1452"
+                app:layout_constraintStart_toStartOf="@+id/textView1462"
+                app:layout_constraintTop_toBottomOf="@+id/textView1462" />
+
+            <TextView
+                android:id="@+id/textView1482"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/phone_number"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1472"
+                app:layout_constraintTop_toBottomOf="@+id/textView1472" />
+
+            <TextView
+                android:id="@+id/textView1492"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView1482" />
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/address"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1492"
+                app:layout_constraintTop_toBottomOf="@+id/textView1492" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView151"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/nid_number"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1492"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+            <TextView
+                android:id="@+id/tv_nid_number"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView151" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivNid"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_nid_number"
+                app:layout_constraintStart_toStartOf="@+id/tv_nid_number"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nid_number"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/normaltxt_16sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/reference_information"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivNid" />
+            <TextView
+                android:id="@+id/textView1511"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/ref_nid_name"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1492"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/tv_ref_name"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView1511" />
+            <TextView
+                android:id="@+id/textView15111"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/ref_nid_number"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1492"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ref_name" />
+
+            <TextView
+                android:id="@+id/tv_ref_nid_number"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView15111" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivRef"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_nid_number"
+                app:layout_constraintStart_toStartOf="@+id/tv_nid_number"
+                app:layout_constraintTop_toBottomOf="@+id/tv_ref_nid_number"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/normaltxt_16sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/bank_info"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ivRef" />
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/acc_holde_name"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1492"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/tv_account_number"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView16" />
+            <TextView
+                android:id="@+id/textView161"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/bank_name"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1492"
+                app:layout_constraintTop_toBottomOf="@+id/tv_account_number" />
+
+            <TextView
+                android:id="@+id/tv_bank_name"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView161" />
+            <TextView
+                android:id="@+id/textView1611"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/branch_name"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1492"
+                app:layout_constraintTop_toBottomOf="@+id/tv_bank_name" />
+
+            <TextView
+                android:id="@+id/tv_branch_name"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView1611" />
+            <TextView
+                android:id="@+id/textView16111"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/acc_holder_number"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1492"
+                app:layout_constraintTop_toBottomOf="@+id/tv_branch_name" />
+
+            <TextView
+                android:id="@+id/tv_bank_acc_h_number"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView16111" />
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/normaltxt_16sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/mfs_info"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_bank_acc_h_number" />
+            <TextView
+                android:id="@+id/textView17"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/mfs_holder_name"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1492"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/tv_mfs_h_name"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
+            <TextView
+                android:id="@+id/textView171"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/mfs_type"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1492"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mfs_h_name" />
+
+            <TextView
+                android:id="@+id/tv_mfs_type"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView171" />
+            <TextView
+                android:id="@+id/textView1711"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/mfs_acc_number"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView1492"
+                app:layout_constraintTop_toBottomOf="@+id/tv_mfs_type" />
+
+            <TextView
+                android:id="@+id/tv_mfs_acc_number"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="32dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/textView1472"
+                app:layout_constraintStart_toStartOf="@+id/textView1482"
+                app:layout_constraintTop_toBottomOf="@+id/textView1711" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

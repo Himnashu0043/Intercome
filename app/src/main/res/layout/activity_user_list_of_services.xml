@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tenant.activity.listofservices.ListOfServicesActivity">
+
+    <include
+        android:id="@+id/list_of_toolbar"
+        layout="@layout/common_frg_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:background="@drawable/bg_edit_search"
+        android:drawableStart="@drawable/ic_grey_search"
+        android:drawablePadding="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:hint="Search Properties......"
+        android:inputType="text"
+        android:imeOptions="actionSearch"
+        android:minHeight="@dimen/_40sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:textColorHint="#DDDDDD"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/ivCross"
+        app:layout_constraintEnd_toStartOf="@+id/ivCross"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivCross"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/dp_16"
+        android:layout_marginBottom="@dimen/dp_8"
+        android:src="@drawable/cross_bg_icon"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_of_toolbar"/>
+
+    <TextView
+        android:id="@+id/textView15"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/common_bg"
+        android:fontFamily="@font/bold"
+        android:drawableStart="@drawable/filter_icon"
+        android:drawablePadding="@dimen/dp_8"
+        android:padding="@dimen/dp_8"
+        android:textSize="@dimen/_10ssp"
+        android:text="@string/sort_by_price_high_to"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/rcyListOdService"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+</androidx.constraintlayout.widget.ConstraintLayout>

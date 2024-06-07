@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-android-sdk-cognitoidentityprovider-asf:2.53.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/44735d166e391b161de30503b8838804/transformed/jetified-aws-android-sdk-cognitoidentityprovider-asf-2.53.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/44735d166e391b161de30503b8838804/transformed/jetified-aws-android-sdk-cognitoidentityprovider-asf-2.53.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-cognitoidentityprovider-asf/2.53.0/1b353aff76caa89eb7cfe3e95c5964136f10c700/aws-android-sdk-cognitoidentityprovider-asf-2.53.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-cognitoidentityprovider-asf/2.53.0/d39e05e8da500945a1e38a5c0e19d86a89be844e/aws-android-sdk-cognitoidentityprovider-asf-2.53.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

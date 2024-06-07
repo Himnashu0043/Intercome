@@ -1,0 +1,1001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="com.google.android.gms.permission.AD_ID"
+        tools:node="remove" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <application
+        android:name=".baseActivity.BaseApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_sq_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_sq_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Intercom"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:targetApi="31">
+        <activity
+            android:name=".manager.bills.ViewReceiptManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.rent.AddOwnerRentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".owner.activity.rent.FlatRentOwnerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".owner.activity.rent.OwnerRentListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.rent.AddRentManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.rent.RentManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.rent.RentFlatManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".owner.activity.favorate.OwnerTenantFavorateActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.aboutapp.AboutUsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.bills.ReceiptManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.bills.ApprovalBillingManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.bills.PaidBillingManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.bills.UnPaidBillingManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.bills.FlatBillManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.newFlow.balancesheet.MonthlyReportPDFManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.newFlow.balancesheet.CashInCashOutManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".owner.activity.ownerbilling.BillingAccountOwnerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.newFlow.balancesheet.BalanceFlatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.newFlow.FlatManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.newFlow.balancesheet.BalanceDueReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.newFlow.DueReportManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTest" />
+        <activity
+            android:name=".manager.newFlow.balancesheet.BalanceEarningReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.newFlow.balancesheet.BalanceExpneseReportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.newFlow.balancesheet.BalanceSheetManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.newFlow.ManagerPaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.newFlow.DetailPaymentManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.newFlow.AddExpensesManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.newFlow.EarningReportManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTest" />
+        <activity
+            android:name=".manager.newFlow.ExpenseReportManagerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTest" />
+        <activity
+            android:name=".manager.newFlow.finance.ManagerFinanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.newFlow.expenses.ManagerExpensesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.managerTenantHistory.ManagerTenantHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.showImgSlider.ShowImgSliderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.chat.OwnerCommunityChatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.visitorAndGatePass.ManagerGatePassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.visitorAndGatePass.ManagerVisitorActivity"
+            android:exported="false"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.visitorAndGatePass.ManagerVisitorGatePassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".CalenderDemoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".owner.activity.properties.OwnerPropertiesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.gatepass.OwnerCreateGatePassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTest" />
+        <activity
+            android:name=".owner.activity.gatepass.OwnerGatePassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.service_charge.ServiceChargeListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.service_charge.ServiceChargeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.managerFlat.ManagerFlatsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".owner.activity.ownerTenantRegular.NewOwnerTenantRegularEntryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.newflow.fav.UserFavActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.newflow.PreviewListingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.newflow.steps.Steps3Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.newflow.steps.Steps2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.newflow.steps.Steps1Activity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.newflow.ThankYouSUbmitingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.newflow.UserFilterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTest" />
+        <activity
+            android:name=".user.newflow.NewSubUserActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.newflow.UserUpgradActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.newflow.LetGetReadyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.paymentGateway.PaymentGatewayActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.newflow.Sell_RentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTest" />
+        <activity
+            android:name=".owner.activity.playVideo.PlayVideoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="android.security.net.config"
+            android:resource="@xml/network_security_config" />
+
+        <activity
+            android:name=".owner.activity.viewPostDetails.ViewPostDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".TestGeasterActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gatekepper.activity.newFlow.myShift.MyShiftGateKeeperActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.chat.OwnerChatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.chat.UserChatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.payment.TenantPayInAdavanceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".gatekepper.activity.newFlow.ownerTenantRegularEntryHistoryDetails.OwnerTenantRegularEntryHistoryDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.ownerVisitor.OwnerVisitorHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.ownerVisitor.OwnerVisitorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.newFlow.ownerTenantSingleEntryHistory.OwnerTenantSingleEntryHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.newFlow.ownerTenantRegularEntryHistory.OwnerTenantRegularEntryHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.newFlow.ownerTenantRegularEntry.OwnerTenantRegularEntryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTest" />
+        <activity
+            android:name=".gatekepper.activity.newFlow.regularEntryHistroyDetails.RegularEntryHistoryDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.newFlow.regularEntryHistory.RegularEntryHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.newFlow.regularEntry.RegularEntryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.newFlow.singleEntryHistory.SingleEntryHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.ownerbilling.OwnerBillingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.newFlow.singleEntry.SingleEntryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.newFlow.home.NewGateKeeperMainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".gatekepper.activity.newFlow.VisitorHistoryTypeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.service_charge.EditServiceChargeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CommonActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.payment.TenantPaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.payment.TenantSecondPaymentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.gatekeeper.ManagerSecondGatePassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.noticBoard.SecondTenantNoticeBoardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.noticBoard.TenantNoticBoardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.ownerProperty.OwnerPropertyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.registerComplain.OwnerAddRegisterComplainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_place_api" />
+
+        <activity
+            android:name=".user.MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.application.intercom.android.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".user.property.PropertyDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".helper.TakeImageWithCrop"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity
+            android:name=".owner.activity.payment_invoice.VerifyingPaymentActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.payment_invoice.PaymentInvoiceActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.myactivity.MyActivityPropertyParkingDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.service_charge.ServiceChargesDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".owner.activity.ownerParkingDetails.OwnerParkingDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.OwnerParking.OwnerParkingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.listOfBilling.TenantListOfBillingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.bills.MyBillingsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.tenantHistory.TenantHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.help.TenantSecondHelpActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.profile.TenantSecondProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".owner.activity.ownerCreateTenant.OwnerCreateTenantActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTest" />
+        <activity
+            android:name=".user.help_and_support.HelpAndSupportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.complaint.RegisterComplaintsActivity"
+            android:exported="false"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.service.ManagerListOfServicesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.service.UserListOfServicesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.parking.CompleteParkingToLetDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".owner.activity.propertyDetails.OwnerSecondPropertyDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.propertyDetails.OwnerPropertyDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.helpSupport.OwnerHelpSupportActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.ownerTenantHistory.OwnerTenantHistoryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.ownerTolet.OwnerToLetActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.ownerPropertyToLetSale.OwnerPropertyToletSaleActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.gatePass.SecondGatePassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.visitorPass.AddVisitorPassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.chat.TenantSecondChatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.notification.TenantNotificationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.registerComplain.TenantAddRegisterComplainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.main.ManagerMainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.registerComplain.TenantRegisterComplainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.gatekeeper.CreateGateKepeerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTest" />
+        <activity
+            android:name=".manager.gatekeeper.GateKeeperListingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.notice.CreateNoticeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTest" />
+        <activity
+            android:name=".manager.notice.NoticeBoardActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.gatekeeper.ManagerGateKeeperActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.gatekeeper.ManagerCreateGatePassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.gatekeeper.ManagerGatePassHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.bills.BillManagementActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.notice.ManagerNoticeBoardDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.bills.ApprovalBillsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.bills.UnpaidBillsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_unpaid_bills"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Intercom.NoActionBar" />
+        <activity
+            android:name=".manager.bills.BillingListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.bills.GenerateInvoiceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.help.TenantHelpandSupportActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".owner.activity.main.OwnerMainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.contact.ContactUsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.bills.AddBillsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/myTest" />
+        <activity
+            android:name=".manager.complaint.RegisterComplainsOwnerTenantDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".manager.property.ManagerPropertyToLetFlatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".manager.parking.ManagerParkingToLetParkingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.contact.ContactIntercomActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.aboutapp.PrivacyPolicyActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.aboutapp.TermsOfServiceActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.community.CommunityActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.subscription.GetIntercomPremiumActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.profile.CompleteProfileActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.subscription.SubscriptionCouponActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.home.HomeActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.forgot_password.CongratulationsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.forgot_password.ResetPasswordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.otp.OtpVerificationActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.login.LoginTypeActivity"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.login.LoginUsingPasswordActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.login.LoginTypeUsingPasswordActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.forgot_password.ForgotPasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="intercomapp.page.link"
+                    android:pathPrefix="/"
+                    android:scheme="http" />
+                <data
+                    android:host="intercomapp.page.link"
+                    android:pathPrefix="/"
+                    android:scheme="https" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user.login.LoginUsingOtpActivity"
+            android:exported="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tenant.activity.visitor.TenantVisitorActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.writePost.TenantWritePostActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".tenant.activity.post.TenantPostActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.MyCommunity.TenantMyCommunityActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.gateKepper.TenantGateKepperActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.gatePass.GatePassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.gatepassHistory.GatePassHistoryActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.createGatePass.CreateGatePassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <!--
+         <activity
+                    android:name=".gatekepper.VisitorDetails.VisitorDetailsActivity"
+                    android:exported="false"
+                    android:theme="@style/mysoft" />
+                <activity
+                    android:name=".gatekepper.guest.GuestActivity"
+                    android:exported="false"
+                    android:theme="@style/mysoft" />
+        -->
+        <activity
+            android:name=".tenant.activity.billing.TenantBillingsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.noticBoard.TenantNoticeBoardDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.changePassword.TenantChangePasswordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.chat.TenantChatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.setting.TenantSettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.chat.ChatDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".tenant.activity.profile.EditProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tenant.activity.profile.ProfileActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".tenant.activity.main.TenantMainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".tenant.activity.listofservices.ListOfServicesActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.activity.visitorPass.VisitorPassActivity"
+            android:exported="false"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.AddVisitor.AddVisitorActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".gatekepper.Main.MainGateKepperActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+        <activity
+            android:name=".user.property.UserCompletePropertyDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/mysoft" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/app_logo" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service
+            android:name=".fireBaseNotification.MyFireBaseMessagingServices"
+            android:directBootAware="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".fireBaseNotification.RingtoneService"
+            android:directBootAware="true"
+            android:exported="false" />
+        <receiver
+            android:name=".utils.BootReceiver"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

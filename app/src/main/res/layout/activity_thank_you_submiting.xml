@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.newflow.ThankYouSUbmitingActivity">
+
+    <ImageView
+        android:id="@+id/imageView129"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_100"
+        android:src="@drawable/thanku_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView226"
+        style="@style/normaltxt_14sp_extra_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/thank_you_for_submitting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView129" />
+
+    <TextView
+        android:id="@+id/textView227"
+        style="@style/normaltxt_14sp_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:lineHeight="22dp"
+        android:text="@string/your_property_is_under_review_we_will_n_notify_you_when_your_listing_was_active"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView226" />
+
+    <include
+        android:id="@+id/common_btn"
+        layout="@layout/common_btn"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView227"
+        app:layout_constraintStart_toStartOf="@+id/textView227"
+        app:layout_constraintTop_toBottomOf="@+id/textView227" />
+</androidx.constraintlayout.widget.ConstraintLayout>

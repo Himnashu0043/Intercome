@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_left_right_cnr_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView100"
+            style="@style/normaltxt_20sp_extraBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/filter_by"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvClose"
+            style="@style/normaltxt_16sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:padding="4dp"
+            android:text="@string/close"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="@+id/textView100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView100" />
+
+        <TextView
+            android:id="@+id/textView1001"
+            style="@style/normaltxt_16sp_extrabold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/type"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView100" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            style="@style/normaltxt_14sp_extra_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:buttonTint="@color/orange"
+            android:text="@string/bill_service"
+            app:layout_constraintStart_toStartOf="@+id/textView1001"
+            app:layout_constraintTop_toBottomOf="@+id/textView1001" />
+
+        <CheckBox
+            android:id="@+id/checkBox31"
+            style="@style/normaltxt_14sp_extra_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:buttonTint="@color/orange"
+            android:text="@string/service_charge"
+            app:layout_constraintEnd_toEndOf="@+id/tvClose"
+            app:layout_constraintTop_toBottomOf="@+id/textView1001" />
+
+        <TextView
+            android:id="@+id/textView250"
+            style="@style/normaltxt_16sp_extrabold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/select_months"
+            app:layout_constraintStart_toStartOf="@+id/checkBox3"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+        <Spinner
+            android:id="@+id/flatSpiner"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cus_sp"
+            android:gravity="fill_vertical"
+            android:minWidth="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox31"
+            app:layout_constraintStart_toStartOf="@+id/textView250"
+            app:layout_constraintTop_toBottomOf="@+id/textView250" />
+
+        <include
+            android:id="@+id/common_btn"
+            layout="@layout/common_btn"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/flatSpiner"
+            app:layout_constraintStart_toStartOf="@+id/flatSpiner"
+            app:layout_constraintTop_toBottomOf="@+id/flatSpiner" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

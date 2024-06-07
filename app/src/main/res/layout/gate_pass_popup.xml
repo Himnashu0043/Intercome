@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView91"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile_img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay" />
+
+            <TextView
+                android:id="@+id/textView166"
+                style="@style/normaltxt_16sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView91"
+                app:layout_constraintTop_toBottomOf="@+id/imageView91" />
+
+            <ImageView
+                android:id="@+id/ivCrossGatePassGateKeeper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView91"
+                app:srcCompat="@drawable/baseline_clear_24" />
+
+            <TextView
+                android:id="@+id/textView167"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/textView166"
+                app:layout_constraintStart_toStartOf="@+id/textView166"
+                app:layout_constraintTop_toBottomOf="@+id/textView166" />
+
+            <TextView
+                android:id="@+id/textView168"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@+id/textView167"
+                app:layout_constraintStart_toStartOf="@+id/textView167"
+                app:layout_constraintTop_toBottomOf="@+id/textView167" />
+
+            <TextView
+                android:id="@+id/textView169"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/phone_number"
+                app:layout_constraintStart_toStartOf="@+id/textView167"
+                app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+            <TextView
+                android:id="@+id/textView170"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/imageView97"
+                app:layout_constraintStart_toStartOf="@+id/textView169"
+                app:layout_constraintTop_toBottomOf="@+id/textView169" />
+
+            <TextView
+                android:id="@+id/textView1711"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/owner_contact_tenant"
+                app:layout_constraintStart_toStartOf="@+id/textView170"
+                app:layout_constraintTop_toBottomOf="@+id/divider8" />
+
+            <TextView
+                android:id="@+id/textView1722"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toStartOf="@+id/imageView98"
+                app:layout_constraintStart_toStartOf="@+id/textView1711"
+                app:layout_constraintTop_toBottomOf="@+id/textView1711" />
+
+            <TextView
+                android:id="@+id/textView171"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/date_1"
+                app:layout_constraintStart_toStartOf="@+id/textView170"
+                app:layout_constraintTop_toBottomOf="@+id/divider15" />
+
+            <TextView
+                android:id="@+id/textView172"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@+id/textView171"
+                app:layout_constraintTop_toBottomOf="@+id/textView171" />
+
+            <TextView
+                android:id="@+id/textView173"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="In Date:"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/textView172"
+                app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+            <TextView
+                android:id="@+id/textView174"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/04/2023"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/textView173"
+                app:layout_constraintTop_toBottomOf="@+id/textView173" />
+
+            <TextView
+                android:id="@+id/textView1731"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out Date:"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/ivCrossGatePassGateKeeper"
+                app:layout_constraintTop_toTopOf="@+id/textView173" />
+
+            <TextView
+                android:id="@+id/tvOutDate"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/04/2023"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/textView1731"
+                app:layout_constraintTop_toTopOf="@+id/textView174" />
+
+
+            <TextView
+                android:id="@+id/textView1739"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/in_time"
+                app:layout_constraintStart_toStartOf="@+id/textView173"
+                app:layout_constraintTop_toBottomOf="@+id/divider10" />
+
+            <TextView
+                android:id="@+id/tvInTime"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05:30 Am"
+                app:layout_constraintStart_toStartOf="@+id/textView1739"
+                app:layout_constraintTop_toBottomOf="@+id/textView1739" />
+
+            <TextView
+                android:id="@+id/textView17399"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Out Time:"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvOutDate"
+                app:layout_constraintTop_toTopOf="@+id/textView1739" />
+
+            <TextView
+                android:id="@+id/tvoutTime"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="06:00 Pm"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/textView17399"
+                app:layout_constraintTop_toTopOf="@+id/tvInTime" />
+
+
+            <TextView
+                android:id="@+id/textView173991"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/note_1"
+                app:layout_constraintStart_toStartOf="@+id/textView1739"
+                app:layout_constraintTop_toBottomOf="@+id/divider13" />
+
+            <TextView
+                android:id="@+id/tvNote"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/divider13"
+                app:layout_constraintStart_toStartOf="@+id/textView173991"
+                app:layout_constraintTop_toBottomOf="@+id/textView173991" />
+
+            <TextView
+                android:id="@+id/textView1739911"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/nid_document"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/textView1739"
+                app:layout_constraintTop_toBottomOf="@+id/tvNote" />
+
+            <TextView
+                android:id="@+id/tvgatepssnotify"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/common_btn_bg"
+                android:gravity="center"
+                android:text="@string/notify"
+                android:textColor="@color/white"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/rcyPhoto" />
+
+
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/ivCrossGatePassGateKeeper"
+                app:layout_constraintStart_toStartOf="@+id/textView167"
+                app:layout_constraintTop_toBottomOf="@+id/textView168" />
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/divider7"
+                app:layout_constraintStart_toStartOf="@+id/textView170"
+                app:layout_constraintTop_toBottomOf="@+id/textView170" />
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView171"
+                app:layout_constraintTop_toBottomOf="@+id/textView172" />
+
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvOutDate"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/textView174" />
+
+            <View
+                android:id="@+id/divider13"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/tvoutTime"
+                app:layout_constraintStart_toStartOf="@+id/tvInTime"
+                app:layout_constraintTop_toBottomOf="@+id/tvInTime" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyPhoto"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvgatepssnotify"
+                app:layout_constraintEnd_toEndOf="@+id/tvNote"
+                app:layout_constraintStart_toStartOf="@+id/textView1739911"
+                app:layout_constraintTop_toBottomOf="@+id/textView1739911" />
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView94"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                app:layout_constraintStart_toStartOf="@+id/textView1739911"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textView1739911"-->
+<!--                app:srcCompat="@drawable/iv_gatekeeper_profile" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imageView96"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/imageView94"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/imageView94"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/imageView94"-->
+<!--                app:srcCompat="@drawable/iv_gatekeeper_profile" />-->
+
+            <View
+                android:id="@+id/divider15"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/divider8"
+                app:layout_constraintStart_toStartOf="@+id/textView1722"
+                app:layout_constraintTop_toBottomOf="@+id/textView1722" />
+
+            <ImageView
+                android:id="@+id/imageView97"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView170"
+                app:layout_constraintEnd_toEndOf="@+id/divider7"
+                app:layout_constraintTop_toTopOf="@+id/textView169"
+                app:srcCompat="@drawable/green_bg_call_icon" />
+
+            <ImageView
+                android:id="@+id/imageView98"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView1722"
+                app:layout_constraintEnd_toEndOf="@+id/imageView97"
+                app:layout_constraintTop_toTopOf="@+id/textView1711"
+                app:srcCompat="@drawable/green_bg_call_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

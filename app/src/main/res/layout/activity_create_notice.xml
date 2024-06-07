@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.notice.CreateNoticeActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_notice_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/semi_bold"
+                android:text="@string/enter_notice_name"
+                android:textColor="#20222C"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_notice_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/bg_edit_text"
+        android:ems="10"
+        android:hint="@string/enter_notice_name"
+        android:inputType="textPersonName"
+        android:minHeight="@dimen/_40sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_notice_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_notice_name" />
+
+    <TextView
+        android:id="@+id/tv_select_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:fontFamily="@font/semi_bold"
+        android:text="@string/select_user"
+        android:textColor="#20222C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_notice_name" />
+
+    <RadioGroup
+        android:id="@+id/groupradio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/edt_notice_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_select_user"
+        app:layout_constraintTop_toBottomOf="@+id/tv_select_user">
+
+        <RadioButton
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/orange"
+            android:fontFamily="@font/medium"
+            android:text="@string/all"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_12ssp" />
+
+        <RadioButton
+            android:id="@+id/tenant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:buttonTint="@color/orange"
+            android:fontFamily="@font/medium"
+            android:text="@string/tenant"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_12ssp" />
+
+        <RadioButton
+            android:id="@+id/owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:buttonTint="@color/orange"
+            android:fontFamily="@font/medium"
+            android:text="@string/owner"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_12ssp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_write_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/semi_bold"
+        android:text="@string/write_description"
+        android:textColor="#20222C"
+        app:layout_constraintStart_toStartOf="@+id/groupradio"
+        app:layout_constraintTop_toBottomOf="@+id/groupradio" />
+
+    <EditText
+        android:id="@+id/edt_desc"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:background="@drawable/bg_edit_text"
+        android:gravity="start"
+        android:hint="@string/write_description"
+        android:inputType="textMultiLine"
+        android:minHeight="@dimen/_40sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_write_description"
+        app:layout_constraintTop_toBottomOf="@+id/tv_write_description" />
+
+    <TextView
+        android:id="@+id/tv_upload_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:fontFamily="@font/semi_bold"
+        android:text="@string/upload_photos"
+        android:textColor="#20222C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_desc" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_upload_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_bills"
+                android:backgroundTint="#E1F1FA"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingTop="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="@+id/edt_desc"
+                app:layout_constraintStart_toStartOf="@+id/tv_upload_photo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_upload_photo">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/iv_upload_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                    app:srcCompat="@drawable/ic_upload_photo" />
+
+                <TextView
+                    android:id="@+id/upload_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/semi_bold"
+                    android:text="@string/upload_photos"
+                    android:textColor="#20222C"
+                    app:layout_constraintEnd_toEndOf="@+id/iv_upload_photo"
+                    app:layout_constraintStart_toStartOf="@+id/iv_upload_photo"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_upload_photo" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_4sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layout_upload_photo" />
+            <ProgressBar
+                android:id="@+id/pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/btn_post_now"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:background="@drawable/common_btn_bg"
+                android:gravity="center"
+                android:text="@string/post_now"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btn_post_later"
+                app:layout_constraintStart_toStartOf="@+id/tv_upload_photo"
+                app:layout_constraintTop_toBottomOf="@+id/rcyPhoto" />
+
+            <TextView
+                android:id="@+id/btn_post_later"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/common_btn_bg"
+                android:gravity="center"
+                android:text="@string/post_later"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_post_now"
+                app:layout_constraintEnd_toEndOf="@+id/edt_desc"
+                app:layout_constraintStart_toEndOf="@+id/btn_post_now"
+                app:layout_constraintTop_toTopOf="@+id/btn_post_now" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

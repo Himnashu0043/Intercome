@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="slider">
+        <item>0</item>
+        <item>1000000000</item>
+    </array>
+    <array name="slider1">
+        <item>0</item>
+        <item>100000</item>
+    </array>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FFFFFFFF</color>
+    <color name="dark_c">#FFFFFFFF</color>
+    <color name="new_dark_sileti">#FFFFFFFF</color>
+    <color name="dark_grey">#FFFFFFFF</color>
+    <color name="dark_grey1">#000000</color>
+    <color name="lightBlack">#FFFFFFFF</color>
+    <color name="newBlack">#FFFFFFFF</color>
+    <color name="lightBlue">#FFFFFFFF</color>
+    <color name="white">#FF000000</color>
+    <color name="white1">#2E2E2E</color>
+    <color name="light_grey">#000000</color>
+    <color name="light_grey1">#2E2E2E</color>
+    <!--<color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FD701E</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FF000000</color>
+    <color name="white1">#2E2E2E</color>
+    <color name="orange">#FD701E</color>
+    <color name="dark_c">#FFFFFFFF</color>
+    <color name="new_dark_sileti">#FFFFFFFF</color>
+    <color name="light_grey">#F2F1F5</color>
+    <color name="dark_grey">#FFFFFFFF</color>
+    <color name="lightBlack">#FFFFFFFF</color>
+    <color name="newBlack">#FFFFFFFF</color>
+    <color name="lightBlue">#FFFFFFFF</color>
+    <color name="blue">#4975FF</color>
+    <color name="green">#00FF19</color>
+    <color name="new_green">#4FBF67</color>
+    <color name="l_green">#4DB81A</color>
+    <color name="darknavyblue2">#2795D3</color>
+    <color name="red">#FF0000</color>-->
+</resources>

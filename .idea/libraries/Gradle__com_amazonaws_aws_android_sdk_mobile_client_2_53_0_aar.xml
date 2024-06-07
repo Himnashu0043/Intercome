@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-android-sdk-mobile-client:2.53.0@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/c64b1891a4a757a3aab9ecfc2f59e0cc/transformed/jetified-aws-android-sdk-mobile-client-2.53.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c64b1891a4a757a3aab9ecfc2f59e0cc/transformed/jetified-aws-android-sdk-mobile-client-2.53.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c64b1891a4a757a3aab9ecfc2f59e0cc/transformed/jetified-aws-android-sdk-mobile-client-2.53.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-mobile-client/2.53.0/e6abd20e7546c0f903a039d54eb24914d6116024/aws-android-sdk-mobile-client-2.53.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-mobile-client/2.53.0/954c4c486c052d96a245df7a893d2f8f93f2a86d/aws-android-sdk-mobile-client-2.53.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

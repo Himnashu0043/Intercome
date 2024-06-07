@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: D" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/7038a8a8c0aa721444ead899a7e5b5ad/transformed/jetified-sslCommerzSdk/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7038a8a8c0aa721444ead899a7e5b5ad/transformed/jetified-sslCommerzSdk/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/7038a8a8c0aa721444ead899a7e5b5ad/transformed/jetified-sslCommerzSdk/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

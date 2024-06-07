@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:layout_marginStart="2dp"
+    android:layout_marginEnd="8dp"
+    android:background="#FFFFFF"
+    app:cardCornerRadius="@dimen/_12sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_8sdp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_property"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/testservice_10_imge_shapeable_overloay"
+            app:srcCompat="@drawable/properties_parking" />
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginStart="@dimen/_8sdp"-->
+        <!--            android:layout_marginTop="@dimen/_16sdp"-->
+        <!--            android:background="@drawable/bg_login_type_btn"-->
+        <!--            android:backgroundTint="@color/white"-->
+        <!--            android:minWidth="@dimen/_60sdp"-->
+        <!--            android:paddingBottom="@dimen/_2sdp"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/iv_property_tag"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="@dimen/_4sdp"-->
+        <!--                android:layout_marginTop="@dimen/_2sdp"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent"-->
+        <!--                app:srcCompat="@drawable/ic_tag" />-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/tv_property_type"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_marginStart="@dimen/_4sdp"-->
+        <!--                android:fontFamily="@font/bold"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="To-Let"-->
+        <!--                android:textColor="#FD701E"-->
+        <!--                android:textSize="@dimen/_10ssp"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintStart_toEndOf="@+id/iv_property_tag"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+        <TextView
+            android:id="@+id/tv_property_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/extra_bold"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_property" />
+
+
+        <TextView
+            android:id="@+id/tv_basement_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/semi_bold"
+            android:gravity="left"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/tv_property_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_property_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_property_name" />
+        <ImageView
+            android:id="@+id/iv_location"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@+id/tv_basement_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_basement_name"
+            app:srcCompat="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/semi_bold"
+            android:gravity="center"
+            android:text="Sector 50, Noida"
+            android:textColor="#858585"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_location"
+            app:layout_constraintEnd_toStartOf="@+id/tv_property_price"
+            app:layout_constraintStart_toEndOf="@+id/iv_location"
+            app:layout_constraintTop_toTopOf="@+id/iv_location" />
+
+        <TextView
+            android:id="@+id/tv_property_price"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/extra_bold"
+            android:textColor="#FD701E"
+            android:textSize="@dimen/_10ssp"
+            android:gravity="right"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_location"
+            app:layout_constraintEnd_toEndOf="@+id/tv_basement_name"
+            app:layout_constraintStart_toEndOf="@+id/tv_location"
+            app:layout_constraintTop_toTopOf="@+id/tv_location" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_property"
+            app:layout_constraintTop_toTopOf="@+id/iv_property">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/favImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/unfav" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+

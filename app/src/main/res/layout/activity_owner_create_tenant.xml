@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".owner.activity.ownerCreateTenant.OwnerCreateTenantActivity">
+
+    <include
+        android:id="@+id/ownerCreateToolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ownerCreateToolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:cardCornerRadius="@dimen/_12sdp"
+                app:cardElevation="@dimen/_4sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imageView63"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:scaleType="fitXY"
+                        app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/community_icon" />
+
+                    <TextView
+                        android:id="@+id/textView116"
+                        style="@style/normaltxt_14sp_extra_bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView63"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView117"
+                        style="@style/normaltxt_12sp_Regular"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="@+id/textView116"
+                        app:layout_constraintStart_toStartOf="@+id/textView116"
+                        app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView73"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                app:layout_constraintEnd_toEndOf="@+id/cardView12"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/cardView12"
+                android:background="@drawable/upload_img" />
+
+            <ProgressBar
+                android:id="@+id/pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/ed_TNID"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardView12" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/select_date_of_occupancy"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView73" />
+
+            <EditText
+                android:id="@+id/ed_selectDate"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/common_bg"
+                android:drawableEnd="@drawable/calendar_iocn"
+                android:focusable="false"
+                android:fontFamily="@font/medium"
+                android:gravity="center_vertical"
+                android:hint="@string/select_date_of_occupancy"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/cardView12"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView51"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/tenant_full_name"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/ed_selectDate" />
+
+            <EditText
+                android:id="@+id/ed_TFull_Name"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/common_bg"
+                android:fontFamily="@font/medium"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_tenant_full_name"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/ed_selectDate"
+                app:layout_constraintStart_toStartOf="@+id/ed_selectDate"
+                app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+            <TextView
+                android:id="@+id/textView511"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/tenant_e_mail_address"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/ed_TFull_Name" />
+
+            <EditText
+                android:id="@+id/ed_TEmail"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/common_bg"
+                android:fontFamily="@font/medium"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_tenant_e_mail_address"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/ed_TFull_Name"
+                app:layout_constraintStart_toStartOf="@+id/ed_TFull_Name"
+                app:layout_constraintTop_toBottomOf="@+id/textView511" />
+
+            <TextView
+                android:id="@+id/textView5111"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/tenant_mobile_number"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/ed_TEmail" />
+
+            <EditText
+                android:id="@+id/ed_TPhone"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/common_bg"
+                android:fontFamily="@font/medium"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_tenant_mobile_number"
+                android:inputType="number"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/ed_TEmail"
+                app:layout_constraintStart_toStartOf="@+id/ed_TEmail"
+                app:layout_constraintTop_toBottomOf="@+id/textView5111" />
+            <TextView
+                android:id="@+id/textView5223"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Tenant Password"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/ed_TPhone" />
+            <EditText
+                android:id="@+id/edPassword"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/common_bg"
+                android:fontFamily="@font/medium"
+                android:gravity="center_vertical"
+                android:hint="Enter Password"
+                android:inputType="text"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/ed_TEmail"
+                app:layout_constraintStart_toStartOf="@+id/ed_TEmail"
+                app:layout_constraintTop_toBottomOf="@+id/textView5223" />
+            <TextView
+                android:id="@+id/textView51111"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/tenant_s_nid_number"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/edPassword" />
+
+            <EditText
+                android:id="@+id/ed_TNID"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/common_bg"
+                android:fontFamily="@font/medium"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_tenant_s_nid_number"
+                android:inputType="number"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/ed_TEmail"
+                app:layout_constraintStart_toStartOf="@+id/ed_TEmail"
+                app:layout_constraintTop_toBottomOf="@+id/textView51111" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView74"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="fitXY"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                app:layout_constraintEnd_toStartOf="@+id/imageView75"
+                app:layout_constraintStart_toStartOf="@+id/ed_TNID"
+                app:layout_constraintTop_toBottomOf="@+id/ed_TNID"
+                android:background="@drawable/front_side_img" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView75"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView74"
+                app:layout_constraintEnd_toEndOf="@+id/ed_TNID"
+                app:layout_constraintStart_toEndOf="@+id/imageView74"
+                app:layout_constraintTop_toTopOf="@+id/imageView74"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                android:background="@drawable/back_side_img" />
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/reference_nid_number"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView74" />
+
+            <EditText
+                android:id="@+id/ed_TReffNID"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/common_bg"
+                android:fontFamily="@font/medium"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_reference_nid_number"
+                android:inputType="number"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/ed_TEmail"
+                app:layout_constraintStart_toStartOf="@+id/ed_TEmail"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView76"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="@dimen/_90sdp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:scaleType="fitXY"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                app:layout_constraintEnd_toStartOf="@+id/imageView77"
+                app:layout_constraintStart_toStartOf="@+id/ed_TReffNID"
+                app:layout_constraintTop_toBottomOf="@+id/ed_TReffNID"
+                android:background="@drawable/front_side_img" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView77"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView76"
+                app:layout_constraintEnd_toEndOf="@+id/ed_TReffNID"
+                app:layout_constraintStart_toEndOf="@+id/imageView76"
+                app:layout_constraintTop_toTopOf="@+id/imageView76"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                android:background="@drawable/back_side_img" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/billing_date"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView76" />
+
+            <EditText
+                android:id="@+id/ed_TBilling"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/common_bg"
+                android:drawableEnd="@drawable/calendar_iocn"
+                android:focusable="false"
+                android:fontFamily="@font/medium"
+                android:gravity="center_vertical"
+                android:hint="@string/select_billing_date"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/cardView12"
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/textView31"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/monthly_room_rent"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/ed_TBilling" />
+
+            <EditText
+                android:id="@+id/ed_TMonthly"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/common_bg"
+                android:fontFamily="@font/medium"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_monthly_room_rent"
+                android:inputType="number"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/ed_TEmail"
+                app:layout_constraintStart_toStartOf="@+id/ed_TEmail"
+                app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+            <TextView
+                android:id="@+id/textView311"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/allot_parking"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/ed_TMonthly" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/ed_TReffNID"
+                app:layout_constraintStart_toStartOf="@+id/textView311"
+                app:layout_constraintTop_toBottomOf="@+id/textView311">
+
+                <RadioButton
+                    android:id="@+id/radio_email"
+                    style="@style/normaltxt_16sp_Semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:lineHeight="@dimen/dp_24"
+                    android:text="@string/no"
+                    app:buttonTint="@color/checkbox_selector" />
+
+                <RadioButton
+                    android:id="@+id/radio_mobile"
+                    style="@style/normaltxt_16sp_Semibold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_120sdp"
+                    android:lineHeight="@dimen/dp_24"
+                    android:text="@string/yes"
+                    android:textColor="@color/black"
+                    app:buttonTint="@color/checkbox_selector" />
+            </RadioGroup>
+            <!--<RadioButton
+                android:id="@+id/radio_email"
+                style="@style/normaltxt_16sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:layout_marginTop="8dp"
+                android:lineHeight="@dimen/dp_24"
+                android:text="No"
+                android:visibility="gone"
+                app:buttonTint="@color/checkbox_selector"
+                app:layout_constraintStart_toStartOf="@+id/textView311"
+                app:layout_constraintTop_toBottomOf="@+id/textView311" />-->
+
+
+            <TextView
+                android:id="@+id/textView52"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/monthly_rent_parking"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+            <EditText
+                android:id="@+id/ed_TParking"
+                style="@style/normaltxt_14sp_Medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_46"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/common_bg"
+                android:fontFamily="@font/medium"
+                android:gravity="center_vertical"
+                android:hint="@string/enter_monthly_rent_parking"
+                android:inputType="number"
+                android:paddingStart="@dimen/dp_16"
+                android:paddingEnd="@dimen/dp_16"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/ed_TEmail"
+                app:layout_constraintStart_toStartOf="@+id/ed_TEmail"
+                app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+            <TextView
+                android:id="@+id/textView521"
+                style="@style/normaltxt_14sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/upload_rent_agreement"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/ed_TParking" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView78"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView521"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                android:background="@drawable/upload_rent_img" />
+
+            <TextView
+                android:id="@+id/textView141"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                android:textColor="@color/dark_grey"
+                app:layout_constraintBottom_toTopOf="@+id/include2"
+                app:layout_constraintEnd_toEndOf="@+id/ed_TParking"
+                app:layout_constraintStart_toStartOf="@+id/ed_TParking"
+                app:layout_constraintTop_toBottomOf="@+id/imageView78" />
+
+            <include
+                android:id="@+id/include2"
+                layout="@layout/common_btn"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

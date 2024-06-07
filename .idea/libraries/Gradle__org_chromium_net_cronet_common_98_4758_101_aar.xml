@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: org.chromium.net:cronet-common:98.4758.101@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/0589cd41b8f552a66992b74c3dd9b2c1/transformed/jetified-cronet-common-98.4758.101/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/0589cd41b8f552a66992b74c3dd9b2c1/transformed/jetified-cronet-common-98.4758.101/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.chromium.net/cronet-common/98.4758.101/5398647202efe4752c9294c8669dc70927cd92d7/cronet-common-98.4758.101-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

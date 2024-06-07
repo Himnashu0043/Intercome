@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="4dp"
+    app:cardCornerRadius="@dimen/_12sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_12sdp">
+
+        <TextView
+            android:id="@+id/tv_flat_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/regular"
+            android:textColor="#000000"
+            android:textSize="@dimen/_10ssp"
+
+            app:layout_constraintStart_toStartOf="@+id/tv_complain_id"
+            app:layout_constraintTop_toBottomOf="@+id/tv_complain_id"/>
+
+        <TextView
+            android:id="@+id/tv_complain_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/regular"
+            android:textColor="#000000"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_service_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/regular"
+            android:textColor="#000000"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@+id/tv_flat_number"
+            app:layout_constraintTop_toBottomOf="@+id/tv_flat_number" />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:fontFamily="@font/regular"
+            android:textColor="#000000"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvPending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/semi_bold"
+            android:gravity="center"
+            android:minWidth="@dimen/_60sdp"
+            android:minHeight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:text="Pending"
+            android:textColor="@color/red"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_service_category"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tvResolve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_status_btn"
+            android:fontFamily="@font/semi_bold"
+            android:gravity="center"
+            android:minWidth="@dimen/_60sdp"
+            android:minHeight="@dimen/_20sdp"
+            android:text="Resolve"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPending" />
+        <TextView
+            android:id="@+id/tv_confirmation_pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:minWidth="@dimen/_130sdp"
+            android:minHeight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:fontFamily="@font/semi_bold"
+            android:text="Confirmation Pending"
+            android:background="@drawable/bg_contact_us_btn"
+            android:backgroundTint="#FFE4E2"
+            android:textColor="#FF0F00"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_service_category"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_resolved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:minWidth="@dimen/_65sdp"
+            android:minHeight="@dimen/_20sdp"
+            android:paddingBottom="@dimen/_3sdp"
+            android:gravity="center"
+            android:fontFamily="@font/semi_bold"
+            android:text="Resolved"
+            android:visibility="gone"
+            android:background="@drawable/bg_contact_us_btn"
+            android:backgroundTint="#EBFFE1"
+            android:textColor="#4DB81A"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_service_category"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

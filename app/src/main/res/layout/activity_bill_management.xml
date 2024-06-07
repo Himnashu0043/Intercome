@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.bills.BillManagementActivity">
+
+    <TextView
+        android:id="@+id/tv_bill_management"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/bold"
+        android:text="Bill Management"
+        android:textColor="#20222C"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_add_billing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:background="@drawable/bg_bills"
+        app:layout_constraintEnd_toStartOf="@+id/layout_billing_list"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bill_management">
+
+        <ImageView
+            android:id="@+id/iv_add_billing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:scaleType="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_add_billing" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_billing_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:background="@drawable/bg_bills"
+        android:backgroundTint="#E5F3FB"
+        app:layout_constraintEnd_toStartOf="@+id/layout_overdue_unpaid_bills"
+        app:layout_constraintStart_toEndOf="@+id/layout_add_billing"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bill_management">
+
+        <ImageView
+            android:id="@+id/iv_billing_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/billing_list" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_overdue_unpaid_bills"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bg_bills"
+        android:backgroundTint="#F4EAFB"
+        app:layout_constraintEnd_toStartOf="@+id/layout_pending_for_approval"
+        app:layout_constraintStart_toEndOf="@+id/layout_billing_list"
+        app:layout_constraintTop_toBottomOf="@id/tv_bill_management">
+
+        <ImageView
+            android:id="@+id/iv_overdue_unpaid_bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_overdue_unpaid_bills" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_pending_for_approval"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bg_bills"
+        android:backgroundTint="#FFE5EA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/layout_overdue_unpaid_bills"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bill_management">
+
+        <ImageView
+            android:id="@+id/iv_pending_for_approval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_pending_for_approval" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_add_billing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Add Billing"
+        android:textColor="#20222C"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_add_billing"
+        app:layout_constraintStart_toStartOf="@+id/layout_add_billing"
+        app:layout_constraintTop_toBottomOf="@+id/layout_add_billing" />
+
+    <TextView
+        android:id="@+id/tv_billing_list"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Billing List"
+        android:textColor="#20222C"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_billing_list"
+        app:layout_constraintStart_toStartOf="@+id/layout_billing_list"
+        app:layout_constraintTop_toBottomOf="@+id/layout_billing_list" />
+
+    <TextView
+        android:id="@+id/tv_overdue_unpaid_bills"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Overdue/Unpaid Bills"
+        android:textColor="#20222C"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_overdue_unpaid_bills"
+        app:layout_constraintStart_toStartOf="@+id/layout_overdue_unpaid_bills"
+        app:layout_constraintTop_toBottomOf="@+id/layout_overdue_unpaid_bills" />
+
+    <TextView
+        android:id="@+id/tv_pending_for_approval"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:text="Pending for
+approval"
+        android:textColor="#20222C"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/layout_pending_for_approval"
+        app:layout_constraintStart_toStartOf="@+id/layout_pending_for_approval"
+        app:layout_constraintTop_toBottomOf="@+id/layout_pending_for_approval" />
+
+        <TextView
+            android:id="@+id/tv_billing_categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bold"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:text="Billing Categories"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="@+id/layout_add_billing"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add_billing" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_manage_bills"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_billing_categories"
+            tools:itemCount="20"
+            tools:listitem="@layout/item_bills_management" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="lightblack">#2E2E2E</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="white1">#FFFFFFFF</color>
+    <color name="orange">#FD701E</color>
+    <color name="dark_c">#9DB2CE</color>
+    <color name="light_sky_blue">#E5F3FB</color>
+    <color name="grey">#CCCCCC</color>
+    <color name="light_grey">#F2F1F5</color>
+    <color name="light_grey1">#F2F1F5</color>
+    <color name="new_light_sileti">#96A0B5</color>
+    <color name="new_dark_sileti">#6E7191</color>
+    <color name="dark_grey">#858585</color>
+    <color name="dark_grey1">#858585</color>
+    <color name="lightBlack">#27272A</color>
+    <color name="newBlack">#20222C</color>
+    <color name="lightBlue">#A0A3BD</color>
+    <color name="blue">#4975FF</color>
+    <color name="green">#00FF19</color>
+    <color name="l_green">#4DB81A</color>
+    <color name="new_green">#4FBF67</color>
+    <color name="darknavyblue2">#2795D3</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFB000</color>
+    <color name="filterScrnColor">#F44336</color>
+    <color name="filter_track_inactive_color">#25F44336</color>
+    <color name="example_7_yellow">#FFEB3B</color>
+    <color name="example_1_selection_color">#FCCA3E</color>
+    <color name="example_1_white_light">#4DFFFFFF</color>
+</resources>

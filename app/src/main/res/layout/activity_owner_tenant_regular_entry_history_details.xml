@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gatekepper.activity.newFlow.ownerTenantRegularEntryHistoryDetails.OwnerTenantRegularEntryHistoryDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView91"
+                android:layout_width="80dp"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile_img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay" />
+
+            <TextView
+                android:id="@+id/textView166"
+                style="@style/normaltxt_16sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView92"
+                app:layout_constraintStart_toEndOf="@+id/imageView91"
+                app:layout_constraintTop_toTopOf="@+id/imageView91" />
+
+            <ImageView
+                android:id="@+id/imageView92"
+                android:layout_width="@dimen/dp_80"
+                android:layout_height="@dimen/dp_80"
+                android:layout_marginEnd="16dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView91"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView91"
+                app:srcCompat="@drawable/bar_code_icon" />
+
+            <TextView
+                android:id="@+id/textView167"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView166"
+                app:layout_constraintStart_toStartOf="@+id/textView166"
+                app:layout_constraintTop_toBottomOf="@+id/textView166" />
+
+            <TextView
+                android:id="@+id/textView168"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/textView167"
+                app:layout_constraintStart_toStartOf="@+id/textView167"
+                app:layout_constraintTop_toBottomOf="@+id/textView167" />
+
+            <TextView
+                android:id="@+id/textView169"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/phone_number"
+                app:layout_constraintStart_toStartOf="@+id/imageView91"
+                app:layout_constraintTop_toBottomOf="@+id/imageView91" />
+
+            <TextView
+                android:id="@+id/textView170"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+
+                app:layout_constraintEnd_toStartOf="@+id/imageView99"
+                app:layout_constraintStart_toStartOf="@+id/textView169"
+                app:layout_constraintTop_toBottomOf="@+id/textView169" />
+
+            <TextView
+                android:id="@+id/textView16911"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/address"
+                app:layout_constraintStart_toStartOf="@+id/textView169"
+                app:layout_constraintTop_toBottomOf="@+id/divider8" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/divider8"
+                app:layout_constraintStart_toStartOf="@+id/textView169"
+                app:layout_constraintTop_toBottomOf="@+id/textView16911" />
+
+            <TextView
+                android:id="@+id/textView173991"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/note_1"
+                app:layout_constraintStart_toStartOf="@+id/textView169"
+                app:layout_constraintTop_toBottomOf="@+id/divider16" />
+
+            <TextView
+                android:id="@+id/tvNote"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/divider8"
+                app:layout_constraintStart_toStartOf="@+id/textView173991"
+                app:layout_constraintTop_toBottomOf="@+id/textView173991" />
+
+            <TextView
+                android:id="@+id/textView1739911"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/nid_document"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/textView173991"
+                app:layout_constraintTop_toBottomOf="@+id/divider14" />
+
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/grey"
+                app:layout_constraintEnd_toEndOf="@+id/imageView92"
+                app:layout_constraintStart_toStartOf="@+id/textView170"
+                app:layout_constraintTop_toBottomOf="@+id/textView170" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyPhoto"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@+id/tvNote"
+                app:layout_constraintStart_toStartOf="@+id/textView1739911"
+                app:layout_constraintTop_toBottomOf="@+id/textView1739911" />
+
+            <View
+                android:id="@+id/divider14"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="@+id/divider8"
+                app:layout_constraintStart_toStartOf="@+id/tvNote"
+                app:layout_constraintTop_toBottomOf="@+id/tvNote" />
+
+            <TextView
+                android:id="@+id/textView179"
+                style="@style/normaltxt_12sp_Semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/in_out_history"
+                app:layout_constraintBottom_toBottomOf="@+id/tvIn"
+                app:layout_constraintStart_toStartOf="@+id/textView1739911"
+                app:layout_constraintTop_toTopOf="@+id/tvIn" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tvIn"
+                android:layout_width="68dp"
+                android:layout_height="30dp"
+                android:visibility="visible"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/divider14"
+                app:layout_constraintTop_toBottomOf="@+id/rcyPhoto">
+
+                <ImageView
+                    android:id="@+id/ivcalender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/calender_img"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="@+id/divider14"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView94" />
+
+                <ImageView
+                    android:id="@+id/ivDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/details_img"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/divider14"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView94" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tvCalender"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvIn">
+
+                <TextView
+                    android:id="@+id/exOneMonthText"
+                    style="@style/normaltxt_20sp_extraBold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="marquee"
+                    android:singleLine="true"
+                    android:visibility="visible"
+                    android:textColor="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="April" />
+
+                <TextView
+                    android:id="@+id/exOneYearText"
+                    style="@style/normaltxt_24sp_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/exOneMonthText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/exOneMonthText"
+                    tools:text="2019" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:fillViewport="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/legendLayout">
+
+                    <com.kizitonwose.calendar.view.CalendarView
+                        android:id="@+id/exOneCalendar"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:visibility="gone"
+                        app:cv_dayViewResource="@layout/example_1_calendar_day"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/legendLayout" />
+                </androidx.core.widget.NestedScrollView>
+
+
+                <include
+                    android:id="@+id/legendLayout"
+                    layout="@layout/calendar_day_legend_container"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/exOneMonthText"
+                    app:layout_constraintTop_toBottomOf="@+id/exOneMonthText" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyparentHistory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvIn" />
+
+            <View
+                android:id="@+id/divider16"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="@+id/divider8"
+                app:layout_constraintStart_toStartOf="@+id/divider8"
+                app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+            <ImageView
+                android:id="@+id/imageView99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView170"
+                app:layout_constraintEnd_toEndOf="@+id/imageView92"
+                app:layout_constraintTop_toTopOf="@+id/textView169"
+                app:srcCompat="@drawable/green_bg_call_icon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

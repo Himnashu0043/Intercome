@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView103"
+            android:layout_width="wrap_content"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/post_property_free_img"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/user_homeToolbar" />
+
+        <include
+            android:id="@+id/user_homeToolbar"
+            layout="@layout/new_user_toolbar"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_edit_search"
+            android:drawableStart="@drawable/ic_grey_search"
+            android:drawablePadding="@dimen/_8sdp"
+            android:focusable="false"
+            android:hint="@string/search_properties"
+            android:inputType="text"
+            android:minHeight="@dimen/_40sdp"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:textColorHint="@color/dark_grey"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView103"
+            app:layout_constraintEnd_toStartOf="@+id/imageView103"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:focusableInTouchMode="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_search">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/rv_top_home_offer_banner"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="2dp"
+                     android:layout_marginTop="@dimen/_8sdp"
+                     app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toTopOf="parent" />-->
+                <!--<androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/view_pager1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_130"
+                    android:layout_marginBottom="8dp"
+                    android:clipChildren="false"
+                    android:layout_marginTop="8dp"
+                    android:clipToPadding="false"
+                    android:layout_marginHorizontal="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:background="@android:color/transparent"
+                    android:foregroundGravity="bottom"
+                    app:layout_constraintEnd_toEndOf="@+id/view_pager1"
+                    app:layout_constraintStart_toStartOf="@+id/view_pager1"
+                    app:layout_constraintTop_toBottomOf="@+id/view_pager1"
+                    app:tabBackground="@drawable/drawable_vp_tab_indicator_selector"
+                    app:tabGravity="fill"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMaxWidth="0dp"
+                    app:tabPaddingEnd="10dp"
+                    app:tabPaddingStart="10dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_distance"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toStartOf="@+id/layout_bedroom"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tabLayout1">
+
+                    <ImageView
+                        android:id="@+id/iv_property_building"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_property_building" />
+
+                    <TextView
+                        android:id="@+id/tv_property_building"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/semi_bold"
+                        android:text="@string/properties"
+                        android:textColor="#20222C"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_property_building" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_bedroom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    app:layout_constraintEnd_toStartOf="@+id/layout_bathroom"
+                    app:layout_constraintStart_toEndOf="@+id/layout_distance"
+                    app:layout_constraintTop_toTopOf="@+id/layout_distance">
+
+                    <ImageView
+                        android:id="@+id/iv_service"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_services" />
+
+                    <TextView
+                        android:id="@+id/tv_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/semi_bold"
+                        android:text="@string/services"
+                        android:textColor="#20222C"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_service" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_bathroom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/layout_bedroom"
+                    app:layout_constraintTop_toTopOf="@+id/layout_bedroom">
+
+                    <ImageView
+                        android:id="@+id/iv_parking"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_property_building" />
+
+
+                    <TextView
+                        android:id="@+id/tv_parking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/semi_bold"
+                        android:text="@string/parking_to_let"
+                        android:textColor="#20222C"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_parking" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/tv_property"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/properties"
+                    android:textColor="#20222C"
+                    android:textSize="@dimen/_14ssp"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="@+id/layout_distance"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_distance" />
+
+                <TextView
+                    android:id="@+id/tv_property_view_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/view_all"
+                    android:textColor="#FD701E"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_property"
+                    app:layout_constraintEnd_toEndOf="@+id/layout_bathroom"
+                    app:layout_constraintTop_toTopOf="@+id/tv_property" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_home_property"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_property_view_all"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_property"
+                    tools:itemCount="20"
+                    tools:listitem="@layout/item_home_properties" />
+
+                <!-- <androidx.recyclerview.widget.RecyclerView
+                     android:id="@+id/rv_home_property_offer_banner"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="2dp"
+                     android:layout_marginTop="@dimen/_8sdp"
+                     app:layout_constraintEnd_toEndOf="@+id/tv_property_view_all"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toBottomOf="@+id/rv_home_property" />-->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/view_pager11"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_130"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_home_property" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:background="@android:color/transparent"
+                    android:foregroundGravity="bottom"
+                    app:layout_constraintEnd_toEndOf="@+id/view_pager11"
+                    app:layout_constraintStart_toStartOf="@+id/view_pager11"
+                    app:layout_constraintTop_toBottomOf="@+id/view_pager11"
+                    app:tabBackground="@drawable/drawable_vp_tab_indicator_selector"
+                    app:tabGravity="fill"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMaxWidth="0dp"
+                    app:tabPaddingEnd="10dp"
+                    app:tabPaddingStart="10dp" />
+
+                <TextView
+                    android:id="@+id/tv_services"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/service"
+                    android:textColor="#20222C"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tabLayout12" />
+
+                <TextView
+                    android:id="@+id/tv_service_view_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/view_all"
+                    android:textColor="#FD701E"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_services"
+                    app:layout_constraintEnd_toEndOf="@+id/view_pager11"
+                    app:layout_constraintTop_toTopOf="@+id/tv_services" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_home_service"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_property_view_all"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_services"
+                    tools:itemCount="20"
+                    tools:listitem="@layout/item_home_services" />
+
+                <!--            <androidx.recyclerview.widget.RecyclerView-->
+                <!--                android:id="@+id/rv_home_service_offer_banner"-->
+                <!--                android:layout_width="0dp"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="@dimen/_8sdp"-->
+                <!--                android:orientation="horizontal"-->
+                <!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+                <!--                app:layout_constraintEnd_toEndOf="@+id/tv_property_view_all"-->
+                <!--                app:layout_constraintStart_toStartOf="@+id/tv_property"-->
+                <!--                app:layout_constraintTop_toBottomOf="@+id/rv_home_service"-->
+                <!--                tools:itemCount="20"-->
+                <!--                tools:listitem="@layout/item_home_offer_banner" />-->
+
+                <TextView
+                    android:id="@+id/tv_parking_to_let"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/parking_to_let"
+                    android:textColor="#20222C"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_home_service" />
+
+                <TextView
+                    android:id="@+id/tv_parking_to_let_view_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/bold"
+                    android:text="@string/view_all"
+                    android:textColor="#FD701E"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_parking_to_let"
+                    app:layout_constraintEnd_toEndOf="@+id/rv_home_service"
+                    app:layout_constraintTop_toTopOf="@+id/tv_parking_to_let" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_home_parking_to_let"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_property_view_all"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_parking_to_let"
+                    tools:itemCount="20"
+                    tools:listitem="@layout/item_home_properties" />
+
+                <!--  <androidx.recyclerview.widget.RecyclerView
+                      android:id="@+id/rv_bottom_home_offer_banner"
+                      android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="2dp"
+                      android:layout_marginTop="@dimen/_8sdp"
+                      android:layout_marginBottom="8dp"
+                      app:layout_constraintBottom_toBottomOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toBottomOf="@+id/rv_home_parking_to_let" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/view_pager111"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rv_home_parking_to_let" />
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginBottom="4dp"
+                    android:background="@android:color/transparent"
+                    android:foregroundGravity="bottom"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/view_pager111"
+                    app:layout_constraintStart_toStartOf="@+id/view_pager111"
+                    app:layout_constraintTop_toBottomOf="@+id/view_pager111"
+                    app:tabBackground="@drawable/drawable_vp_tab_indicator_selector"
+                    app:tabGravity="fill"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMaxWidth="0dp"
+                    app:tabPaddingEnd="10dp"
+                    app:tabPaddingStart="10dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

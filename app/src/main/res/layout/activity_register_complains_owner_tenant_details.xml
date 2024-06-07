@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.complaint.RegisterComplainsOwnerTenantDetailsActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_complaint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:cardCornerRadius="@dimen/_12sdp"
+        app:cardElevation="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_16sdp">
+
+
+            <TextView
+                android:id="@+id/tv_profile_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/bold"
+                android:textColor="@color/newBlack"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_owner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_flat_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/regular"
+                android:text="@string/flat_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintStart_toStartOf="@+id/tv_profile_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_profile_name" />
+
+            <TextView
+                android:id="@+id/tv_flat_number1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_flat_number"
+                app:layout_constraintTop_toTopOf="@+id/tv_flat_number" />
+
+            <TextView
+                android:id="@+id/tv_tv_complain_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/regular"
+                android:text="@string/complain_id"
+                android:textColor="#000000"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintStart_toStartOf="@+id/tv_flat_number"
+                app:layout_constraintTop_toBottomOf="@+id/tv_flat_number" />
+
+            <TextView
+                android:id="@+id/tv_tv_complain_id1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_flat_number1"
+                app:layout_constraintStart_toStartOf="@+id/tv_flat_number1"
+                app:layout_constraintTop_toTopOf="@+id/tv_tv_complain_id" />
+
+            <TextView
+                android:id="@+id/tv_service_category"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/regular"
+                android:text="@string/service_category_1"
+                android:visibility="gone"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintStart_toStartOf="@+id/tv_tv_complain_id"
+                app:layout_constraintTop_toBottomOf="@+id/tv_tv_complain_id" />
+
+            <TextView
+                android:id="@+id/tv_service_category1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tv_tv_complain_id1"
+                app:layout_constraintStart_toEndOf="@+id/tv_service_category"
+                app:layout_constraintTop_toTopOf="@+id/tv_service_category" />
+
+            <TextView
+                android:id="@+id/tv_complaint_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/regular"
+                android:text="@string/complaint_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintStart_toStartOf="@+id/tv_service_category"
+                app:layout_constraintTop_toBottomOf="@+id/tv_service_category" />
+
+            <TextView
+                android:id="@+id/tv_complaint_name1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintEnd_toStartOf="@+id/iv_calling"
+                app:layout_constraintStart_toEndOf="@+id/tv_complaint_name"
+                app:layout_constraintTop_toTopOf="@+id/tv_complaint_name" />
+
+            <ImageView
+                android:id="@+id/iv_calling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@drawable/bg_calling_and_message"
+                android:minWidth="@dimen/_30sdp"
+                android:minHeight="@dimen/_30sdp"
+                android:scaleType="center"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_calling" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:fontFamily="@font/regular"
+                android:text="@string/date_1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintStart_toStartOf="@+id/tv_complaint_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_complaint_name" />
+
+            <TextView
+                android:id="@+id/tv_date1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_date"
+                app:layout_constraintStart_toEndOf="@+id/tv_date"
+                app:layout_constraintTop_toTopOf="@+id/tv_date" />
+
+
+            <TextView
+                android:id="@+id/tv_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/semi_bold"
+                android:gravity="center"
+                android:text="@string/owner"
+                android:textColor="#FD701E"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_profile_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_profile_name" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintEnd_toEndOf="@+id/iv_calling"
+                app:layout_constraintStart_toStartOf="@+id/tv_date"
+                app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+            <TextView
+                android:id="@+id/tv_denyResone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/regular"
+                android:textColor="@color/black"
+                android:visibility="visible"
+                android:textSize="@dimen/_9ssp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_service_category1"
+                app:layout_constraintStart_toStartOf="@+id/tv_date"
+                app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_description"
+                app:layout_constraintStart_toStartOf="@+id/tv_description"
+                app:layout_constraintTop_toBottomOf="@+id/tv_denyResone" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!--<TextView
+        android:id="@+id/tv_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/regular"
+        android:textColor="#000000"
+        android:textSize="@dimen/_9ssp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/layout_complaint"
+        app:layout_constraintStart_toStartOf="@+id/layout_complaint"
+        app:layout_constraintTop_toBottomOf="@+id/layout_complaint" />-->
+
+
+
+    <TextView
+        android:id="@+id/btn_resolve"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_contact_us_btn"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:fontFamily="@font/bold"
+        android:gravity="center"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:text="@string/resolved"
+        android:visibility="visible"
+        android:textColor="#FD701E"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+     />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

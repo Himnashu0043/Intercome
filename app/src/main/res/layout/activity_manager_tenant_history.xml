@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager.managerTenantHistory.ManagerTenantHistoryActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_16sdp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardElevation="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imageView63"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                    app:srcCompat="@drawable/community_icon" />
+
+                <TextView
+                    android:id="@+id/textView116"
+                    style="@style/normaltxt_14sp_extra_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView63"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView117"
+                    style="@style/normaltxt_12sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView63"
+                    app:layout_constraintEnd_toEndOf="@+id/textView116"
+                    app:layout_constraintStart_toStartOf="@+id/textView116"
+                    app:layout_constraintTop_toBottomOf="@+id/tvFlat" />
+
+                <TextView
+                    android:id="@+id/textView1171"
+                    style="@style/normaltxt_12sp_Regular"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Flat Number :"
+                    app:layout_constraintStart_toStartOf="@+id/textView116"
+                    app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+                <TextView
+                    android:id="@+id/tvFlat"
+                    style="@style/normaltxt_13sp_SemiBold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView116"
+                    app:layout_constraintStart_toEndOf="@+id/textView1171"
+                    app:layout_constraintTop_toBottomOf="@+id/textView116" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="@dimen/_12sdp"
+            app:cardElevation="@dimen/_4sdp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView12"
+            app:layout_constraintStart_toStartOf="@+id/cardView12"
+            app:layout_constraintTop_toBottomOf="@+id/cardView12">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView12"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/cardView12">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/iv_expand_profile"
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+                    app:srcCompat="@drawable/iv_expand_profile" />
+
+                <TextView
+                    android:id="@+id/tv_expand_profile_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="16dp"
+                    android:fontFamily="@font/semi_bold"
+                    android:textColor="#20222C"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_user_type"
+                    app:layout_constraintStart_toEndOf="@+id/iv_expand_profile"
+                    app:layout_constraintTop_toTopOf="@+id/iv_expand_profile" />
+
+                <TextView
+                    android:id="@+id/tv_user_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:fontFamily="@font/semi_bold"
+                    android:text="Owner"
+                    android:textColor="#FD701E"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_expand_profile_name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_expand_profile_name" />
+
+                <TextView
+                    android:id="@+id/tv_expand_address"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/regular"
+                    android:textColor="#858585"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_user_type"
+                    app:layout_constraintStart_toStartOf="@+id/tv_expand_profile_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_expand_profile_name" />
+
+                <TextView
+                    android:id="@+id/tv_owner_since"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:fontFamily="@font/medium"
+                    android:text="Owner Since"
+                    android:textColor="#858585"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/iv_expand_profile"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_expand_address" />
+
+                <TextView
+                    android:id="@+id/tv_occupancy_to"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_40sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:fontFamily="@font/medium"
+                    android:text="Occupancy To"
+                    android:textColor="#858585"
+                    android:textSize="@dimen/_9ssp"
+                    app:layout_constraintStart_toStartOf="@+id/tv_expand_profile_name"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_expand_address" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/medium"
+                    android:textColor="#20222C"
+                    android:textSize="@dimen/_8ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_owner_since"
+                    app:layout_constraintStart_toStartOf="@+id/tv_owner_since"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_owner_since" />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:fontFamily="@font/medium"
+                    android:gravity="center"
+                    android:textColor="#20222C"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/tv_occupancy_to"
+                    app:layout_constraintStart_toStartOf="@+id/tv_occupancy_to"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_occupancy_to" />
+
+
+                <ImageView
+                    android:id="@+id/iv_calling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:background="@drawable/bg_calling_and_message"
+                    android:minWidth="@dimen/_30sdp"
+                    android:minHeight="@dimen/_30sdp"
+                    android:scaleType="center"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_status"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_calling" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView23" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

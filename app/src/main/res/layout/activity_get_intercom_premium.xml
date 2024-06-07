@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.subscription.GetIntercomPremiumActivity">
+
+    <ImageView
+        android:id="@+id/iv_subscription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/iv_subscription" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout_subscribe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_suscription"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_premium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="250dp"
+                android:fontFamily="@font/bold"
+                android:text="Get Intercom Premium"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_offer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:fontFamily="@font/bold"
+                android:text="@string/unlimited_property_amp_parking_contact"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_premium"
+                app:layout_constraintTop_toBottomOf="@+id/tv_premium" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_plan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_offer"
+                app:layout_constraintTop_toBottomOf="@+id/tv_offer" />
+            <!-- <androidx.constraintlayout.widget.ConstraintLayout
+                 android:id="@+id/layout_silver"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/_8sdp"
+                 android:background="@drawable/bg_subscription_item"
+
+                 android:paddingBottom="@dimen/_8sdp"
+                 app:layout_constraintEnd_toEndOf="@+id/tv_offer"
+                 app:layout_constraintStart_toStartOf="@+id/tv_offer"
+                 app:layout_constraintTop_toBottomOf="@+id/tv_offer">
+
+
+                 <TextView
+                     android:id="@+id/tv_subscription_name"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/_16sdp"
+                     android:layout_marginTop="@dimen/_8sdp"
+                     android:fontFamily="@font/bold"
+                     android:text="SILVER"
+                     android:textColor="#181A37"
+                     android:textSize="@dimen/_12ssp"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toTopOf="parent" />
+
+
+                 <TextView
+                     android:id="@+id/tv_subscription_details"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/medium"
+                     android:text="3 Months of Membership"
+                     android:textColor="#181A37"
+                     android:textSize="@dimen/_11ssp"
+                     app:layout_constraintStart_toStartOf="@+id/tv_subscription_name"
+                     app:layout_constraintTop_toBottomOf="@+id/tv_subscription_name" />
+
+                 <TextView
+                     android:id="@+id/tv_subscription_price"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="@dimen/_8sdp"
+                     android:layout_marginEnd="@dimen/_16sdp"
+                     android:fontFamily="@font/bold"
+                     android:text="৳29.97"
+                     android:textColor="#181A37"
+                     android:textSize="@dimen/_12ssp"
+                     app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintTop_toTopOf="parent" />
+
+
+                 <TextView
+                     android:id="@+id/tv_subscription_duration"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/regular"
+                     android:text="৳9.99 / month"
+                     android:textColor="#181A37"
+                     android:textSize="@dimen/_11ssp"
+                     app:layout_constraintEnd_toEndOf="@+id/tv_subscription_price"
+                     app:layout_constraintTop_toBottomOf="@+id/tv_subscription_price" />
+
+             </androidx.constraintlayout.widget.ConstraintLayout>
+
+             <androidx.constraintlayout.widget.ConstraintLayout
+                 android:id="@+id/layout_gold"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/_16sdp"
+                 android:background="@drawable/bg_subscription_stroke_item"
+                 android:paddingBottom="@dimen/_8sdp"
+                 app:layout_constraintEnd_toEndOf="@+id/layout_silver"
+                 app:layout_constraintStart_toStartOf="@+id/layout_silver"
+                 app:layout_constraintTop_toBottomOf="@+id/layout_silver">
+
+                 <TextView
+                     android:id="@+id/tv_gold_subscription_name"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/_16sdp"
+                     android:layout_marginTop="@dimen/_8sdp"
+                     android:fontFamily="@font/bold"
+                     android:text="GOLD"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/_12ssp"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toTopOf="parent" />
+
+
+                 <TextView
+                     android:id="@+id/tv_gold_subscription_details"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/medium"
+                     android:text="6 Months of Membership"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/_11ssp"
+                     app:layout_constraintStart_toStartOf="@+id/tv_gold_subscription_name"
+                     app:layout_constraintTop_toBottomOf="@+id/tv_gold_subscription_name" />
+
+                 <TextView
+                     android:id="@+id/tv_gold_subscription_price"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="@dimen/_8sdp"
+                     android:layout_marginEnd="@dimen/_16sdp"
+                     android:fontFamily="@font/bold"
+                     android:text="৳29.97"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/_12ssp"
+                     app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintTop_toTopOf="parent" />
+
+
+                 <TextView
+                     android:id="@+id/tv_gold_subscription_duration"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/regular"
+                     android:text="৳8.99 / month"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/_11ssp"
+                     app:layout_constraintEnd_toEndOf="@+id/tv_gold_subscription_price"
+                     app:layout_constraintTop_toBottomOf="@+id/tv_gold_subscription_price" />
+
+             </androidx.constraintlayout.widget.ConstraintLayout>
+
+             <androidx.constraintlayout.widget.ConstraintLayout
+                 android:id="@+id/layout_platinum"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="@dimen/_16sdp"
+                 android:background="@drawable/bg_subscription_stroke_item"
+                 android:paddingBottom="@dimen/_8sdp"
+                 app:layout_constraintEnd_toEndOf="@+id/layout_gold"
+                 app:layout_constraintStart_toStartOf="@+id/layout_gold"
+                 app:layout_constraintTop_toBottomOf="@+id/layout_gold">
+
+
+                 <TextView
+                     android:id="@+id/tv_platinum_subscription_name"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginStart="@dimen/_16sdp"
+                     android:layout_marginTop="@dimen/_8sdp"
+                     android:fontFamily="@font/bold"
+                     android:text="PLATINUM"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/_12ssp"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintTop_toTopOf="parent" />
+
+
+                 <TextView
+                     android:id="@+id/tv_platinum_subscription_details"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/medium"
+                     android:text="3 Months of Membership"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/_11ssp"
+                     app:layout_constraintEnd_toEndOf="@+id/tv_platinum_subscription_price"
+                     app:layout_constraintStart_toStartOf="@+id/tv_platinum_subscription_name"
+                     app:layout_constraintTop_toBottomOf="@+id/tv_platinum_subscription_name" />
+
+                 <TextView
+                     android:id="@+id/tv_platinum_subscription_price"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="@dimen/_8sdp"
+                     android:layout_marginEnd="@dimen/_16sdp"
+                     android:fontFamily="@font/bold"
+                     android:text="৳29.97"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/_12ssp"
+                     app:layout_constraintEnd_toEndOf="parent"
+                     app:layout_constraintTop_toTopOf="parent" />
+
+
+                 <TextView
+                     android:id="@+id/tv_platinum_subscription_duration"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     android:fontFamily="@font/regular"
+                     android:text="৳9.99 / month"
+                     android:textColor="@color/white"
+                     android:textSize="@dimen/_11ssp"
+                     app:layout_constraintEnd_toEndOf="@+id/tv_platinum_subscription_price"
+                     app:layout_constraintTop_toBottomOf="@+id/tv_platinum_subscription_price" />
+
+             </androidx.constraintlayout.widget.ConstraintLayout>-->
+            <TextView
+                android:id="@+id/tvPromoCode"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Enter Promocode"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/rv_plan"
+                app:layout_constraintTop_toBottomOf="@+id/rv_plan" />
+
+            <TextView
+                android:id="@+id/btn_submit"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_46sdp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/common_btn_bg"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="Subscribe"
+                android:textColor="@color/orange"
+                app:layout_constraintEnd_toEndOf="@+id/tv_offer"
+                app:layout_constraintStart_toStartOf="@+id/tv_offer"
+                app:layout_constraintTop_toBottomOf="@+id/tvPromoCode" />
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                android:src="@drawable/side_menu_logo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_submit" />
+
+            <!--        <TextView-->
+            <!--            android:id="@+id/tv_enter_promocode"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_marginTop="@dimen/_8sdp"-->
+            <!--            android:layout_marginBottom="@dimen/_24sdp"-->
+            <!--            android:fontFamily="@font/bold"-->
+            <!--            android:text="Enter Promocode"-->
+            <!--            android:textColor="@color/white"-->
+            <!--            -->
+            <!--            android:textSize="@dimen/_10ssp"-->
+            <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--            app:layout_constraintEnd_toEndOf="parent"-->
+            <!--            app:layout_constraintStart_toStartOf="parent" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

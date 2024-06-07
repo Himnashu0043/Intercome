@@ -1,0 +1,70 @@
+{
+  "project_info": {
+    "project_number": "258834289791",
+    "project_id": "intercom-5496c",
+    "storage_bucket": "intercom-5496c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258834289791:android:3432a9a93675aa47ff9b4a",
+        "android_client_info": {
+          "package_name": "com.application.intercom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258834289791-96rquaha1ohjsfrriur34k59lm5lis96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.application.intercom",
+            "certificate_hash": "9d950e9241037370b414fe29e244aa56fda8c152"
+          }
+        },
+        {
+          "client_id": "258834289791-eirnvipjt6k5vj0cuupfbl2uqrmhdi8g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.application.intercom",
+            "certificate_hash": "3a2e571c6ee9c1e73bd9520dc72d7b6146666243"
+          }
+        },
+        {
+          "client_id": "258834289791-uiqufij0ej0ceildps5ks2pnklgk3a3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.application.intercom",
+            "certificate_hash": "ae8f7ee9176c5aa07e83ef7a6d077998e5c92ccc"
+          }
+        },
+        {
+          "client_id": "258834289791-jqo2kp3bifp6d6nq9m1p0jht2cgu8vl2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkudxuhOcvmE7hWfIjCs0iyMrJbFHKlgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258834289791-jqo2kp3bifp6d6nq9m1p0jht2cgu8vl2.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "258834289791-lh9kef0102qsr676cdu1sh9jpgou2plt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.application.Intercom"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

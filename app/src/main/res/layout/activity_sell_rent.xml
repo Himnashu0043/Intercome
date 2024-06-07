@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.newflow.Sell_RentActivity">
+
+    <ImageView
+        android:id="@+id/imageView104"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sell_rent_gradient_img" />
+
+    <ImageView
+        android:id="@+id/imageView105"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivBack"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack"
+        app:srcCompat="@drawable/sell_rent_img" />
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/textView192"
+        style="@style/normaltxt_16sp_extrabold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/you_are_posting_this_property_for"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView104" />
+
+    <TextView
+        android:id="@+id/textView193"
+        style="@style/normaltxt_14sp_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="৳300"
+        app:layout_constraintEnd_toEndOf="@+id/textView192"
+        app:layout_constraintStart_toStartOf="@+id/textView192"
+        app:layout_constraintTop_toBottomOf="@+id/textView192" />
+
+    <View
+        android:id="@+id/divider17"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/orange"
+        app:layout_constraintBottom_toBottomOf="@+id/textView193"
+        app:layout_constraintEnd_toEndOf="@+id/textView193"
+        app:layout_constraintStart_toStartOf="@+id/textView193"
+        app:layout_constraintTop_toTopOf="@+id/textView193" />
+
+    <TextView
+        android:id="@+id/textView194"
+        style="@style/normaltxt_16sp_extrabold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/free"
+        android:textColor="@color/orange"
+        app:layout_constraintEnd_toEndOf="@+id/textView192"
+        app:layout_constraintStart_toStartOf="@+id/textView192"
+        app:layout_constraintTop_toBottomOf="@+id/textView193" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcyinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="visible"
+        android:background="@drawable/gradint_bg_with_stroke_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView194" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tvContinue"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/common_btn_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rcyinfo">
+
+        <TextView
+            android:id="@+id/textView195"
+            style="@style/normaltxt_15sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/continue_1"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:src="@drawable/white_arrow"
+            app:layout_constraintBottom_toBottomOf="@+id/textView195"
+            app:layout_constraintStart_toEndOf="@+id/textView195"
+            app:layout_constraintTop_toTopOf="@+id/textView195" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

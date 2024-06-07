@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:layout_marginBottom="@dimen/_4sdp"
+    app:cardCornerRadius="@dimen/_12sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_12sdp">
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_profile"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:scaleType="fitXY"
+            app:shapeAppearance="@style/service_10_imge_shapeable_overloay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay"
+            app:srcCompat="@drawable/iv_gatekeeper_profile" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/semi_bold"
+            android:textColor="#20222C"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_edit"
+            app:layout_constraintStart_toEndOf="@+id/iv_profile"
+            app:layout_constraintTop_toTopOf="@+id/iv_profile" />
+
+
+        <TextView
+            android:id="@+id/tv_mobile_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:drawableEnd="@drawable/call_icon"
+            android:drawablePadding="@dimen/_4sdp"
+            android:fontFamily="@font/medium"
+            android:textColor="#000000"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintStart_toStartOf="@+id/tv_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_gate_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:fontFamily="@font/regular"
+            android:textColor="#858585"
+            android:textSize="@dimen/_9ssp"
+            app:layout_constraintEnd_toStartOf="@+id/cardView8"
+            app:layout_constraintStart_toStartOf="@+id/tv_mobile_no"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mobile_no" />
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_mobile_no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pencil" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:cardBackgroundColor="@color/green"
+            app:cardCornerRadius="@dimen/dp_10"
+            app:cardElevation="@dimen/dp_4"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gate_type"
+            app:layout_constraintEnd_toEndOf="@+id/iv_edit"
+            >
+
+            <TextView
+                android:id="@+id/tvduty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                style="@style/normaltxt_14sp_bold"
+                android:padding="@dimen/dp_5"
+                android:text="@string/on_duty"
+                android:textColor="@color/white" />
+        </androidx.cardview.widget.CardView>
+        <!--<TextView
+            android:id="@+id/tv_on_duty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_notify_btn"
+            android:backgroundTint="#4DB81A"
+            android:fontFamily="@font/semi_bold"
+            android:gravity="center"
+            android:minWidth="@dimen/_60sdp"
+            android:minHeight="@dimen/_20sdp"
+            android:paddingTop="@dimen/_3sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:text="@string/on_duty"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gate_type"
+            app:layout_constraintEnd_toEndOf="@+id/iv_edit" />-->
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

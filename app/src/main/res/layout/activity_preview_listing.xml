@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.newflow.PreviewListingActivity">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFFFF"
+        app:cardCornerRadius="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_8sdp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_30"
+                android:background="@android:color/transparent"
+                android:foregroundGravity="bottom"
+                app:layout_constraintBottom_toBottomOf="@+id/view_pager1"
+                app:layout_constraintEnd_toEndOf="@+id/view_pager1"
+                app:layout_constraintStart_toStartOf="@+id/view_pager1"
+                app:tabBackground="@drawable/drawable_vp_tab_indicator_selector"
+                app:tabGravity="fill"
+                app:tabIndicatorHeight="0dp"
+                app:tabMaxWidth="0dp"
+                app:tabPaddingEnd="10dp"
+                app:tabPaddingStart="10dp" />
+
+            <ImageView
+                android:id="@+id/iv_property"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_150sdp"
+                android:scaleType="centerCrop"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/properties_parking" />
+
+            <ImageView
+                android:id="@+id/imageView109"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/layResi"
+                app:layout_constraintEnd_toEndOf="@+id/iv_property"
+                app:layout_constraintTop_toTopOf="@+id/layResi"
+                app:srcCompat="@drawable/unfav" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layRent"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/common_btn_bg"
+                android:minWidth="@dimen/_60sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:id="@+id/tv_property_type"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="@string/for_rent"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layResi"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/common_btn_bg"
+                android:backgroundTint="@color/black"
+                android:minWidth="@dimen/_70sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/layRent"
+                app:layout_constraintStart_toEndOf="@+id/layRent"
+                app:layout_constraintTop_toTopOf="@+id/layRent">
+
+
+                <TextView
+                    android:id="@+id/tv_property_type1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/bold"
+                    android:gravity="center"
+                    android:text="@string/residential"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_property_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_24sdp"
+                android:fontFamily="@font/extra_bold"
+                android:textColor="@color/newBlack"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toStartOf="@+id/tv_property_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_property" />
+
+            <TextView
+                android:id="@+id/tv_property_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:fontFamily="@font/extra_bold"
+                android:textColor="@color/orange"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_property_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_property_name" />
+
+
+            <ImageView
+                android:id="@+id/iv_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="@+id/tv_property_name"
+                app:layout_constraintTop_toBottomOf="@id/tv_property_name"
+                app:srcCompat="@drawable/ic_location" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:fontFamily="@font/regular"
+                android:gravity="center"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_location"
+                app:layout_constraintStart_toEndOf="@+id/iv_location"
+                app:layout_constraintTop_toTopOf="@+id/iv_location" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:background="@drawable/bg_dot"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_location"
+                app:layout_constraintStart_toEndOf="@+id/tv_location"
+                app:layout_constraintTop_toTopOf="@+id/iv_location" />
+
+
+            <TextView
+                android:id="@+id/tv_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:drawableStart="@drawable/dic_icon"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/medium"
+                android:text="1.3 km"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/_12ssp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_location"
+                app:layout_constraintStart_toEndOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/iv_location" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:drawableStart="@drawable/calendar_icon"
+                android:drawablePadding="4dp"
+                android:fontFamily="@font/regular"
+                android:gravity="left"
+
+                android:text="Date of Registration : 22/10/2023"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/iv_location"
+                app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_distance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/layout_bedroom"
+                app:layout_constraintStart_toStartOf="@+id/iv_location"
+                app:layout_constraintTop_toBottomOf="@+id/tv_date">
+
+                <ImageView
+                    android:id="@+id/iv_distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_login_type_btn"
+                    android:backgroundTint="#F0FAF2"
+                    android:minWidth="@dimen/_24sdp"
+                    android:minHeight="@dimen/_24sdp"
+                    android:padding="@dimen/_8sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_distance" />
+
+                <TextView
+                    android:id="@+id/tv_fit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/medium"
+                    android:gravity="left"
+                    android:textColor="@color/newBlack"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_distance"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_distance"
+                    app:layout_constraintTop_toTopOf="@+id/iv_distance" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_bedroom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_distance"
+                app:layout_constraintEnd_toStartOf="@+id/layout_bathroom"
+                app:layout_constraintStart_toEndOf="@+id/layout_distance"
+                app:layout_constraintTop_toTopOf="@+id/layout_distance">
+
+                <ImageView
+                    android:id="@+id/iv_bedroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_login_type_btn"
+                    android:backgroundTint="#F0FAF2"
+                    android:minWidth="@dimen/_24sdp"
+                    android:minHeight="@dimen/_24sdp"
+                    android:padding="@dimen/_8sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bed" />
+
+                <TextView
+                    android:id="@+id/tv_bedroom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/medium"
+                    android:textColor="@color/newBlack"
+                    android:textSize="10dp"
+                    android:gravity="left"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_bedroom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_bedroom"
+                    app:layout_constraintTop_toTopOf="@+id/iv_bedroom" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_bathroom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/layout_bedroom"
+                app:layout_constraintEnd_toEndOf="@+id/tv_property_price"
+                app:layout_constraintStart_toEndOf="@+id/layout_bedroom"
+                app:layout_constraintTop_toTopOf="@+id/layout_bedroom">
+
+                <ImageView
+                    android:id="@+id/iv_bathroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@drawable/bg_login_type_btn"
+                    android:backgroundTint="#F4EAFB"
+                    android:minWidth="@dimen/_24sdp"
+                    android:minHeight="@dimen/_24sdp"
+                    android:padding="@dimen/_4sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_bathroom" />
+
+                <TextView
+                    android:id="@+id/tv_bathroom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/medium"
+                    android:gravity="left"
+                    android:textColor="@color/newBlack"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/iv_bathroom"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_bathroom"
+                    app:layout_constraintTop_toTopOf="@+id/iv_bathroom" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView143"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Per Month"
+                android:textColor="@color/dark_grey"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@+id/tv_property_price"
+                app:layout_constraintTop_toBottomOf="@+id/tv_property_price" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <include
+        android:id="@+id/common_btn"
+        layout="@layout/common_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView147"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_billing_list" />
+
+            <TextView
+                android:id="@+id/textView255"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView148"
+                app:layout_constraintStart_toEndOf="@+id/imageView147"
+                app:layout_constraintTop_toTopOf="@+id/imageView147" />
+
+            <TextView
+                android:id="@+id/textView256"
+                style="@style/normaltxt_12sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Ref No."
+                android:textColor="@color/new_light_sileti"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/textView255"
+                app:layout_constraintTop_toBottomOf="@+id/textView255" />
+
+            <TextView
+                android:id="@+id/textView258"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="T12"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/textView256"
+                app:layout_constraintStart_toEndOf="@+id/textView256"
+                app:layout_constraintTop_toTopOf="@+id/textView256" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/_3sdp"
+                android:layout_height="@dimen/_3sdp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_dot"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/textView256"
+                app:layout_constraintStart_toEndOf="@+id/textView258"
+                app:layout_constraintTop_toTopOf="@+id/textView256" />
+
+            <TextView
+                android:id="@+id/textView259"
+                style="@style/normaltxt_12sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Due Amount"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/textView255"
+                app:layout_constraintTop_toBottomOf="@+id/textView255" />
+
+            <ImageView
+                android:id="@+id/imageView148"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView147"
+                app:srcCompat="@drawable/list_icon" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/listPop"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@color/light_grey"
+                android:visibility="gone"
+                app:layout_constraintEnd_toStartOf="@+id/imageView148"
+                app:layout_constraintTop_toTopOf="@+id/imageView148">
+
+                <TextView
+                    android:id="@+id/tvEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="@string/billing"
+                    android:textColor="@color/lightBlack"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvInActive"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Invoice"
+                    android:textColor="@color/lightBlack"
+                    android:visibility="visible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEdit" />
+
+                <TextView
+                    android:id="@+id/tvReport"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:gravity="center"
+                    android:padding="4dp"
+                    android:text="Receipt"
+                    android:textColor="@color/lightBlack"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvInActive" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView2591"
+                style="@style/normaltxt_13sp_Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/orange"
+                app:layout_constraintStart_toStartOf="@+id/textView255"
+                app:layout_constraintTop_toBottomOf="@+id/textView259" />
+
+            <View
+                android:id="@+id/divider26"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2591" />
+
+            <TextView
+                android:id="@+id/textView267"
+                style="@style/normaltxt_12sp_Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Person"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintStart_toStartOf="@+id/imageView147"
+                app:layout_constraintTop_toTopOf="@+id/tv_viewDetails" />
+
+            <TextView
+                android:id="@+id/textView268"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_viewDetails"
+                app:layout_constraintStart_toStartOf="@+id/textView267"
+                app:layout_constraintTop_toBottomOf="@+id/textView267" />
+
+            <TextView
+                android:id="@+id/tv_viewDetails"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/bg_notify_btn"
+                android:backgroundTint="@color/orange"
+                android:fontFamily="@font/semi_bold"
+                android:gravity="center"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_3sdp"
+                android:text="@string/view_details"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider26" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

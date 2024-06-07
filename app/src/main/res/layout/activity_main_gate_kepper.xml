@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newGateKeepeerDrw"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".gatekepper.Main.MainGateKepperActivity"
+    tools:openDrawer="start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/gateKeeper_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout271"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout281"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_gateKeeper_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/without_name_home_active"
+                    app:layout_constraintEnd_toEndOf="@+id/textView253"
+                    app:layout_constraintStart_toStartOf="@+id/textView253"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView253"
+                    style="@style/normaltxt_12sp_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/home"
+                    android:textColor="@color/orange"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_gateKeeper_home" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout281"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout291"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout271"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout271">
+
+                <ImageView
+                    android:id="@+id/iv_gateKeeper_visitor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/without_name_visitor_unactive"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_VisitorName"
+                    style="@style/normaltxt_12sp_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/visitors"
+                    android:textColor="@color/dark_c"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_gateKeeper_visitor" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout291"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/constraintLayout301"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout281"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout281">
+
+                <ImageView
+                    android:id="@+id/iv_gateKeeper_gatePass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/without_name_gatepass_unactive"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_GatePassName"
+                    style="@style/normaltxt_12sp_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/gate_pass"
+                    android:textColor="#9DB2CE"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_gateKeeper_gatePass" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout301"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/constraintLayout291"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout291">
+
+                <ImageView
+                    android:id="@+id/iv_gateKeeper_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/without_name_profile_unactive"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_profile_Name"
+                    style="@style/normaltxt_12sp_bold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/my_profile"
+                    android:textColor="#9DB2CE"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_gateKeeper_profile" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <!--<ImageView
+                android:id="@+id/iv_gateKeeper_home"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/iv_gateKeeper_visitor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/home_active" />
+
+            <ImageView
+                android:id="@+id/iv_gateKeeper_visitor"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_gateKeeper_home"
+                app:layout_constraintEnd_toStartOf="@+id/iv_gateKeeper_gatePass"
+                app:layout_constraintStart_toEndOf="@+id/iv_gateKeeper_home"
+                app:layout_constraintTop_toTopOf="@+id/iv_gateKeeper_home"
+                app:srcCompat="@drawable/visitor_unactive" />
+
+            <ImageView
+                android:id="@+id/iv_gateKeeper_gatePass"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_gateKeeper_visitor"
+                app:layout_constraintEnd_toStartOf="@+id/iv_gateKeeper_profile"
+                app:layout_constraintStart_toEndOf="@+id/iv_gateKeeper_visitor"
+                app:layout_constraintTop_toTopOf="@+id/iv_gateKeeper_visitor"
+                app:srcCompat="@drawable/gatepass_unactive" />
+
+            <ImageView
+                android:id="@+id/iv_gateKeeper_profile"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_gateKeeper_gatePass"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/iv_gateKeeper_gatePass"
+                app:layout_constraintTop_toTopOf="@+id/iv_gateKeeper_gatePass"
+                app:srcCompat="@drawable/new_gatekeeper_un_profile" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:visibility="visible">
+
+        <include
+            android:id="@+id/nav"
+            layout="@layout/user_nav_drw" />
+    </com.google.android.material.navigation.NavigationView>
+    <!--    <include-->
+    <!--        android:id="@+id/homeToolbar"-->
+    <!--        layout="@layout/home_toolbar"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

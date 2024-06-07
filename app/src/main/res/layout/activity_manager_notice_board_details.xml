@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tenant.activity.noticBoard.TenantNoticeBoardDetailsActivity">
+
+    <include
+        android:id="@+id/noticeDetailsToolbar"
+        layout="@layout/common_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        style="@style/normaltxt_13sp_Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_16"
+        android:text="06 Mar, 2023"
+        android:textColor="@color/lightBlue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noticeDetailsToolbar" />
+
+    <TextView
+        android:id="@+id/textView371"
+        style="@style/normaltxt_16sp_bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/electricity_bill_issue"
+        app:layout_constraintStart_toStartOf="@+id/textView38"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView40"
+        style="@style/normaltxt_12sp_Semibold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:lineHeight="@dimen/sp_15"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        android:textColor="@color/dark_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView371"
+        app:layout_constraintTop_toBottomOf="@+id/textView371" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcynoticeDetials"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView14"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_175"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/text_image"
+        app:layout_constraintEnd_toStartOf="@+id/imageView141"
+        app:layout_constraintStart_toStartOf="@+id/textView40"
+        app:layout_constraintTop_toBottomOf="@+id/textView40"
+        app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView141"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/text_1_image"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView14"
+        app:layout_constraintEnd_toEndOf="@+id/textView40"
+        app:layout_constraintStart_toEndOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay" />
+</androidx.constraintlayout.widget.ConstraintLayout>

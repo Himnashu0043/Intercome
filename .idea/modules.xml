@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Intercom.iml" filepath="$PROJECT_DIR$/.idea/Intercom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Intercom.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Intercom.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Intercom.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Intercom.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Intercom.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Intercom.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.Intercom.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.Intercom.app.androidTest.iml" />
+    </modules>
+  </component>
+</project>

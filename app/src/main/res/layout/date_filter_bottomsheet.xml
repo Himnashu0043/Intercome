@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/white_left_right_cnr_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView100"
+            style="@style/normaltxt_20sp_extraBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/filter_by"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvClose"
+            style="@style/normaltxt_16sp_Semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:padding="4dp"
+            android:text="@string/close"
+            android:textColor="@color/orange"
+            app:layout_constraintBottom_toBottomOf="@+id/textView100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView100" />
+
+        <TextView
+            android:id="@+id/textView1001"
+            style="@style/normaltxt_16sp_extrabold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Year"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView100" />
+
+        <TextView
+            android:id="@+id/textView10012"
+            style="@style/normaltxt_16sp_extrabold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Months"
+            app:layout_constraintBottom_toBottomOf="@+id/textView1001"
+            app:layout_constraintStart_toStartOf="@+id/monthsSpiner"
+            app:layout_constraintTop_toTopOf="@+id/textView1001" />
+
+        <Spinner
+            android:id="@+id/yearSpiner"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/cus_sp"
+            android:gravity="fill_vertical"
+            android:minWidth="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/monthsSpiner"
+            app:layout_constraintStart_toStartOf="@+id/textView1001"
+            app:layout_constraintTop_toBottomOf="@+id/textView1001" />
+
+        <Spinner
+            android:id="@+id/monthsSpiner"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/cus_sp"
+            android:gravity="fill_vertical"
+            android:minWidth="0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/yearSpiner"
+            app:layout_constraintEnd_toEndOf="@+id/tvClose"
+            app:layout_constraintStart_toEndOf="@+id/yearSpiner"
+            app:layout_constraintTop_toTopOf="@+id/yearSpiner" />
+        <EditText
+            android:id="@+id/tvStartDate"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_edit_search"
+            android:hint="@string/star_date"
+            android:paddingStart="16dp"
+            android:textColorHint="@color/dark_grey"
+            android:paddingEnd="16dp"
+            android:visibility="gone"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/tvEndDate"
+            app:layout_constraintStart_toStartOf="@+id/textView1001"
+            app:layout_constraintTop_toBottomOf="@+id/textView1001" />
+
+        <EditText
+            android:id="@+id/tvEndDate"
+            style="@style/normaltxt_14sp_Regular"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/end_date"
+            android:paddingStart="16dp"
+            android:background="@drawable/bg_edit_search"
+            android:textColorHint="@color/dark_grey"
+            android:paddingEnd="16dp"
+            android:focusable="false"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/tvStartDate"
+            app:layout_constraintEnd_toEndOf="@+id/tvClose"
+            app:layout_constraintStart_toEndOf="@+id/tvStartDate"
+            app:layout_constraintTop_toBottomOf="@+id/textView1001" />
+
+
+        <include
+            android:id="@+id/common_btn"
+            layout="@layout/common_btn"
+            android:layout_width="0dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/monthsSpiner"
+            app:layout_constraintStart_toStartOf="@+id/tvStartDate"
+            app:layout_constraintTop_toBottomOf="@+id/yearSpiner" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/_24sdp"
+    tools:context=".user.property.PropertySortByBottomSheet">
+
+
+    <TextView
+        android:id="@+id/tv_sort_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/extra_bold"
+        android:text="@string/sort_by"
+        android:textColor="@color/lightBlack"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:fontFamily="@font/bold"
+        android:text="@string/close"
+        android:textColor="#FD701E"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_sort_by"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_sort_by" />
+
+    <!-- add RadioGroup which contain the many RadioButton-->
+    <RadioGroup
+        android:id="@+id/groupradio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_close"
+        app:layout_constraintStart_toStartOf="@+id/tv_sort_by"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sort_by">
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/Distance"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Distance"-->
+<!--            android:textColor="#20222C"-->
+<!--            android:fontFamily="@font/medium"-->
+<!--            android:textSize="@dimen/_12ssp" />-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_1sdp"-->
+<!--            android:layout_marginStart="@dimen/_8sdp"-->
+<!--            android:layout_marginEnd="@dimen/_8sdp"-->
+<!--            android:background="#F4F4F4" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/date_uploaded"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Date Uploaded"-->
+<!--            android:textColor="#20222C"-->
+<!--            android:fontFamily="@font/medium"-->
+<!--            android:textSize="@dimen/_12ssp"  />-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_1sdp"-->
+<!--            android:layout_marginStart="@dimen/_8sdp"-->
+<!--            android:layout_marginEnd="@dimen/_8sdp"-->
+<!--            android:background="#F4F4F4" />-->
+
+        <RadioButton
+            android:id="@+id/rent_high_to_low"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rent_high_to_low"
+            android:textColor="@color/lightblack"
+            android:buttonTint="@color/orange"
+            android:fontFamily="@font/medium"
+            android:textSize="@dimen/_12ssp"  />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rent_low_to_high"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightBlack"
+            android:buttonTint="@color/orange"
+            android:fontFamily="@font/medium"
+            android:text="@string/rent_low_to_high"
+            android:textSize="@dimen/_12ssp"  />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="#F4F4F4" />
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/Popular"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#20222C"-->
+<!--            android:fontFamily="@font/medium"-->
+<!--            android:text="Popular"-->
+<!--            android:textSize="@dimen/_12ssp"  />-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="@dimen/_1sdp"-->
+<!--            android:layout_marginStart="@dimen/_8sdp"-->
+<!--            android:layout_marginEnd="@dimen/_8sdp"-->
+<!--            android:background="#F4F4F4" />-->
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginRight="@dimen/dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageView91"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile_img"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/service_10_imge_shapeable_overloay" />
+
+            <TextView
+                android:id="@+id/textView166"
+                style="@style/normaltxt_16sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Zeeshan Alam"
+                app:layout_constraintEnd_toEndOf="@+id/imageView92"
+                app:layout_constraintStart_toStartOf="@+id/imageView91"
+                app:layout_constraintTop_toBottomOf="@+id/imageView91" />
+
+            <ImageView
+                android:id="@+id/imageView92"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginEnd="16dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView91"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView91"
+                app:srcCompat="@drawable/bar_code_icon" />
+
+            <TextView
+                android:id="@+id/textView167"
+                style="@style/normaltxt_14sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TF-244"
+                app:layout_constraintEnd_toEndOf="@+id/textView166"
+                app:layout_constraintStart_toStartOf="@+id/textView166"
+                app:layout_constraintTop_toBottomOf="@+id/textView166" />
+
+            <TextView
+                android:id="@+id/textView168"
+                style="@style/normaltxt_12sp_Regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:visibility="visible"
+                android:text="Delivery | Single Entry"
+                app:layout_constraintEnd_toEndOf="@+id/textView167"
+                app:layout_constraintStart_toStartOf="@+id/textView167"
+                app:layout_constraintTop_toBottomOf="@+id/textView167" />
+
+            <TextView
+                android:id="@+id/textView169"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Phone Number"
+                app:layout_constraintStart_toStartOf="@+id/textView168"
+                app:layout_constraintTop_toBottomOf="@+id/divider7" />
+
+            <TextView
+                android:id="@+id/textView170"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="01765750808"
+                app:layout_constraintEnd_toEndOf="@+id/divider7"
+                app:layout_constraintStart_toStartOf="@+id/textView169"
+                app:layout_constraintTop_toBottomOf="@+id/textView169" />
+
+            <TextView
+                android:id="@+id/tvOwner"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Owner Contact/Tenant:"
+                app:layout_constraintStart_toStartOf="@+id/textView170"
+                app:layout_constraintTop_toBottomOf="@+id/divider8" />
+
+            <TextView
+                android:id="@+id/tvContactOwner"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="24023423-528358"
+                app:layout_constraintStart_toStartOf="@+id/tvOwner"
+                app:layout_constraintTop_toBottomOf="@+id/tvOwner" />
+
+            <TextView
+                android:id="@+id/textView171"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Date:"
+                app:layout_constraintStart_toStartOf="@+id/textView170"
+                app:layout_constraintTop_toBottomOf="@+id/divider25" />
+
+            <TextView
+                android:id="@+id/textView172"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/04/2023"
+                app:layout_constraintStart_toStartOf="@+id/textView171"
+                app:layout_constraintTop_toBottomOf="@+id/textView171" />
+
+            <TextView
+                android:id="@+id/textView173"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="In Date:"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/textView172"
+                app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+            <TextView
+                android:id="@+id/textView174"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/04/2023"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="@+id/textView173"
+                app:layout_constraintTop_toBottomOf="@+id/textView173" />
+
+            <TextView
+                android:id="@+id/textView1731"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Out Date:"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/imageView92"
+                app:layout_constraintTop_toTopOf="@+id/textView173" />
+
+            <TextView
+                android:id="@+id/tvOutDate"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/04/2023"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/textView1731"
+                app:layout_constraintTop_toTopOf="@+id/textView174" />
+
+
+            <TextView
+                android:id="@+id/textView1739"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="In Time:"
+                app:layout_constraintStart_toStartOf="@+id/textView173"
+                app:layout_constraintTop_toBottomOf="@+id/divider10" />
+
+            <TextView
+                android:id="@+id/tvInTime"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="05:30 Am"
+                app:layout_constraintStart_toStartOf="@+id/textView1739"
+                app:layout_constraintTop_toBottomOf="@+id/textView1739" />
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/textView173991"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Note:"
+                app:layout_constraintStart_toStartOf="@+id/textView1739"
+                app:layout_constraintTop_toBottomOf="@+id/divider13" />
+
+            <TextView
+                android:id="@+id/tvNote"
+                style="@style/normaltxt_12sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Biryani Blues"
+                app:layout_constraintEnd_toEndOf="@+id/divider13"
+                app:layout_constraintStart_toStartOf="@+id/textView173991"
+                app:layout_constraintTop_toBottomOf="@+id/textView173991" />
+
+            <TextView
+                android:id="@+id/textView1739911"
+                style="@style/normaltxt_10sp_Regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="NID ocumnet :"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/textView1739"
+                app:layout_constraintTop_toBottomOf="@+id/tvNote" />
+
+            <TextView
+                android:id="@+id/tvIn"
+                style="@style/normaltxt_14sp_bold"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/common_btn_bg"
+                android:backgroundTint="#4FBF67"
+                android:gravity="center"
+                android:text="In"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/imageView94" />
+
+            <ImageView
+                android:id="@+id/imageView95"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toStartOf="@+id/imageView92"
+                app:layout_constraintTop_toTopOf="@+id/imageView91"
+                app:srcCompat="@drawable/download_pdf_icon" />
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="@+id/imageView92"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/textView168"
+                app:layout_constraintTop_toBottomOf="@+id/textView168" />
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="@+id/divider7"
+                app:layout_constraintStart_toStartOf="@+id/textView170"
+                app:layout_constraintTop_toBottomOf="@+id/textView170" />
+
+            <View
+                android:id="@+id/divider9"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="@+id/divider25"
+                app:layout_constraintStart_toStartOf="@+id/textView171"
+                app:layout_constraintTop_toBottomOf="@+id/textView172" />
+
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvOutDate"
+                app:layout_constraintStart_toStartOf="@+id/textView174"
+                app:layout_constraintTop_toBottomOf="@+id/textView174" />
+
+            <View
+                android:id="@+id/divider13"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="@+id/divider9"
+                app:layout_constraintStart_toStartOf="@+id/tvInTime"
+                app:layout_constraintTop_toBottomOf="@+id/tvInTime" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcyPhoto"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/tvIn"
+                app:layout_constraintEnd_toEndOf="@+id/tvNote"
+                app:layout_constraintStart_toStartOf="@+id/textView1739911"
+                app:layout_constraintTop_toBottomOf="@+id/textView1739911" />
+
+            <View
+                android:id="@+id/divider25"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintEnd_toEndOf="@+id/divider8"
+                app:layout_constraintStart_toStartOf="@+id/tvContactOwner"
+                app:layout_constraintTop_toBottomOf="@+id/tvContactOwner" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
